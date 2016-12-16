@@ -25,7 +25,7 @@ For more details about this command line or specific usage, please consult the
 For Windows and Mac systems it is additinally possible to use [Kitematic](https://kitematic.com/) and launch Galaxy GraphClust Flavor from the OS graphical user interface.
 
 ## To launch the Galaxy GraphClust pipeline:
-* Inside your browser goto http://localhost:8080/
+* Inside your browser goto [http://localhost:8080/](http://localhost:8080/)
 
 TODO
 
