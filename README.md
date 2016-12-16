@@ -13,7 +13,7 @@ Galaxy GraphClust Flavor
 
 # Usage
 
-To launch:
+## To launch:
 
 ```
 docker run -i -t -p 8080:80 backofenlab/docker-galaxy-graphclust
@@ -23,6 +23,9 @@ For more details about this command line or specific usage, please consult the
 [`README`](https://github.com/bgruening/docker-galaxy-stable/blob/master/README.md) of the main Galaxy Docker image, on which the current image is based.
 
 For Windows and Mac systems it is additinally possible to use [Kitematic](https://kitematic.com/) and launch Galaxy GraphClust Flavor from the OS graphical user interface.
+
+## To run Galaxy GraphClust pipeline:
+TODO
 
 # Contributers
 
