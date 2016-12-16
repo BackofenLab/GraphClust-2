@@ -17,7 +17,7 @@ Galaxy GraphClust Flavor
 To launch:
 
 ```
-docker run -i -t -p 8080:80 bgruening/galaxy-graphclust
+docker run -i -t -p 8080:80 backofenlab/docker-galaxy-graphclust
 ```
 
 For more details about this command line or specific usage, please consult the
