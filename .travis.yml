@@ -27,3 +27,8 @@ script:
   - make test_ftp
   - make test_bioblend
   - make test_docker_in_docker
+
+# blocklist
+branches:
+  except:
+  - Update-Readme-Frontpage
