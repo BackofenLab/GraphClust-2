@@ -7,10 +7,12 @@ Galaxy GraphClust Flavor
 
 :whale: Galaxy Docker repository for GraphClust
 
-# Requirements
+# Requirements:
 
- - [Docker](https://docs.docker.com/installation/) for Linux / Windows / OSX
+ - [Docker](https://docs.docker.com/installation/)
+   A Docker client with the necessary user permissions is required for running the Galaxy GraphClust. Docker supports the three major desktop operating systems  Linux, Windows and Mac OSX.
 
+- Alternatively 
 # Usage
 
 ## To run the Galaxy server:
