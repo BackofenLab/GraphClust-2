@@ -10,7 +10,7 @@ Galaxy GraphClust Flavor
 # Requirements:
 
  - [Docker](https://docs.docker.com/installation/)
-   A Docker client with the necessary user permissions is required for running the Galaxy GraphClust. Docker supports the three major desktop operating systems  Linux, Windows and Mac OSX.
+   A Docker client with the necessary user permissions is required for running the Galaxy GraphClust. Docker supports the three major desktop operating systems  Linux, Windows and Mac OSX. Please refer to Docker [installation guideline](https://docs.docker.com/installation/) for details.
 
 - Alternatively 
 # Usage
