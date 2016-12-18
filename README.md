@@ -12,8 +12,11 @@ Galaxy GraphClust Flavor
  - [Docker](https://docs.docker.com/installation/)
    A Docker client with the necessary user permissions is required for running the Galaxy GraphClust. Docker supports the three major desktop operating systems  Linux, Windows and Mac OSX. Please refer to Docker [installation guideline](https://docs.docker.com/installation/) for details.
 
-- Alternatively 
-# Usage
+- For Windows and Mac systems it is additinally possible to use [Kitematic](https://kitematic.com/) and launch Galaxy GraphClust Flavor from the OS graphical user interface.
+
+- Alternative to launch the docker, having access to a Galaxy instance server preconfigured with the set of tools included in 'graphclust.yml' would be enough to run GraphClust Galaxy pipeline. (TODO: clarify this option) (TODO: mention Freiburg galaxy server?)
+
+# Setup:
 
 ## To run the Galaxy server:
 
@@ -24,7 +27,7 @@ docker run -i -t -p 8080:80 backofenlab/docker-galaxy-graphclust
 For more details about this command line or specific usage, please consult the
 [`README`](https://github.com/bgruening/docker-galaxy-stable/blob/master/README.md) of the main Galaxy Docker image, on which the current image is based.
 
-For Windows and Mac systems it is additinally possible to use [Kitematic](https://kitematic.com/) and launch Galaxy GraphClust Flavor from the OS graphical user interface.
+# Usage:
 
 ## To launch the Galaxy GraphClust pipeline:
 * Inside your browser goto [http://localhost:8080/](http://localhost:8080/)
