@@ -9,7 +9,8 @@ ENV ENABLE_TTS_INSTALL True
 
 # Enable Conda dependency resolution
 ENV GALAXY_CONFIG_CONDA_AUTO_INSTALL=True \
-    GALAXY_CONFIG_CONDA_AUTO_INIT=True
+    GALAXY_CONFIG_CONDA_AUTO_INIT=True \
+    GALAXY_CONFIG_USE_CACHED_DEPENDENCY_MANAGER=True    
 
 # Install tools
 ADD graphclust.yml $GALAXY_ROOT/tools.yaml
