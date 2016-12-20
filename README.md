@@ -18,7 +18,7 @@ Galaxy GraphClust Flavor
 
 # Setup:
 
-## To run the Galaxy server:
+## From the command line (Linux/Windows/MacOS):
 
 ```
 docker run -i -t -p 8080:80 backofenlab/docker-galaxy-graphclust
@@ -27,14 +27,7 @@ docker run -i -t -p 8080:80 backofenlab/docker-galaxy-graphclust
 For more details about this command line or specific usage, please consult the
 [`README`](https://github.com/bgruening/docker-galaxy-stable/blob/master/README.md) of the main Galaxy Docker image, on which the current image is based.
 
-# Usage:
-
-## To launch the Galaxy GraphClust pipeline:
-
-### From command line:
-* Inside your browser goto [http://localhost:8080/](http://localhost:8080/)
-
-### Using Kitematic graphic interface(Windows/MacOS):
+## Using Kitematic graphic interface(Windows/MacOS):
 1. Run kitematic,  search for `graphclust` and click on `create` button
 ![](./kitematic/kitematic-1.png)
 2. Wait for image to be downloaded
@@ -45,6 +38,14 @@ For more details about this command line or specific usage, please consult the
 ![](./kitematic/kitematic-4.png)
 5. Start browsing Galaxy html interface on `IP:8080`
 ![](./kitematic/kitematic-5.png)
+
+
+# Usage:
+
+## To launch the Galaxy GraphClust pipeline:
+
+### From command line:
+* Inside your browser goto [http://localhost:8080/](http://localhost:8080/)
 
 
 
