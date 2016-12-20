@@ -28,6 +28,17 @@ For more details about this command line or specific usage, please consult the
 [`README`](https://github.com/bgruening/docker-galaxy-stable/blob/master/README.md) of the main Galaxy Docker image, on which the current image is based.
 
 ## Using Kitematic graphic interface(Windows/MacOS):
+See [here below](#setup-kitematic).
+
+# Usage:
+
+## To launch the Galaxy GraphClust pipeline:
+
+### From command line:
+* Inside your browser goto [http://localhost:8080/](http://localhost:8080/)
+
+## Setup using Kitematic graphic interface(Windows/MacOS): [setup-kitematic] ##
+
 1. Run kitematic,  search for `graphclust` and click on `create` button
 ![](./kitematic/kitematic-1.png)
 2. Wait for image to be downloaded
@@ -39,13 +50,6 @@ For more details about this command line or specific usage, please consult the
 5. Start browsing Galaxy html interface on `IP:8080`
 ![](./kitematic/kitematic-5.png)
 
-
-# Usage:
-
-## To launch the Galaxy GraphClust pipeline:
-
-### From command line:
-* Inside your browser goto [http://localhost:8080/](http://localhost:8080/)
 
 
 
