@@ -94,3 +94,87 @@ tools:
   tool_shed_url: https://toolshed.g2.bx.psu.edu
   install_resolver_dependencies: True
   install_tool_dependencies: False
+
+- name: fasta_compute_length
+  owner: devteam
+  tool_panel_section_label: "FASTA manipulation tools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: fasta_formatter
+  owner: devteam
+  tool_panel_section_label: "FASTA manipulation tools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: fasta_nucleotide_changer
+  owner: devteam
+  tool_panel_section_label: "FASTA manipulation tools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: fasta_to_tabular
+  owner: devteam
+  tool_panel_section_label: "FASTA manipulation tools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: tabular_to_fasta
+  owner: devteam
+  tool_panel_section_label: "FASTA manipulation tools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: find_subsequences
+  owner: bgruening
+  tool_panel_section_label: "FASTA manipulation tools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: fasta_merge_files_and_filter_unique_sequences
+  owner: galaxyp
+  tool_panel_section_label: "FASTA manipulation tools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: get_orfs_or_cdss
+  owner: peterjc
+  tool_panel_section_label: "FASTA manipulation tools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: seq_filter_by_id
+  owner: peterjc
+  tool_panel_section_label: "FASTA manipulation tools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: seq_select_by_id 
+  owner: peterjc
+  tool_panel_section_label: "FASTA manipulation tools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: seq_rename
+  owner: peterjc
+  tool_panel_section_label: "FASTA manipulation tools"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
+- name: infernal
+  owner: bgruening
+  tool_panel_section_label: "GraphClust"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_resolver_dependencies: False
+  install_tool_dependencies: True
