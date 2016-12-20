@@ -27,7 +27,7 @@ docker run -i -t -p 8080:80 backofenlab/docker-galaxy-graphclust
 For more details about this command line or specific usage, please consult the
 [`README`](https://github.com/bgruening/docker-galaxy-stable/blob/master/README.md) of the main Galaxy Docker image, on which the current image is based.
 
-## Using Kitematic graphic interface(Windows/MacOS):
+## Using Kitematic graphic interface (Windows/MacOS):
 See [here below](#setup-kitematic).
 
 # Usage:
