@@ -15,3 +15,5 @@ ENV GALAXY_CONFIG_CONDA_AUTO_INSTALL=True \
 ADD graphclust.yml $GALAXY_ROOT/tools.yaml
 RUN install-tools $GALAXY_ROOT/tools.yaml && \
     /tool_deps/_conda/bin/conda clean --tarballs
+
+ADD tour_graphclust_wf.yaml $GALAXY_ROOT/config/plugins/tours/graphclust.wf.yaml
