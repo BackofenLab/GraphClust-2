@@ -28,7 +28,7 @@ For more details about this command line or specific usage, please consult the
 [`README`](https://github.com/bgruening/docker-galaxy-stable/blob/master/README.md) of the main Galaxy Docker image, on which the current image is based.
 
 ## Using Kitematic graphic interface (Windows/MacOS):
-See [here below](#setup-kitematic).
+See [here below](#setup-using-kitematic-graphic-interfacewindowsmacos-setup-kitematic).
 
 # Usage:
 
