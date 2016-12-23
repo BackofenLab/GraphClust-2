@@ -1,0 +1,1030 @@
+{
+    "a_galaxy_workflow": "true", 
+    "annotation": "", 
+    "format-version": "0.1", 
+    "name": "3rd_round", 
+    "steps": {
+        "0": {
+            "annotation": "", 
+            "content_id": null, 
+            "id": 0, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "data_svector"
+                }
+            ], 
+            "label": "data_svector", 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 255, 
+                "top": 128
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"data_svector\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "ae75db6f-9af8-4fa6-8325-474b45a7b586", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "d3172748-fedf-4108-a87a-d1b2329cdad5"
+                }
+            ]
+        }, 
+        "1": {
+            "annotation": "", 
+            "content_id": null, 
+            "id": 1, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "data_fasta"
+                }
+            ], 
+            "label": "data_fasta", 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 255, 
+                "top": 198
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"data_fasta\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "51bd8cb3-6992-47e1-9cfb-49747e13de34", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "58740c2c-b20e-486f-b3f7-061006c8cff3"
+                }
+            ]
+        }, 
+        "2": {
+            "annotation": "", 
+            "content_id": null, 
+            "id": 2, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "data_names"
+                }
+            ], 
+            "label": "data_names", 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 252, 
+                "top": 276
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"data_names\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "f0a3d0d3-c34e-4319-9233-0249fcdabda7", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "3472ccc7-002b-4b1a-9575-6c6ca74f2651"
+                }
+            ]
+        }, 
+        "3": {
+            "annotation": "", 
+            "content_id": null, 
+            "id": 3, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "blacklist_2nd_round"
+                }
+            ], 
+            "label": "blacklist_2nd_round", 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 244, 
+                "top": 339
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"blacklist_2nd_round\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "3ceb5c83-1d2b-48df-97ee-b17e16044d5b", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "32a693a1-043e-4ef9-91e8-08422f3eb956"
+                }
+            ]
+        }, 
+        "4": {
+            "annotation": "", 
+            "content_id": null, 
+            "id": 4, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "final_part_sof_2nd_round"
+                }
+            ], 
+            "label": "final_part_sof_2nd_round", 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 238, 
+                "top": 433
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"final_part_sof_2nd_round\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "fcaf6d0a-3dfd-43cd-a94b-2d0532a29645", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "cc1dabcc-9c42-45da-9250-2fa432e5025e"
+                }
+            ]
+        }, 
+        "5": {
+            "annotation": "", 
+            "content_id": null, 
+            "id": 5, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "fast_cluster_2nd_round"
+                }
+            ], 
+            "label": "fast_cluster_2nd_round", 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 249, 
+                "top": 525
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"fast_cluster_2nd_round\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "acd6cf92-25ca-4b56-8987-3cd5005327a1", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "4f395533-e787-418d-b4dd-77a46923f2ee"
+                }
+            ]
+        }, 
+        "6": {
+            "annotation": "", 
+            "content_id": null, 
+            "id": 6, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "data_map"
+                }
+            ], 
+            "label": "data_map", 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 621, 
+                "top": 144
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"data_map\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "1b510074-8efe-4632-af77-a7e5c847a5a7", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "63ac4b36-4aef-4829-8647-4c3589ba0445"
+                }
+            ]
+        }, 
+        "7": {
+            "annotation": "", 
+            "content_id": null, 
+            "id": 7, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "data_fasta_scan"
+                }
+            ], 
+            "label": "data_fasta_scan", 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 1276, 
+                "top": 670
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"data_fasta_scan\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "4f39dbae-8b19-4d9e-bdca-ac6e5a6daec2", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "134f7814-70ec-4eb3-be36-7cc75c418927"
+                }
+            ]
+        }, 
+        "8": {
+            "annotation": "", 
+            "content_id": null, 
+            "id": 8, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "final_part_used_cmsearch_2nd_round"
+                }
+            ], 
+            "label": "final_part_used_cmsearch_2nd_round", 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 1488, 
+                "top": 822
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"final_part_used_cmsearch_2nd_round\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "d3332f24-9da9-439e-af54-2c196783fd88", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "221f7ebb-b7ef-4d64-9898-77ad6b129102"
+                }
+            ]
+        }, 
+        "9": {
+            "annotation": "", 
+            "content_id": null, 
+            "id": 9, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "FASTA_zip"
+                }
+            ], 
+            "label": "FASTA_zip", 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 1681, 
+                "top": 414
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"FASTA_zip\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "4cde2d78-3c5c-4ba7-8e17-cd5c62068f18", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "5bd447db-7073-4d8a-a701-68ae0834ff49"
+                }
+            ]
+        }, 
+        "10": {
+            "annotation": "", 
+            "content_id": null, 
+            "id": 10, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "cmsearch_2nd__round"
+                }
+            ], 
+            "label": "cmsearch_2nd__round", 
+            "name": "Input dataset collection", 
+            "outputs": [], 
+            "position": {
+                "left": 1485.5, 
+                "top": 894
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"collection_type\": \"list\", \"name\": \"cmsearch_2nd__round\"}", 
+            "tool_version": null, 
+            "type": "data_collection_input", 
+            "uuid": "7ee71474-3c5b-477e-b61a-5ac35bf215f1", 
+            "workflow_outputs": []
+        }, 
+        "11": {
+            "annotation": "", 
+            "content_id": null, 
+            "id": 11, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "cmsearch_1st_round"
+                }
+            ], 
+            "label": "cmsearch_1st_round", 
+            "name": "Input dataset collection", 
+            "outputs": [], 
+            "position": {
+                "left": 1488.5, 
+                "top": 966
+            }, 
+            "tool_errors": null, 
+            "tool_id": null, 
+            "tool_state": "{\"collection_type\": \"list\", \"name\": \"cmsearch_1st_round\"}", 
+            "tool_version": null, 
+            "type": "data_collection_input", 
+            "uuid": "95837469-4b5a-4bd2-b482-d2b425d9969b", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "ae51470c-347e-4084-9250-9e33e0416f8e"
+                }
+            ]
+        }, 
+        "12": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_nspdk/NSPDK_candidateClust/9.2", 
+            "id": 12, 
+            "input_connections": {
+                "data_fasta": {
+                    "id": 1, 
+                    "output_name": "output"
+                }, 
+                "data_names": {
+                    "id": 2, 
+                    "output_name": "output"
+                }, 
+                "data_svector": {
+                    "id": 0, 
+                    "output_name": "output"
+                }, 
+                "iteration_num|blacklist": {
+                    "id": 3, 
+                    "output_name": "output"
+                }, 
+                "iteration_num|fast_cluster_last_round": {
+                    "id": 5, 
+                    "output_name": "output"
+                }, 
+                "iteration_num|final_partition_soft": {
+                    "id": 4, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool NSPDK_candidateClusters", 
+                    "name": "iteration_num"
+                }, 
+                {
+                    "description": "runtime parameter for tool NSPDK_candidateClusters", 
+                    "name": "iteration_num"
+                }, 
+                {
+                    "description": "runtime parameter for tool NSPDK_candidateClusters", 
+                    "name": "iteration_num"
+                }, 
+                {
+                    "description": "runtime parameter for tool NSPDK_candidateClusters", 
+                    "name": "data_fasta"
+                }, 
+                {
+                    "description": "runtime parameter for tool NSPDK_candidateClusters", 
+                    "name": "data_names"
+                }, 
+                {
+                    "description": "runtime parameter for tool NSPDK_candidateClusters", 
+                    "name": "data_svector"
+                }
+            ], 
+            "label": null, 
+            "name": "NSPDK_candidateClusters", 
+            "outputs": [
+                {
+                    "name": "fast_cluster", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "fast_cluster_sim", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "black_list", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "fast_cluster_m", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "fast_cluster_sim_m", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "black_list_m", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 474, 
+                "top": 225
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionblack_list": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "black_list"
+                }, 
+                "HideDatasetActionblack_list_m": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "black_list_m"
+                }, 
+                "HideDatasetActionfast_cluster": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "fast_cluster"
+                }, 
+                "HideDatasetActionfast_cluster_m": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "fast_cluster_m"
+                }, 
+                "HideDatasetActionfast_cluster_sim": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "fast_cluster_sim"
+                }, 
+                "HideDatasetActionfast_cluster_sim_m": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "fast_cluster_sim_m"
+                }
+            }, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_nspdk/NSPDK_candidateClust/9.2", 
+            "tool_shed_repository": {
+                "changeset_revision": "165fe96228be", 
+                "name": "graphclust_nspdk", 
+                "owner": "rnateam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"knn\": \"\\\"20\\\"\", \"max_dist_relations\": \"\\\"3\\\"\", \"nhf\": \"\\\"500\\\"\", \"noCache\": \"\\\"true\\\"\", \"__page__\": 0, \"usn\": \"\\\"true\\\"\", \"__rerun_remap_job_id__\": null, \"oc\": \"\\\"true\\\"\", \"iteration_num\": \"{\\\"CI\\\": \\\"3\\\", \\\"final_partition_soft\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"iteration_num_selector\\\": \\\"true\\\", \\\"GLOBAL_hit_blacklist_overlap\\\": \\\"0.2\\\", \\\"blacklist\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0, \\\"fast_cluster_last_round\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\", \"ensf\": \"\\\"5\\\"\", \"data_fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"max_rad\": \"\\\"3\\\"\", \"data_svector\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"nspdk_nhf_max\": \"\\\"1000\\\"\", \"nspdk_nhf_step\": \"\\\"25\\\"\", \"GLOBAL_num_clusters\": \"\\\"100\\\"\", \"data_names\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "9.2", 
+            "type": "tool", 
+            "uuid": "c67bf1c1-643f-49a2-b800-8783261d8bf3", 
+            "workflow_outputs": []
+        }, 
+        "13": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_prepocessing_for_mlocarna/preMloc/0.1.0", 
+            "id": 13, 
+            "input_connections": {
+                "data_map": {
+                    "id": 6, 
+                    "output_name": "output"
+                }, 
+                "fast_cluster": {
+                    "id": 12, 
+                    "output_name": "fast_cluster_m"
+                }, 
+                "fast_cluster_sim": {
+                    "id": 12, 
+                    "output_name": "fast_cluster_sim_m"
+                }, 
+                "fasta_data": {
+                    "id": 1, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool premlocarna", 
+                    "name": "fasta_data"
+                }, 
+                {
+                    "description": "runtime parameter for tool premlocarna", 
+                    "name": "fast_cluster_sim"
+                }, 
+                {
+                    "description": "runtime parameter for tool premlocarna", 
+                    "name": "data_map"
+                }, 
+                {
+                    "description": "runtime parameter for tool premlocarna", 
+                    "name": "fast_cluster"
+                }
+            ], 
+            "label": null, 
+            "name": "premlocarna", 
+            "outputs": [
+                {
+                    "name": "centers", 
+                    "type": "input"
+                }, 
+                {
+                    "name": "trees", 
+                    "type": "input"
+                }, 
+                {
+                    "name": "cmFa", 
+                    "type": "input"
+                }, 
+                {
+                    "name": "model_tree_fa", 
+                    "type": "input"
+                }, 
+                {
+                    "name": "tree_matrix", 
+                    "type": "input"
+                }
+            ], 
+            "position": {
+                "left": 729, 
+                "top": 282
+            }, 
+            "post_job_actions": {
+                "HideDatasetActioncenters": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "centers"
+                }, 
+                "HideDatasetActioncmFa": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "cmFa"
+                }, 
+                "HideDatasetActionmodel_tree_fa": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "model_tree_fa"
+                }, 
+                "HideDatasetActiontree_matrix": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "tree_matrix"
+                }, 
+                "HideDatasetActiontrees": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "trees"
+                }
+            }, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_prepocessing_for_mlocarna/preMloc/0.1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "8ad3e79255c1", 
+                "name": "graphclust_prepocessing_for_mlocarna", 
+                "owner": "rnateam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"knn\": \"\\\"20\\\"\", \"__page__\": 0, \"CI\": \"\\\"3\\\"\", \"fasta_data\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"fast_cluster_sim\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"data_map\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"fast_cluster\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "0.1.0", 
+            "type": "tool", 
+            "uuid": "b986e5a7-14ab-422d-a034-bc3e371324d0", 
+            "workflow_outputs": []
+        }, 
+        "14": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_mlocarna/locarna_best_subtree/0.1.0", 
+            "id": 14, 
+            "input_connections": {
+                "center_fa_file": {
+                    "id": 13, 
+                    "output_name": "centers"
+                }, 
+                "data_map": {
+                    "id": 6, 
+                    "output_name": "output"
+                }, 
+                "tree_file": {
+                    "id": 13, 
+                    "output_name": "trees"
+                }, 
+                "tree_matrix": {
+                    "id": 13, 
+                    "output_name": "tree_matrix"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool locarna_best_subtree", 
+                    "name": "center_fa_file"
+                }, 
+                {
+                    "description": "runtime parameter for tool locarna_best_subtree", 
+                    "name": "tree_matrix"
+                }, 
+                {
+                    "description": "runtime parameter for tool locarna_best_subtree", 
+                    "name": "data_map"
+                }, 
+                {
+                    "description": "runtime parameter for tool locarna_best_subtree", 
+                    "name": "tree_file"
+                }
+            ], 
+            "label": null, 
+            "name": "locarna_best_subtree", 
+            "outputs": [
+                {
+                    "name": "model_tree_stk", 
+                    "type": "stockholm"
+                }
+            ], 
+            "position": {
+                "left": 953.5, 
+                "top": 402
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionmodel_tree_stk": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "model_tree_stk"
+                }
+            }, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_mlocarna/locarna_best_subtree/0.1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "15bd4fb05e5c", 
+                "name": "graphclust_mlocarna", 
+                "owner": "rnateam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"tau\": \"\\\"50\\\"\", \"max_diff_am\": \"\\\"50\\\"\", \"center_fa_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0, \"__rerun_remap_job_id__\": null, \"tree_matrix\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"p\": \"\\\"0.001\\\"\", \"data_map\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"max_diff\": \"\\\"100\\\"\", \"tree_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"plfold_minlen\": \"\\\"210\\\"\"}", 
+            "tool_version": "0.1.0", 
+            "type": "tool", 
+            "uuid": "2cbfc732-b147-4ebc-b961-95f793b60d76", 
+            "workflow_outputs": []
+        }, 
+        "15": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_cmfinder/cmFinder/0.1.0", 
+            "id": 15, 
+            "input_connections": {
+                "cmfinder_fa": {
+                    "id": 13, 
+                    "output_name": "cmFa"
+                }, 
+                "model_tree_stk": {
+                    "id": 14, 
+                    "output_name": "model_tree_stk"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool CMFinder_v0", 
+                    "name": "model_tree_stk"
+                }, 
+                {
+                    "description": "runtime parameter for tool CMFinder_v0", 
+                    "name": "cmfinder_fa"
+                }
+            ], 
+            "label": null, 
+            "name": "CMFinder_v0", 
+            "outputs": [
+                {
+                    "name": "model_cmfinder_stk", 
+                    "type": "stockholm"
+                }
+            ], 
+            "position": {
+                "left": 1204, 
+                "top": 450
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionmodel_cmfinder_stk": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "model_cmfinder_stk"
+                }
+            }, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_cmfinder/cmFinder/0.1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "78772eedd780", 
+                "name": "graphclust_cmfinder", 
+                "owner": "rnateam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"cmfinder_fa\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"model_tree_stk\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"gap_threshold_opts\": \"{\\\"gap_threshold_opts_selector\\\": \\\"--g\\\", \\\"__current_case__\\\": 0, \\\"gap\\\": \\\"1.0\\\"}\"}", 
+            "tool_version": "0.1.0", 
+            "type": "tool", 
+            "uuid": "e6003090-6d7b-40aa-90f5-7a7c8bf8d00b", 
+            "workflow_outputs": []
+        }, 
+        "16": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/infernal/infernal_cmbuild/1.1.0.2", 
+            "id": 16, 
+            "input_connections": {
+                "alignment_infile": {
+                    "id": 15, 
+                    "output_name": "model_cmfinder_stk"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Build covariance models", 
+                    "name": "alignment_infile"
+                }
+            ], 
+            "label": null, 
+            "name": "Build covariance models", 
+            "outputs": [
+                {
+                    "name": "summary_outfile", 
+                    "type": "text"
+                }, 
+                {
+                    "name": "cmfile_outfile", 
+                    "type": "cm"
+                }, 
+                {
+                    "name": "refined_multiple_alignment_output", 
+                    "type": "stockholm"
+                }
+            ], 
+            "position": {
+                "left": 1375, 
+                "top": 273
+            }, 
+            "post_job_actions": {
+                "HideDatasetActioncmfile_outfile": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "cmfile_outfile"
+                }, 
+                "HideDatasetActionrefined_multiple_alignment_output": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "refined_multiple_alignment_output"
+                }, 
+                "HideDatasetActionsummary_outfile": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "summary_outfile"
+                }
+            }, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/infernal/infernal_cmbuild/1.1.0.2", 
+            "tool_shed_repository": {
+                "changeset_revision": "c47a7c52ac4f", 
+                "name": "infernal", 
+                "owner": "bgruening", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"noss\": \"\\\"false\\\"\", \"is_summery_output\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null, \"effective_opts\": \"{\\\"__current_case__\\\": 0, \\\"effective_opts_selector\\\": \\\"--enone\\\"}\", \"alignment_infile\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"refining_opts\": \"{\\\"__current_case__\\\": 0, \\\"refining_opts_selector\\\": \\\"\\\"}\", \"model_construction_opts\": \"{\\\"model_construction_opts_selector\\\": \\\"--fast\\\", \\\"symfrac\\\": \\\"0.5\\\", \\\"__current_case__\\\": 0}\", \"relative_weights_opts\": \"{\\\"relative_weights_opts_selector\\\": \\\"--wpb\\\", \\\"__current_case__\\\": 0}\"}", 
+            "tool_version": "1.1.0.2", 
+            "type": "tool", 
+            "uuid": "9686a13f-5c22-42b5-85d3-4405383d2a78", 
+            "workflow_outputs": []
+        }, 
+        "17": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/infernal/infernal_cmsearch/1.1.0.2", 
+            "id": 17, 
+            "input_connections": {
+                "cm_opts|cmfile": {
+                    "id": 16, 
+                    "output_name": "cmfile_outfile"
+                }, 
+                "seqdb": {
+                    "id": 7, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Search covariance model(s)", 
+                    "name": "seqdb"
+                }, 
+                {
+                    "description": "runtime parameter for tool Search covariance model(s)", 
+                    "name": "cm_opts"
+                }
+            ], 
+            "label": null, 
+            "name": "Search covariance model(s)", 
+            "outputs": [
+                {
+                    "name": "outfile", 
+                    "type": "tabular"
+                }, 
+                {
+                    "name": "multiple_alignment_output", 
+                    "type": "tabular"
+                }
+            ], 
+            "position": {
+                "left": 1500.5, 
+                "top": 518
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionmultiple_alignment_output": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "multiple_alignment_output"
+                }, 
+                "HideDatasetActionoutfile": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "outfile"
+                }
+            }, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/infernal/infernal_cmsearch/1.1.0.2", 
+            "tool_shed_repository": {
+                "changeset_revision": "c47a7c52ac4f", 
+                "name": "infernal", 
+                "owner": "bgruening", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"A\": \"\\\"false\\\"\", \"nohmm\": \"\\\"false\\\"\", \"--acyk\": \"\\\"false\\\"\", \"bottomonly\": \"\\\"false\\\"\", \"g\": \"\\\"false\\\"\", \"inclusion_thresholds_opts\": \"{\\\"__current_case__\\\": 0, \\\"inclusion_thresholds_selector\\\": \\\"\\\"}\", \"__page__\": 0, \"max\": \"\\\"false\\\"\", \"notrunc\": \"\\\"false\\\"\", \"mid\": \"\\\"false\\\"\", \"seqdb\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"toponly\": \"\\\"false\\\"\", \"cm_opts\": \"{\\\"cmfile\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 1, \\\"cm_opts_selector\\\": \\\"histdb\\\"}\", \"reporting_thresholds_opts\": \"{\\\"reporting_thresholds_selector\\\": \\\"\\\", \\\"__current_case__\\\": 0}\", \"cyk\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null}", 
+            "tool_version": "1.1.0.2", 
+            "type": "tool", 
+            "uuid": "1289a089-b881-4912-a4c8-e67f1d63f0cd", 
+            "workflow_outputs": []
+        }, 
+        "18": {
+            "annotation": "", 
+            "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_postprocessing/glob_report/0.1", 
+            "id": 18, 
+            "input_connections": {
+                "FASTA": {
+                    "id": 9, 
+                    "output_name": "output"
+                }, 
+                "cmsearch_results": [
+                    {
+                        "id": 17, 
+                        "output_name": "outfile"
+                    }, 
+                    {
+                        "id": 11, 
+                        "output_name": "output"
+                    }, 
+                    {
+                        "id": 10, 
+                        "output_name": "output"
+                    }
+                ], 
+                "iteration_num|final_partition_soft": {
+                    "id": 4, 
+                    "output_name": "output"
+                }, 
+                "iteration_num|final_partition_used_cmsearch": {
+                    "id": 8, 
+                    "output_name": "output"
+                }, 
+                "model_tree_files": {
+                    "id": 13, 
+                    "output_name": "model_tree_fa"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Report_Results", 
+                    "name": "model_tree_files"
+                }, 
+                {
+                    "description": "runtime parameter for tool Report_Results", 
+                    "name": "iteration_num"
+                }, 
+                {
+                    "description": "runtime parameter for tool Report_Results", 
+                    "name": "iteration_num"
+                }, 
+                {
+                    "description": "runtime parameter for tool Report_Results", 
+                    "name": "FASTA"
+                }, 
+                {
+                    "description": "runtime parameter for tool Report_Results", 
+                    "name": "cmsearch_results"
+                }
+            ], 
+            "label": null, 
+            "name": "Report_Results", 
+            "outputs": [
+                {
+                    "name": "clusters", 
+                    "type": "input"
+                }, 
+                {
+                    "name": "partitions", 
+                    "type": "input"
+                }, 
+                {
+                    "name": "final_stats", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "tableForEval", 
+                    "type": "tabular"
+                }, 
+                {
+                    "name": "final_soft", 
+                    "type": "txt"
+                }, 
+                {
+                    "name": "final_used_cmsearch", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 1833, 
+                "top": 654
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionfinal_soft": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "final_soft"
+                }, 
+                "HideDatasetActionfinal_used_cmsearch": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "final_used_cmsearch"
+                }, 
+                "HideDatasetActionpartitions": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "partitions"
+                }, 
+                "HideDatasetActiontableForEval": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "tableForEval"
+                }
+            }, 
+            "tool_errors": null, 
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_postprocessing/glob_report/0.1", 
+            "tool_shed_repository": {
+                "changeset_revision": "b797e13169a0", 
+                "name": "graphclust_postprocessing", 
+                "owner": "rnateam", 
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"model_tree_files\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cm_max_eval\": \"\\\"0.001\\\"\", \"min_cluster_size\": \"\\\"3\\\"\", \"__rerun_remap_job_id__\": null, \"merge_cluster_ol\": \"\\\"0.66\\\"\", \"iteration_num\": \"{\\\"final_partition_used_cmsearch\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"iteration_num_selector\\\": \\\"true\\\", \\\"final_partition_soft\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"CI\\\": \\\"3\\\", \\\"__current_case__\\\": 0}\", \"cm_min_bitscore\": \"\\\"20\\\"\", \"cut_type\": \"\\\"true\\\"\", \"merge_overlap\": \"\\\"0.51\\\"\", \"cm_bitscore_sig\": \"\\\"1\\\"\", \"FASTA\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cmsearch_results\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"partition_type\": \"\\\"true\\\"\"}", 
+            "tool_version": "0.1", 
+            "type": "tool", 
+            "uuid": "195b6f00-7a1d-47fa-b11f-bb60a4529720", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "clusters", 
+                    "uuid": "1ec39a34-3d5e-4ca4-bb4f-e13fc5ef2ebb"
+                }, 
+                {
+                    "label": null, 
+                    "output_name": "final_stats", 
+                    "uuid": "9728f53c-a339-4b8b-9483-2adf607c39b2"
+                }
+            ]
+        }
+    }, 
+    "uuid": "f1a8fc76-3141-49f0-a3cc-328b7b08f0fe"
+}
