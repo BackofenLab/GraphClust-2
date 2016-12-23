@@ -1,0 +1,413 @@
+name: GraphClust workflow step by step
+description: Steo by step instructions for using GrapClust for clustering RNA sequences
+title_default: "<b>GrapClust step by step</b>"
+steps:
+    - title: "<b>A tutorial on GrapClust(Clustering RNA sequences)</b>"
+      content: "This tour will walk you through the process of <b>GrapClust</b> to cluster RNA sequences.<br><br>
+                Read and Follow the instructions before clicking <b>'Next'</b>.<br><br>
+                Click <b>'Prev'</b> in case you missed out on any step."
+      backdrop: true
+
+    - title: "<b>A tutorial on GraphClust</b>"
+      content: "Together we will go through the following 10 steps:<br>
+                 <dir>
+                 <b>
+                   <li>Data Acquisition</li>
+                   <li>Pre-processing</li>
+                   <li>Creating a graph from FASTA</li>
+                   <li>Creating a sparse vector</li>
+                   <li>Computing candidate clusters</li>
+                   <li>Preprocessing data for computing best subtree</li>
+                   <li>Computing best subtree using LocaRna</li>
+                   <li>Finding consensus motives</li>
+                   <li>Building Covariance Model using cmbuild</li>
+                   <li>Searching homologous sequences using cmsearch</li>
+                   <li>Post-processing</li>
+                 </b>
+                 </dir>"
+      backdrop: true
+
+
+    - title: "<b>Data Acquisition</b>"
+      content: "We will start with a simple small <b>FASTA</b> file.<br><br>
+                You will get one FASTA file with RNA sequences that we want to cluster.<br><br>"
+      backdrop: true
+
+    - title: "<b>Data Acquisition</b>"
+      element: ".upload-button"
+      intro: "We will import the FASTA file into into the history we just created.<br><br>
+              Click <b>'Next'</b> and the tour will take you to the Upload screen."
+      position: "right"
+      postclick:
+        - ".upload-button"
+
+    - title: "<b>Data Acquisition</b>"
+      element: "button#btn-new"
+      intro: "The sample training data available on github is a good place to start.<br><br>
+              Simply click <b>'Next'</b> and the links to the training data will be automatically inserted and ready for upload.<br><br>
+              Later on, when you want to upload other data, you can do so by clicking the <b>'Paste/Fetch Data'</b> button or
+              <b>'Choose local file'</b>  to upload localy stored file."
+      position: "top"
+      postclick:
+        - "button#btn-new"
+
+    - title: "<b>Data Acquisition</b>"
+      element: ".upload-text-content:first"
+      intro: "Links Acquired !"
+      position: "top"
+      textinsert:
+        https://github.com/eteriSokhoyan/test-data/raw/master/cliques-low-representatives.fa
+
+    - title: "<b>Data Acquisition</b>"
+      element: "button#btn-start"
+      intro: "Click on <b>'Start'</b> to upload the data into your Galaxy history."
+      position: "top"
+
+    - title: "<b>Data Acquisition</b>"
+      element: "button#btn-close"
+      intro: "The upload may take awhile.<br><br>
+              Hit the <b>close</b> button when you see that the files are uploaded into your history."
+      position: "top"
+
+    - title: "<b>Data Acquisition</b>"
+      element: "#current-history-panel > div.controls"
+      intro: "You've acquired your data. Now let's start Pre-processing.<br><br>"
+      position: "left"
+
+    - title: "<b>Pre-processing</b>"
+      intro: "This tool takes as an input file of sequences in Fasta format
+                and creates the final input for GraphCLust based on given parameters. Parameters allows us to
+                split long sequences into smaller fragments to enable the detection of local signals"
+      position: "right"
+      postclick:
+        - "#preproc > div.toolTitle > div > a"
+
+    - title: "<b>Pre-processing</b>"
+      element: "#s2id_uid-18_select > a"
+      intro: "Here we should define our input file.<br>"
+      position: "top"
+
+
+    - title: "<b>Pre-processing</b>"
+      element: "#uid-11"
+      intro: "<b>'Window size'</b> defines the length of the fragments that the input sequences will be split.
+              In default settings we set it to very high number to not split the sequences at all.<br><br>"
+      position: "top"
+
+
+    - title: "<b>Pre-processing</b>"
+      element: "#uid-64 > div.ui-form-title > span"
+      intro: "<b>'Window shift in percent'</b> defines the percentage of the shift fot fragments of the input sequences.
+              In default settings it is 100% because we don't split input sequences.<br><br>"
+      position: "top"
+
+    - title: "<b>Pre-processing</b>"
+      element: "#uid-46 > div.ui-form-field"
+      intro: "<b>Minimum sequence length</b> defines the minimal length of input sequences.<br><br>"
+      position: "top"
+
+
+    - title: "<b>Pre-processing</b>"
+      element: "#execute"
+      intro: "To run the tool press <b>'Execute' </b> button.<br>"
+      position: "top"
+
+
+    - title: "<b>Understanding the Output</b>"
+      element: "#current-history-panel"
+      intro: "After the tool is executed  several output files are created.
+              <br> By clicking on the <b>'eye'</b> icon you can see the content of the files.
+              <br><br>"
+      position: "left"
+
+    - title: "<b>Creating a graph from FASTA</b>"
+      intro: "Next step is to create a graph from FASTA file.<br>"
+      position: "right"
+      postclick:
+        - "#gspan > div.toolTitle > div > a"
+
+    - title: "<b>Creating a graph from FASTA</b>"
+      element: "#uid-71 > div.ui-form-field > div.ui-select-content > div.ui-options > div.btn-group.ui-radiobutton"
+      intro: "As an input this tool takes preproccessed FASTA file: <b>'data.fasta'</b>.<br>"
+      position: "right"
+
+
+    - title: "<b>Creating a graph from FASTA</b>"
+      intro: "Detailed description of each parameter you can find in help section at the bottom of the page"
+      position: "top"
+
+    - title: "<b>Creating a graph from FASTA</b>"
+      element: "#execute"
+      intro:  "To run the tool press <b>'Execute' </b> button.<br>"
+      position: "top"
+
+    - title: "<b>Creating a graph from FASTA</b>"
+      intro:  "Once tool is executed it will produce <b>gspan.zip file</b>.<br>"
+      position: "top"
+
+    - title: "<b>Creating a sparse vector</b>"
+      intro:  "Next comes creation of explicit sparse feature encoding usinf <b>NSPDK</b>.<br>"
+      position: "top"
+      postclick:
+        - "#nspdk_sparse > div.toolTitle > div > a"
+
+    - title: "<b>Creating a sparse vector</b>"
+      intro:  "This tools requires 2 input files:
+                <br>
+                   <dir>
+                   <b>
+                     <li>data.fasta : from pre-processing step</li>
+                     <li>gspan.zip : from the previous step</li>
+                   </b>
+                   </dir>"
+      position: "top"
+
+
+    - title: "<b>Creating a sparse vector</b>"
+      intro:  "More information about NSPDK you can find in help section<br>"
+      position: "top"
+
+    - title: "<b>Creating a sparse vector</b>"
+      element: "#execute"
+      intro:  "Run the tool by pressing <b>'Execute' </b> button.<br>"
+      position: "top"
+
+    - title: "<b>Creating a sparse vector</b>"
+      intro:  "After tool is exec it will produce <b>data_svector</b> which we will use in the next step."
+      position: "top"
+
+
+    - title: "<b>Computing candidate clusters</b>"
+      intro:  "During this step we will copmute global feature index and get top dense sets.
+              The candidate clusters are chosen as the top ranking neighborhoods provided that the
+                size of their overlap is below a specified threshold."
+      position: "top"
+      postclick:
+        - "#NSPDK_candidateClust > div.toolTitle > div > a"
+
+
+    - title: "<b>Computing candidate clusters</b>"
+      intro:  "Here we have to specify 3 input files:
+                <br>
+                   <dir>
+                   <b>
+                     <li>data_svector : from the previous step</li>
+                     <li>data_fasta </li>
+                     and
+                     <li>data_names from pre-processing step</li>
+                   </b>
+                   </dir>"
+      position: "top"
+
+    - title: "<b>Computing candidate clusters</b>"
+      intro:  "Another important parameter for this tool is <b>Multiple iterations</b>.
+              This parameter by default is set to <b>'no'</b> which means we will do only a single iteration.
+              By setting it to <b>'yes'</b> we have to define some other input files which we would get from previous
+              iterations. But in the scope of this tutorial we will just go for a single iteration."
+      position: "top"
+
+    - title: "<b>Computing candidate clusters</b>"
+      intro:  "For more information about this tool check the <b>help</b> section.<br>"
+      position: "top"
+
+    - title: "<b>Computing candidate clusters</b>"
+      element: "#execute"
+      intro:  "Run the tool by pressing <b>'Execute' </b> button.<br>"
+      position: "top"
+
+    - title: "<b>Computing candidate clusters</b>"
+      intro:  "This step will produce 3 output files:
+          <br>
+             <dir>
+             <b>
+               <li>fast_cluster</li>
+               <li>fast_cluster_sim</li>
+               <li>blacklist</li>
+             </b>
+             </dir>
+             <b>fast_cluster</b> represents the id's of the candidate clusters. <br>
+             <b>fast_cluster_sim</b> represents the similarity scores. <br>
+             <b>blacklist</b> contains the ids of sequences that were already clustered, that's why in case
+             of the single iteration it's empty. <br>"
+      position: "top"
+
+
+    - title: "<b>Preprocessing data for computing best subtree</b>"
+      intro:  "Next step will do some pre-processing for computing best subtrees.<br>"
+      position: "top"
+      postclick:
+        - "#preMloc > div.toolTitle > div > a"
+
+    - title: "<b>Preprocessing data for computing best subtree</b>"
+      intro:  "This step needs 4 input files:
+                <br>
+                   <dir>
+                   <b>
+                     <li>fast_cluster : from the previous step</li>
+                     <li>fast_cluster_sim : from the previous step</li>
+                     <li>data_fasta </li>
+                     and
+                     <li>data_names from pre-processing step</li>
+                   </b>
+                   </dir>
+                   "
+      position: "top"
+
+    - title: "<b>Preprocessing data for computing best subtree</b>"
+      element: "#execute"
+      intro:  "Run the tool by pressing <b>'Execute' </b> button.<br>"
+      position: "top"
+
+    - title: "<b>Preprocessing data for computing best subtree</b>"
+      intro:  "Execution of this tool results in 4 datasets :
+          <br>
+             <dir>
+             <b>
+               <li>centers</li>
+               <li>trees</li>
+               <li>tree_matrix</li>
+               <li>cmfinder_fa</li>
+               <li>model_tree_fa</li>
+             </b>
+             </dir>
+            These datasets will be used in next steps.
+        <br>"
+      position: "top"
+
+
+    - title: "<b>Computing best subtree using LocaRna</b>"
+      intro:  "This step computes a multiple sequence-structure alignment of RNA sequences using <b>LocaRna</b>.
+              It uses tree file (from previous step) with guide tree in NEWICK format.
+              The given tree is used as guide tree for the progressive alignment. It saves the calculation
+              of pairwise all-vs-all similarities and construction of the guide tree. And at the end return the best subtree<br>"
+      position: "top"
+      postclick:
+        - "#locarna_best_subtree > div.toolTitle > div > a"
+
+    - title: "<b>Computing best subtree using LocaRna</b>"
+      intro:  "This step takes as an input following files:
+         <dir>
+         <b>
+           <li>centers</li>
+           <li>trees</li>
+           <li>tree_matrix</li>
+           from previous steps and
+           <li>data_map from pre step</li>
+         </b>
+         </dir>
+        <br>"
+      position: "top"
+
+    - title: "<b>Computing best subtree using LocaRna</b>"
+      element: "#execute"
+      intro:  "Run the tool by pressing <b>'Execute' </b> button.<br>"
+      position: "top"
+
+    - title: "<b>Computing best subtree using LocaRna</b>"
+      intro:  "Output of this tool is <b>model.tree.stk</b> which will
+                be used in next step to find consensus motives.<br>"
+      position: "top"
+
+    - title: "<b>Finding consensus motives</b>"
+      intro:  "During this step convertion from CLUSTAL format files to STOCKHOLM format is done.
+              Then using CMFinder we determine consensus motives for sequences.<br>"
+      position: "top"
+      postclick:
+        - "#cmFinder > div.toolTitle > div > a"
+
+    - title: "<b>Finding consensus motives</b>"
+      intro:  "This tool takes as an input the following files:
+              <dir>
+              <b>
+                <li>model_tree_stk : from previous step</li>
+                <li>cmfinder_fa : from 'Preprocessing data for computing best subtree' step </li>
+                <li>tree_matrix</li>
+              </dir>
+        <br>"
+      position: "top"
+
+    - title: "<b>Finding consensus motives</b>"
+      element: "#execute"
+      intro:  "Run the tool by pressing <b>'Execute' </b> button.<br>"
+      position: "top"
+
+    - title: "<b>Finding consensus motives</b>"
+      intro:  "Output of the tool is in STOCKHOLM format and contains the consensus structure. <br>"
+      position: "top"
+
+
+    - title: "<b>Building Covariance Model using cmbuild</b>"
+      intro:  "In this step we cm build a covariance model of an RNA multiple alignment.
+              <b>cmbuild</b> uses the consensus structure to determine the architecture of the covariance model. <br>"
+      position: "top"
+      postclick:
+        - "#infernal > div:nth-child(3) > div > a "
+
+    - title: "<b>Building Covariance Model using cmbuild</b>"
+      intro:  "As an input for this tool we give 'model_cmfinder_stk' file containing consensus
+                structure from the pre step. <br>
+                For more information about this tool read the <b>help</b> section of the page. <br>"
+      position: "top"
+
+    - title: "<b>Building Covariance Model using cmbuild</b>"
+      element: "#execute"
+      intro:  "Run the tool by pressing <b>'Execute' </b> button.<br>"
+      position: "top"
+
+    - title: "<b>Searching homologous sequences using cmsearch</b>"
+      intro:  "After covariance model is built we can move on to <cmsearch>. <br>"
+      position: "top"
+      postclick:
+        - "#infernal > div:nth-child(4) > div > a"
+
+    - title: "<b>Searching homologous sequences using cmsearch</b>"
+      intro:  "<b>cmsearch</b> allows you to make consensus RNA secondary structure profiles,
+              and use them to search nucleic acid sequence databases for homologous RNAs. <br>"
+      position: "top"
+
+    - title: "<b>Searching homologous sequences using cmsearch</b>"
+      intro:  "As a <b>sequence database </b> we choose <b>data_fasta_scan</b> file generated during
+                pre-processing. <br>
+                Then to use <b>covariance model</b> generated in previous step you should
+                select from <b>Subject covariance models</b> dropdown menu <b>Covariance model from your history</b> option."
+      position: "top"
+
+    - title: "<b>Searching homologous sequences using cmsearch</b>"
+      element: "#execute"
+      intro:  "Run the tool by pressing <b>'Execute' </b> button.<br>"
+      position: "top"
+
+    - title: "<b>Post-processing</b>"
+      intro:  "Final step of our workflow is <b>Post-processing</b>.<br>
+              In this step we will report clusters and merge them if needed."
+      position: "top"
+      postclick:
+        - "#glob_report > div.toolTitle > div > a"
+
+    - title: "<b>Post-processing</b>"
+      intro:  "This tool takes as an input the following files:
+              <dir>
+              <b>
+                <li>FASTA.zip : from Preprocessing step</li>
+                <li>cmsearch_results : from previous step </li>
+                and
+                <li>model_tree_files : from <b>'Preprocessing data for computing best subtree'</b> step</li>
+              </dir>
+        <br>"
+      position: "top"
+
+    - title: "<b>Post-processing</b>"
+      intro:  "The final output: <br>
+              <b>'cluste.final.stat'</b> file contains general information about clusters,
+                      e.g. number of clusters, number of sequences in each cluster etc.
+                      <br> By clicking on the <b>'eye'</b> icon you can see the content of the file.
+                    <br>
+              <b>'CLUSTERS'</b> dataset collection contains one file for each cluster. <br>
+              Each file contains information about sequences in that cluster. Each line in the file contains: cluster number,
+              cm_score, sequence origin (whether it comes from model or from Infernal search) and sequence id.
+              <br>"
+      position: "top"
+
+    - title: "<b>A tutorial on GrapClust workflow</b>"
+      intro: "Thank You for going through our tutorial."
+      backdrop: true
