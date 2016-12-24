@@ -59,12 +59,6 @@ See [here below](#setup-using-kitematic-graphic-interfacewindowsmacos-setup-kite
  - Eteri Sokhoyan
  - Bjoern Gruening
 
-
-# History
-
- - 0.1: Initial release!
-
-
 # Support & Bug Reports
 
 You can file an [github issue](https://github.com/BackofenLab/docker-galaxy-graphclust/issues) or ask us on the [Galaxy development list](http://lists.bx.psu.edu/listinfo/galaxy-dev).
