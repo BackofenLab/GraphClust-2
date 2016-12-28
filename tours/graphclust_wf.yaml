@@ -1,9 +1,9 @@
 name: GraphClust workflow
-description: Simple instructions for using GrapClust workflow for clustering RNA sequences
-title_default: "<b>GrapClust</b>"
+description: Simple instructions for using GraphClust workflow for clustering RNA sequences
+title_default: "<b>GraphClust</b>"
 steps:
-    - title: "<b>A tutorial on GrapClust(Clustering RNA sequences)</b>"
-      content: "This tour will walk you through the process of <b>GrapClust</b> to cluster RNA sequences.<br><br>
+    - title: "<b>A tutorial on GraphClust(Clustering RNA sequences)</b>"
+      content: "This tour will walk you through the process of <b>GraphClust</b> to cluster RNA sequences.<br><br>
                 Read and Follow the instructions before clicking <b>'Next'</b>.<br><br>
                 Click <b>'Prev'</b> in case you missed out on any step."
       backdrop: true
@@ -29,7 +29,7 @@ steps:
 
     - title: "<b>Rename the history</b>"
       element: "#current-history-panel > div.controls"
-      intro: "Change the name of the new history to <b>'GrapClust'</b>."
+      intro: "Change the name of the new history to <b>'GarpHclust'</b>."
       position: "left"
 
     - title: "<b>Data Acquisition</b>"
@@ -50,7 +50,7 @@ steps:
       intro: "The sample training data available on github is a good place to start.<br><br>
               Simply click <b>'Next'</b> and the links to the training data will be automatically inserted and ready for upload.<br><br>
               Later on, when you want to upload other data, you can do so by clicking the <b>'Paste/Fetch Data'</b> button or
-              <b>'Choose local file'</b>  to upload localy stored file."
+              <b>'Choose local file'</b>  to upload locally stored file."
       position: "top"
       postclick:
         - "button#btn-new"
@@ -75,7 +75,7 @@ steps:
 
     - title: "<b>Data Acquisition</b>"
       element: "#current-history-panel > div.controls"
-      intro: "You've acquired your data. Now let's call the <b>GrapClust Workflow</b>.<br><br>"
+      intro: "You've acquired your data. Now let's call the <b>GarpHclust Workflow</b>.<br><br>"
       position: "left"
 
     - title: "<b>Running a Workflow</b>"
@@ -86,7 +86,7 @@ steps:
 
     - title: "<b>Running a Workflow</b>"
       element: 'a[href$="/workflow/run?id=1cd8e2f6b131e891"]'
-      intro: "Select simple one round iteration workflow <b>GrapClust_1_round</b>.<br><br>"
+      intro: "Select simple one round iteration workflow <b>GraphClust_1_round</b>.<br><br>"
       position: "top"
 
 
@@ -115,7 +115,7 @@ steps:
 
     - title: "<b>Understanding the Output</b>"
       element: "#current-history-panel"
-      intro: "<b>'cluste.final.stat'</b> file contains general information about clusters,
+      intro: "<b>'cluster.final.stat'</b> file contains general information about clusters,
               e.g. number of clusters, number of sequences in each cluster etc.
               <br> By clicking on the <b>'eye'</b> icon you can see the content of the file.
               <br><br>"
@@ -138,6 +138,6 @@ steps:
 
 
 
-    - title: "<b>A tutorial on GrapClust workflow</b>"
+    - title: "<b>A tutorial on GarpHclust workflow</b>"
       intro: "Thank You for going through our tutorial."
       backdrop: true

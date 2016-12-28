@@ -1,9 +1,9 @@
 name: GraphClust workflow step by step
-description: Steo by step instructions for using GrapClust for clustering RNA sequences
-title_default: "<b>GrapClust step by step</b>"
+description: Steo by step instructions for using GraphClust for clustering RNA sequences
+title_default: "<b>GraphClust step by step</b>"
 steps:
-    - title: "<b>A tutorial on GrapClust(Clustering RNA sequences)</b>"
-      content: "This tour will walk you through the process of <b>GrapClust</b> to cluster RNA sequences.<br><br>
+    - title: "<b>A tutorial on GraphClust(Clustering RNA sequences)</b>"
+      content: "This tour will walk you through the process of <b>GraphClust</b> to cluster RNA sequences.<br><br>
                 Read and Follow the instructions before clicking <b>'Next'</b>.<br><br>
                 Click <b>'Prev'</b> in case you missed out on any step."
       backdrop: true
@@ -46,7 +46,7 @@ steps:
       intro: "The sample training data available on github is a good place to start.<br><br>
               Simply click <b>'Next'</b> and the links to the training data will be automatically inserted and ready for upload.<br><br>
               Later on, when you want to upload other data, you can do so by clicking the <b>'Paste/Fetch Data'</b> button or
-              <b>'Choose local file'</b>  to upload localy stored file."
+              <b>'Choose local file'</b>  to upload locally stored file."
       position: "top"
       postclick:
         - "button#btn-new"
@@ -128,7 +128,7 @@ steps:
 
     - title: "<b>Creating a graph from FASTA</b>"
       element: "#uid-71 > div.ui-form-field > div.ui-select-content > div.ui-options > div.btn-group.ui-radiobutton"
-      intro: "As an input this tool takes preproccessed FASTA file: <b>'data.fasta'</b>.<br>"
+      intro: "As an input this tool takes pre-processed FASTA file: <b>'data.fasta'</b>.<br>"
       position: "right"
 
 
@@ -178,7 +178,7 @@ steps:
 
 
     - title: "<b>Computing candidate clusters</b>"
-      intro:  "During this step we will copmute global feature index and get top dense sets.
+      intro:  "During this step we will compute global feature index and get top dense sets.
               The candidate clusters are chosen as the top ranking neighborhoods provided that the
                 size of their overlap is below a specified threshold."
       position: "top"
@@ -309,7 +309,7 @@ steps:
       position: "top"
 
     - title: "<b>Finding consensus motives</b>"
-      intro:  "During this step convertion from CLUSTAL format files to STOCKHOLM format is done.
+      intro:  "During this step conversion from CLUSTAL format files to STOCKHOLM format is done.
               Then using CMFinder we determine consensus motives for sequences.<br>"
       position: "top"
       postclick:
@@ -398,7 +398,7 @@ steps:
 
     - title: "<b>Post-processing</b>"
       intro:  "The final output: <br>
-              <b>'cluste.final.stat'</b> file contains general information about clusters,
+              <b>'cluster.final.stat'</b> file contains general information about clusters,
                       e.g. number of clusters, number of sequences in each cluster etc.
                       <br> By clicking on the <b>'eye'</b> icon you can see the content of the file.
                     <br>
@@ -408,6 +408,6 @@ steps:
               <br>"
       position: "top"
 
-    - title: "<b>A tutorial on GrapClust workflow</b>"
+    - title: "<b>A tutorial on GraphClust workflow</b>"
       intro: "Thank You for going through our tutorial."
       backdrop: true
