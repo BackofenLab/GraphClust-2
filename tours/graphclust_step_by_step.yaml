@@ -1,5 +1,5 @@
 name: GraphClust workflow step by step
-description: Steo by step instructions for using GraphClust for clustering RNA sequences
+description: Step by step instructions for using GraphClust for clustering RNA sequences
 title_default: "<b>GraphClust step by step</b>"
 steps:
     - title: "<b>A tutorial on GraphClust(Clustering RNA sequences)</b>"
