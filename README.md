@@ -77,8 +77,6 @@ todo
  - [Eteri Sokhoyan](https://github.com/eteriSokhoyan)
  - [Bjoern Gruening](https://github.com/bgruening/)
 
-# License
-todo
 
 # Support & Bug Reports
 
