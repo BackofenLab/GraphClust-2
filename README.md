@@ -4,7 +4,7 @@
 
 Galaxy-GraphClust
 ========================
-Galaxy-GraphClust is a workflow for structural clustering of RNA secondary structures developed as an extension of GraphClust clustering pipeline inside the Galaxy framework. It consists of a set of integrated Galaxy tools and different flavors of clustering workflows built upon these tools.
+Galaxy-GraphClust is a workflow for structural clustering of RNA secondary structures developed as an extension of [GraphClust](http://www.bioinf.uni-freiburg.de/Software/GraphClust/) clustering pipeline [Heyne et al. 10.1093/bioinformatics/bts224] inside the Galaxy framework. It consists of a set of integrated Galaxy tools and different flavors of clustering workflows built upon these tools.
 
 :whale: Galaxy-GraphClust Docker Image
 ========================
@@ -46,7 +46,7 @@ After running the Galaxy server, a web server is established under the host IP/U
     * In **any computer with network connection to the host**: [http://HOSTIP:8080/]()
     
 ## Registration and Login: 
-To have distinct history and workflows the Galaxy server requires each user to register for first access time. **By default anyone with access to the host network can register. No registration confirmation email will be sent to the given email.** So you can register with any custom (including non-existent) email address. To change the default authorization settings please refer to Galaxy Wiki [Authentication section](https://wiki.galaxyproject.org/Develop/Authentication) 
+To have distinct history and workflows the Galaxy server requires each user to register for first access time. **By default anyone with access to the host network can register. No registration confirmation email will be sent to the given email.** So you can register with any custom (including non-existent) email address. There exist also a default Admin user [described here](https://bgruening.github.io/docker-galaxy-stable/users-passwords.html).  To change the default authorization settings please refer to the Galaxy Wiki section [Authentication](https://wiki.galaxyproject.org/Develop/Authentication) 
 
 * To register (first time only):
     * On top right of the panel goto **User→Register**
