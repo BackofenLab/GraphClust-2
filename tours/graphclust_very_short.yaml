@@ -1,9 +1,9 @@
 name: GraphClust workflow fast tutorial
-description: Simple and short instructions for using GrapClust workflow for clustering RNA sequences
-title_default: "<b>GrapClust_short_tour</b>"
+description: Simple and short instructions for using GraphClust workflow for clustering RNA sequences
+title_default: "<b>GraphClust_short_tour</b>"
 steps:
-    - title: "<b>A tutorial on GrapClust(Clustering RNA sequences)</b>"
-      content: "This tour will walk you through the process of <b>GrapClust</b> to cluster RNA sequences.<br><br>
+    - title: "<b>A tutorial on GraphClust(Clustering RNA sequences)</b>"
+      content: "This tour will walk you through the process of <b>GraphClust</b> to cluster RNA sequences.<br><br>
                 Read and Follow the instructions before clicking <b>'Next'</b>.<br><br>
                 Click <b>'Prev'</b> in case you missed out on any step."
       backdrop: true
@@ -26,7 +26,7 @@ steps:
       position: "left"
 
 
-    - title: "<b>GrapClust</b>"
+    - title: "<b>GraphClust</b>"
       intro: "Now when you are logged in we can continue out tour"
       position: "left"
       backdrop: true
@@ -76,7 +76,7 @@ steps:
 
     - title: "<b>Data Acquisition</b>"
       element: "#current-history-panel > div.controls"
-      intro: "You've acquired your data. Now let's call the <b>GrapClust Workflow</b>.<br><br>"
+      intro: "You've acquired your data. Now let's call the <b>GraphClust Workflow</b>.<br><br>"
       position: "left"
 
     - title: "<b>Running a Workflow</b>"
@@ -87,7 +87,7 @@ steps:
 
     - title: "<b>Running a Workflow</b>"
       element: 'a[href$="/workflow/run?id=1cd8e2f6b131e891"]'
-      intro: "Select simple one round iteration workflow <b>GrapClust_1_round</b>.<br><br>"
+      intro: "Select simple one round iteration workflow <b>GraphClust_1_round</b>.<br><br>"
       position: "top"
 
 
@@ -139,6 +139,6 @@ steps:
 
 
 
-    - title: "<b>A tutorial on GrapClust workflow</b>"
+    - title: "<b>A tutorial on GraphClust workflow</b>"
       intro: "Thank You for going through our tutorial."
       backdrop: true
