@@ -29,7 +29,7 @@ steps:
 
     - title: "<b>Rename the history</b>"
       element: "#current-history-panel > div.controls"
-      intro: "Change the name of the new history to <b>'GarpHclust'</b>."
+      intro: "Change the name of the new history to <b>'GraphClust'</b>."
       position: "left"
 
     - title: "<b>Data Acquisition</b>"
@@ -75,7 +75,7 @@ steps:
 
     - title: "<b>Data Acquisition</b>"
       element: "#current-history-panel > div.controls"
-      intro: "You've acquired your data. Now let's call the <b>GarpHclust Workflow</b>.<br><br>"
+      intro: "You've acquired your data. Now let's call the <b>GraphClust Workflow</b>.<br><br>"
       position: "left"
 
     - title: "<b>Running a Workflow</b>"
@@ -138,6 +138,6 @@ steps:
 
 
 
-    - title: "<b>A tutorial on GarpHclust workflow</b>"
+    - title: "<b>A tutorial on GraphClust workflow</b>"
       intro: "Thank You for going through our tutorial."
       backdrop: true
