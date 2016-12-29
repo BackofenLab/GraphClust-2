@@ -21,10 +21,12 @@ Docker supports the three major desktop operating systems  Linux, Windows and Ma
     to use [Kitematic](https://kitematic.com) and launch
     Galaxy GraphClust Flavor from the OS graphical user interface.
 
-  * Alternative to launching our Docker container, having access
-    to a Galaxy instance server preconfigured with the set of tools
-    included in 'graphclust.yml' would be enough to run GraphClust
-    Galaxy pipeline. (TODO: clarify this option) (TODO: mention Freiburg galaxy server?)
+  * Alternative to launching our Docker container, having admin access
+    to any Galaxy instance will enable you to install all needed tools to run the 
+    GraphClust pipeline. All tools are listed in 
+    [`graphclust.yml`](https://github.com/BackofenLab/docker-galaxy-graphclust/blob/master/graphclust.yml).
+    The [Freibuger Galaxy Instance](http://galaxy.uni-freiburg.de) for example
+    offers next to 700 other tools also the GraphClust Pipeline.
 
 
 ## Running the Galaxy server
