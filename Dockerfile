@@ -37,3 +37,8 @@ RUN startup_lite && \
     . $GALAXY_VIRTUAL_ENV/bin/activate && \
     python $GALAXY_ROOT/setup_data_libraries.py -i $GALAXY_ROOT/library_data.yaml && \
     python $GALAXY_ROOT/import_workflows.py
+
+# Container Style
+ADD GalaxyDocker.png $GALAXY_CONFIG_DIR/web/welcome_image.png
+ADD welcome.html $GALAXY_CONFIG_DIR/web/welcome.html
+
