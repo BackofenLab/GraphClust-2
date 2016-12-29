@@ -4,7 +4,7 @@
 
 Galaxy-GraphClust
 ========================
-Galaxy-GraphClust is a workflow for structural clustering of RNA secondary structures developed as an extension of [GraphClust](http://www.bioinf.uni-freiburg.de/Software/GraphClust/) clustering pipeline [Heyne et al. 10.1093/bioinformatics/bts224] inside the Galaxy framework. It consists of a set of integrated Galaxy tools and different flavors of clustering workflows built upon these tools.
+Galaxy-GraphClust is a workflow for structural clustering of RNA secondary structures developed as an extension of [GraphClust](http://www.bioinf.uni-freiburg.de/Software/GraphClust) clustering pipeline [Heyne et al. 10.1093/bioinformatics/bts224] inside the Galaxy framework. It consists of a set of integrated Galaxy tools and different flavors of clustering workflows built upon these tools.
 
 :whale: Galaxy-GraphClust Docker Image
 ========================
@@ -14,12 +14,17 @@ This Docker image is a flavor of [Galaxy Docker image](https://github.com/bgruen
 # Installation and Setup:
 ## Requirements:
 
- - [Docker](https://docs.docker.com/installation/)
-   A Docker client with the necessary user permissions is required for running the Galaxy GraphClust. Docker supports the three major desktop operating systems  Linux, Windows and Mac OSX. Please refer to Docker [installation guideline](https://docs.docker.com/installation/) for details.
+The only requirement to run this Webserver locally is [Docker](https://docs.docker.com/installation).
+Docker supports the three major desktop operating systems  Linux, Windows and Mac OSX. Please refer to Docker [installation guideline](https://docs.docker.com/installation) for details.
 
-- For Windows and Mac systems it is additinally possible to use [Kitematic](https://kitematic.com/) and launch Galaxy GraphClust Flavor from the OS graphical user interface.
+    * For Windows and Mac systems it is additinally possible
+    to use [Kitematic](https://kitematic.com) and launch
+    Galaxy GraphClust Flavor from the OS graphical user interface.
 
-- Alternative to launch the docker, having access to a Galaxy instance server preconfigured with the set of tools included in 'graphclust.yml' would be enough to run GraphClust Galaxy pipeline. (TODO: clarify this option) (TODO: mention Freiburg galaxy server?)
+    * Alternative to launching our Docker container, having access
+    to a Galaxy instance server preconfigured with the set of tools
+    included in 'graphclust.yml' would be enough to run GraphClust
+    Galaxy pipeline. (TODO: clarify this option) (TODO: mention Freiburg galaxy server?)
 
 
 ## Running the Galaxy server
