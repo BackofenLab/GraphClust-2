@@ -17,11 +17,11 @@ This Docker image is a flavor of [Galaxy Docker image](https://github.com/bgruen
 The only requirement to run this Webserver locally is [Docker](https://docs.docker.com/installation).
 Docker supports the three major desktop operating systems  Linux, Windows and Mac OSX. Please refer to Docker [installation guideline](https://docs.docker.com/installation) for details.
 
-    * For Windows and Mac systems it is additinally possible
+  * For Windows and Mac systems it is additinally possible
     to use [Kitematic](https://kitematic.com) and launch
     Galaxy GraphClust Flavor from the OS graphical user interface.
 
-    * Alternative to launching our Docker container, having access
+  * Alternative to launching our Docker container, having access
     to a Galaxy instance server preconfigured with the set of tools
     included in 'graphclust.yml' would be enough to run GraphClust
     Galaxy pipeline. (TODO: clarify this option) (TODO: mention Freiburg galaxy server?)
@@ -30,7 +30,7 @@ Docker supports the three major desktop operating systems  Linux, Windows and Ma
 ## Running the Galaxy server
 ### From the command line (Linux/Windows/MacOS):
 
-```
+```bash
 docker run -i -t -p 8080:80 backofenlab/docker-galaxy-graphclust
 ```
 
@@ -46,9 +46,10 @@ Please check this [step-by-step guide](./kitematic/kitematic.md).
 After running the Galaxy server, a web server is established under the host IP/URL and designated port.
 
 * Inside your browser goto IP/URL:PORT
-* Following same settings as previous step: 
-    * In the **same local computer**: [http://localhost:8080/](http://localhost:8080/)
-    * In **any computer with network connection to the host**: [http://HOSTIP:8080/]()
+* Following same settings as previous step
+
+  * In the **same local computer**: [http://localhost:8080/](http://localhost:8080/)
+  * In **any computer with network connection to the host**: [http://HOSTIP:8080/]()
     
 ## Registration and Login: 
 To have distinct history and workflows the Galaxy server requires each user to register for first access time. **By default anyone with access to the host network can register. No registration confirmation email will be sent to the given email.** So you can register with any custom (including non-existent) email address. There exist also a default Admin user [described here](https://bgruening.github.io/docker-galaxy-stable/users-passwords.html).  To change the default authorization settings please refer to the Galaxy Wiki section [Authentication](https://wiki.galaxyproject.org/Develop/Authentication) 
