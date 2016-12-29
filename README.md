@@ -50,8 +50,8 @@ After running the Galaxy server, a web server is established under the host IP/U
 * Inside your browser goto IP/URL:PORT
 * Following same settings as previous step
 
-  * In the **same local computer**: [http://localhost:8080/](http://localhost:8080/)
-  * In **any computer with network connection to the host**: [http://HOSTIP:8080/]()
+  * In the **same local computer**: [http://localhost:8080/](http://localhost:8080)
+  * In **any computer with network connection to the host**: [http://HOSTIP:8080]()
     
 ## Registration and Login: 
 To have distinct history and workflows the Galaxy server requires each user to register for first access time. **By default anyone with access to the host network can register. No registration confirmation email will be sent to the given email.** So you can register with any custom (including non-existent) email address. There exist also a default Admin user [described here](https://bgruening.github.io/docker-galaxy-stable/users-passwords.html).  To change the default authorization settings please refer to the Galaxy Wiki section [Authentication](https://wiki.galaxyproject.org/Develop/Authentication) 
@@ -83,7 +83,7 @@ todo
 
  - [Milad Miladi](https://github.com/mmiladi/)
  - [Eteri Sokhoyan](https://github.com/eteriSokhoyan)
- - [Bjoern Gruening](https://github.com/bgruening/)
+ - [Bjoern Gruening](https://github.com/bgruening)
 
 
 # Support & Bug Reports
