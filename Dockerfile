@@ -40,5 +40,6 @@ RUN startup_lite && \
 
 # Container Style
 ADD GalaxyDocker.png $GALAXY_CONFIG_DIR/web/welcome_image.png
+ADD workflow_early.png $GALAXY_CONFIG_DIR/web/workflow_early.png
 ADD welcome.html $GALAXY_CONFIG_DIR/web/welcome.html
 
