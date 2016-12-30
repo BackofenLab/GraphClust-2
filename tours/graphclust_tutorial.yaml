@@ -2,22 +2,43 @@ name: GraphClust workflow
 description: Simple instructions for using GraphClust workflow for clustering RNA sequences
 title_default: "<b>GraphClust</b>"
 steps:
-    - title: "<b>A tutorial on GraphClust(Clustering RNA sequences)</b>"
+    - title: "<b>A tutorial on Galaxy-GraphClust(Clustering RNA sequences)</b>"
       content: "This tour will walk you through the process of <b>GraphClust</b> to cluster RNA sequences.<br><br>
                 Read and Follow the instructions before clicking <b>'Next'</b>.<br><br>
                 Click <b>'Prev'</b> in case you missed out on any step."
       backdrop: true
 
+    - title: "<b>User registration</b>"
+      content: "Please check the User tab of the top panel and ensure you are <b>registered</b> and <b>logged-in</b>.<br><br>
+                To have individual history and workflows, each user should register for the first time.<br>
+                "
+      backdrop: true
+
     - title: "<b>A tutorial on GraphClust</b>"
       content: "Together we will go through the following steps:<br>
-                 <dir>
+                 <ol>
                  <b>
                    <li>Data Acquisition</li>
-                   <li>Calling the Workflow</li>
+                   <li>Running the Workflow</li>
                    <li>Understanding the Output</li>
                  </b>
-                 </dir>"
+                 </lo>"
       backdrop: true
+
+    - title: "<b>Log in</b>"
+      element: '#user > li > a'
+      intro: " To be able to use workflows you should be logged in. So if you already have an account
+              simply <b>log in</b> or otherwise <b>register</b> by clicking on <b>'User'</b>.<br>
+              Within a <b>Docker</b> Galaxy-GraphClust everyone can register on default.
+              You can register with any custom, including non-existent, email address. &#128521;"
+      position: "left"
+
+
+    - title: "<b>GraphClust</b>"
+      intro: "Now when you are logged in we can continue out tour"
+      position: "left"
+      backdrop: true
+
 
     - title: "<b>Create a new history</b>"
       element: '#history-options-button'
@@ -47,7 +68,7 @@ steps:
 
     - title: "<b>Data Acquisition</b>"
       element: "button#btn-new"
-      intro: "The sample training data available on github is a good place to start.<br><br>
+      intro: "The sample training data available on GitHub is a good place to start.<br><br>
               Simply click <b>'Next'</b> and the links to the training data will be automatically inserted and ready for upload.<br><br>
               Later on, when you want to upload other data, you can do so by clicking the <b>'Paste/Fetch Data'</b> button or
               <b>'Choose local file'</b>  to upload locally stored file."
@@ -75,18 +96,21 @@ steps:
 
     - title: "<b>Data Acquisition</b>"
       element: "#current-history-panel > div.controls"
-      intro: "You've acquired your data. Now let's call the <b>GraphClust Workflow</b>.<br><br>"
+      intro: "You've now acquired the input data. Now let's launch a flavor of <b>Galaxy-GraphClust Workflow</b>.<br><br>"
       position: "left"
 
     - title: "<b>Running a Workflow</b>"
       element: 'a[href$="/workflow/list_for_run"]'
-      intro: "Click on <b>'All Workflows'</b> to access your saved workflows.<br>"
+      intro: "Click on <b>'All Workflows'</b> to access your saved and pre-configured Workflows.<br>
+              Alternatively you can click on <b>'Workflow'</b> from the top panel."
       position: "right"
 
 
     - title: "<b>Running a Workflow</b>"
       element: 'a[href$="/workflow/run?id=1cd8e2f6b131e891"]'
-      intro: "Select simple one round iteration workflow <b>GraphClust_1_round</b>.<br><br>"
+      intro: "Inside your list of workflows you should see variations of Galaxy-GraphClust.<br>
+              Click on <b>GraphClust_1_round</b>, which is the lighter and faster one, to run one-round Workflow.<br>
+              Then click Next.<br><br>"
       position: "top"
 
 
@@ -97,20 +121,21 @@ steps:
 
     - title: "<b>Running a Workflow</b>"
       element: "#uid-23 > div.portlet-header > div.portlet-title > span > b"
-      intro: "<b>Step 1</b> is the first step of our workflow.Here we should define out input dataset,
-              which will be the uploaded FASTA file.<br><br>"
+      intro: "<b>Step 1</b> is the first step of our workflow. Here we should assign an input dataset.<br>
+              Input is a set of putative RNA sequences that we want to cluster.
+              Please ensure the fasta file uploaded in the first step is selected.<br><br>"
       position: "right"
 
 
     - title: "<b>Running a Workflow</b>"
       element: 'button#uid-11'
-      intro: "To run the workflow with <b>default setting</b> simply click on <b>'Run workflow'</b> button
-              on the top.<br><br>"
+      intro: "To run the workflow with <b>default setting</b> simply click on <b>'Run workflow'</b> blue button
+              on the top right.<br><br>"
       position: "left"
 
     - title: "<b>Understanding the Output</b>"
       intro: "Running the workflow might take a while.
-              After all the steps are done in <b>History panel</b> we will see the outputs.<br><br>"
+              After all the steps are done (turned to green) in <b>History panel</b> we will see the outputs.<br><br>"
       position: "top"
 
     - title: "<b>Understanding the Output</b>"
