@@ -39,7 +39,6 @@ RUN startup_lite && \
     python $GALAXY_ROOT/import_workflows.py
 
 # Container Style
-ADD GalaxyDocker.png $GALAXY_CONFIG_DIR/web/welcome_image.png
-ADD workflow_early.png $GALAXY_CONFIG_DIR/web/workflow_early.png
+ADD workflow_early.png $GALAXY_CONFIG_DIR/web/welcome_image.png
 ADD welcome.html $GALAXY_CONFIG_DIR/web/welcome.html
 
