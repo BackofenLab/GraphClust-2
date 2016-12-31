@@ -23,7 +23,7 @@ steps:
       element: '#user > li > a'
       intro: " To be able to use workflows you should be logged in. So if you already have an account
               simply <b>log in</b> or otherwise <b>register</b> by clicking on <b>'User'</b>.<br>
-              Within a <b>Docker</b> Galaxy-GraphClust everyone can register on default.
+              Within a <b>Docker</b> Galaxy-GraphClust everyone can register by default.
               You can register with any custom, including non-existent, email address. &#128521;"
       position: "left"
 
@@ -158,7 +158,7 @@ steps:
                    or from Infernal <b>CMSEARCH</b> or preclustering <b>CDHIT</b>)</li>
                    <li>Input fasta sequence id seperated into <b>ORIGID</b> and <b>ORIGHEAD</b> sections</li>
                  </b>
-                 </lo>"
+                 </ol>"
 
       position: "left"
 
