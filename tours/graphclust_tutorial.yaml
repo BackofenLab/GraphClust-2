@@ -4,14 +4,8 @@ title_default: "<b>GraphClust</b>"
 steps:
     - title: "<b>A tutorial on Galaxy-GraphClust(Clustering RNA sequences)</b>"
       content: "This tour will walk you through the process of <b>GraphClust</b> to cluster RNA sequences.<br><br>
-                Read and Follow the instructions before clicking <b>'Next'</b>.<br><br>
+                In the forthcoming windows please Read and Follow the instructions before clicking <b>'Next'</b>.<br><br>
                 Click <b>'Prev'</b> in case you missed out on any step."
-      backdrop: true
-
-    - title: "<b>User registration</b>"
-      content: "Please check the User tab of the top panel and ensure you are <b>registered</b> and <b>logged-in</b>.<br><br>
-                To have individual history and workflows, each user should register for the first time.<br>
-                "
       backdrop: true
 
     - title: "<b>A tutorial on GraphClust</b>"
@@ -35,7 +29,7 @@ steps:
 
 
     - title: "<b>GraphClust</b>"
-      intro: "Now when you are logged in we can continue out tour"
+      intro: "Now that you are logged-in we can continue our tour"
       position: "left"
       backdrop: true
 
@@ -54,13 +48,13 @@ steps:
       position: "left"
 
     - title: "<b>Data Acquisition</b>"
-      content: "We will start with a simple small <b>FASTA</b> file.<br><br>
+      content: "We start with uploading a simple small set of sequences in <b>FASTA</b> format.<br><br>
                 You will get one FASTA file with RNA sequences that we want to cluster.<br><br>"
       backdrop: true
 
     - title: "<b>Data Acquisition</b>"
       element: ".upload-button"
-      intro: "We will import the FASTA file into into the history we just created.<br><br>
+      intro: "We will import the FASTA file into the history we just created.<br><br>
               Click <b>'Next'</b> and the tour will take you to the Upload screen."
       position: "right"
       postclick:
@@ -68,8 +62,8 @@ steps:
 
     - title: "<b>Data Acquisition</b>"
       element: "button#btn-new"
-      intro: "The sample training data available on GitHub is a good place to start.<br><br>
-              Simply click <b>'Next'</b> and the links to the training data will be automatically inserted and ready for upload.<br><br>
+      intro: "The sample input data available on GitHub is a good place to start.<br><br>
+              Simply click <b>'Next'</b> and the links to the input data will be automatically inserted and ready for upload.<br><br>
               Later on, when you want to upload other data, you can do so by clicking the <b>'Paste/Fetch Data'</b> button or
               <b>'Choose local file'</b>  to upload locally stored file."
       position: "top"
@@ -78,7 +72,8 @@ steps:
 
     - title: "<b>Data Acquisition</b>"
       element: ".upload-text-content:first"
-      intro: "Links Acquired !"
+      intro: "Link acquired !<br><br>
+              This file contains annotated RNAs with human origin from RFAM database, from a mixture of RNA families."
       position: "top"
       textinsert:
         https://github.com/eteriSokhoyan/test-data/raw/master/cliques-low-representatives.fa
@@ -102,15 +97,16 @@ steps:
     - title: "<b>Running a Workflow</b>"
       element: 'a[href$="/workflow/list_for_run"]'
       intro: "Click on <b>'All Workflows'</b> to access your saved and pre-configured Workflows.<br>
-              Alternatively you can click on <b>'Workflow'</b> from the top panel."
+              Alternatively you can click on <b>'Workflow'</b> tab from the top panel."
       position: "right"
 
 
     - title: "<b>Running a Workflow</b>"
       element: 'a[href$="/workflow/run?id=1cd8e2f6b131e891"]'
-      intro: "Inside your list of workflows you should see variations of Galaxy-GraphClust.<br>
-              Click on <b>GraphClust_1_round</b>, which is the lighter and faster one, to run one-round Workflow.<br>
-              Then click Next.<br><br>"
+      intro: "Inside your workflows list you should see variations of Galaxy-GraphClust.
+              The round number specifies the number of iterative clusterings.<br><br> 
+              <b>Click on GraphClust_1_round</b>, which is the faster one better fitting for 
+              the purpose of this tutorial.<b>Then click Next.</b>"
       position: "top"
 
 
@@ -121,43 +117,48 @@ steps:
 
     - title: "<b>Running a Workflow</b>"
       element: "#uid-23 > div.portlet-header > div.portlet-title > span > b"
-      intro: "<b>Step 1</b> is the first step of our workflow. Here we should assign an input dataset.<br>
-              Input is a set of putative RNA sequences that we want to cluster.
-              Please ensure the fasta file uploaded in the first step is selected.<br><br>"
+      intro: "<b>Step 1</b> is the first step of our workflow. Here an input dataset must be assigned.<br>
+              Input data is a set of putative RNA sequences that we want to cluster.<br> <br>
+              Please ensure the fasta file uploaded in the first step is selected."
       position: "right"
 
 
     - title: "<b>Running a Workflow</b>"
       element: 'button#uid-11'
       intro: "To run the workflow with <b>default setting</b> simply click on <b>'Run workflow'</b> blue button
-              on the top right.<br><br>"
+              on the top right.<br>
+              For details about pipeline settings you can check 'step-by-step' tutorial and Galaxy-GraphClust documentations. <br>"
       position: "left"
 
     - title: "<b>Understanding the Output</b>"
-      intro: "Running the workflow might take a while.
-              After all the steps are done (turned to green) in <b>History panel</b> we will see the outputs.<br><br>"
+      intro: "Running the workflow takes a few minutes. The workflow is finished 
+              when all the steps inside History panel changes from gray/yellow to green.<br><br>
+              After all the steps are done, clustering output is ready. 
+              The results can be checked from navigating through History panel."
       position: "top"
 
     - title: "<b>Understanding the Output</b>"
       element: "#current-history-panel"
-      intro: "<b>'cluster.final.stat'</b> file contains general information about clusters,
-              e.g. number of clusters, number of sequences in each cluster etc.
-              <br> By clicking on the <b>'eye'</b> icon you can see the content of the file.
-              <br><br>"
+      intro: "<b>'cluster.final.stat'</b> file contains overall information about predicted clusters.
+              <br> By clicking on the <b>'eye'</b> icon you can see the content of the file.<br><br>
+              The first four columns specify number of clusters, cluster ids, number of sequences in each cluster."
       position: "left"
 
     - title: "<b>Understanding the Output</b>"
       element: "#current-history-panel"
-      intro: "<b>'CLUSTERS'</b> dataset collection contains one file for each cluster. <br>
+      intro: Click "<b>'CLUSTERS'</b> dataset collection to see clustered sequences. 
+              There is one file for each cluster. <br>
               Each file contains information about sequences in that cluster. Each line in the file contains:
-                 <dir>
-                 <b>
-                   <li>cluster number</li>
-                   <li>cm_score</li>
-                   <li>sequence origin (whether it comes from model or from Infernal search)</li>
-                   <li>sequence id</li>
+                 <ol>
+        
+                   <li> <b>CLUSTER</b>: cluster number</li>
+                   <li> cm_score: Covariance model bit score indicates how well sequence matches to the CM 
+                   model of the cluster.</li>
+                   <li> sequence origin (whether it orginnates from dense center <b>MODEL</b> 
+                   or from Infernal <b>CMSEARCH</b> or preclustering <b>CDHIT</b>)</li>
+                   <li>Input fasta sequence id seperated into <b>ORIGID</b> and <b>ORIGHEAD</b> sections</li>
                  </b>
-                 </dir>"
+                 </lo>"
 
       position: "left"
 
