@@ -17,7 +17,7 @@ ADD graphclust.yml $GALAXY_ROOT/tools.yaml
 RUN install-tools $GALAXY_ROOT/tools.yaml && \
     /tool_deps/_conda/bin/conda clean --tarballs
 
-ADD ./tours/graphclust_wf.yaml $GALAXY_ROOT/config/plugins/tours/graphclust.wf.yaml
+ADD ./tours/graphclust_tutorial.yaml $GALAXY_ROOT/config/plugins/tours/graphclust.tutorial.yaml
 ADD ./tours/graphclust_step_by_step.yaml $GALAXY_ROOT/config/plugins/tours/graphclust.step_by_step.yaml
 ADD ./tours/graphclust_very_short.yaml $GALAXY_ROOT/config/plugins/tours/graphclust.short.yaml
 
