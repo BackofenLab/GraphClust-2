@@ -4,7 +4,7 @@ title_default: "<b>GraphClust</b>"
 steps:
     - title: "<b>A tutorial on Galaxy-GraphClust(Clustering RNA sequences)</b>"
       content: "This tour will walk you through the process of <b>GraphClust</b> to cluster RNA sequences.<br><br>
-                In the forthcoming windows please Read and Follow the instructions before clicking <b>'Next'</b>.<br><br>
+                In the forthcoming windows please read and follow the instructions before clicking <b>'Next'</b>.<br><br>
                 Click <b>'Prev'</b> in case you missed out on any step."
       backdrop: true
 
