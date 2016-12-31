@@ -146,7 +146,7 @@ steps:
 
     - title: "<b>Understanding the Output</b>"
       element: "#current-history-panel"
-      intro: Click "<b>'CLUSTERS'</b> dataset collection to see clustered sequences. 
+      intro: "Click <b>'CLUSTERS'</b> dataset collection to see clustered sequences. 
               There is one file for each cluster. <br>
               Each file contains information about sequences in that cluster. Each line in the file contains:
                  <ol>
