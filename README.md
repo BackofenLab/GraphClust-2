@@ -82,6 +82,8 @@ GraphClust pipeline for clustering similar RNA sequences together is a complex p
 
 ![GraphClust pipeline overview (Heyne et al. 2012)](https://raw.githubusercontent.com/BackofenLab/docker-galaxy-graphclust/master/graphclust_pipeline.png)
 
+*GraphClust pipeline overview (Heyne et al. 2012)*
+
 Below is the correspondance list of Galaxy-GraphClust tool names with each step of GraphClust:
 
   a) sequence based pre-clustering:
