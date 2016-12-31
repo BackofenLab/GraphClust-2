@@ -69,15 +69,16 @@ To have distinct history and workflows the Galaxy server requires each user to r
 Interactive Tours are available for Galaxy and Galaxy-GraphClust. To run the tours please on top panel go to **Help→Interactive Tours** and click on one of the tours prefixed **GraphClust workflow**. You can check the other tours for a more general introduction to the Galaxy interface.
 
 
-### Step-by-step guide to cluster a sample input data
+<!-- ### Step-by-step guide to cluster a sample input data
 todo
 
 ### Customize workflow steps
 todo
+ -->
 
-
-### GraphClust pipeline overview
+GraphClust pipeline overview
 ===============================
+
 GraphClust pipeline for clustering similar RNA sequences together is a complex pipeline, for deatils please check GraphClust publication. Overall it consists of three major phases: a) sequence based pre-clustering b) encoding predicted RNA structurs as graph features c) iterative fast candidate clustering then refinement
 
 ![GraphClust pipeline overview (Heyne et al. 2012)](https://raw.githubusercontent.com/BackofenLab/docker-galaxy-graphclust/master/graphclust_pipeline.png)
@@ -87,35 +88,23 @@ GraphClust pipeline for clustering similar RNA sequences together is a complex p
 Below is the correspondance list of Galaxy-GraphClust tool names with each step of GraphClust:
 
   a) sequence based pre-clustering:
-    
-    1: Preprocessing | Input preprocessing (fragmentation)
-    
-    2: fasta_gspan | Generation of structures via RNAshapes and conversion into graphs
-
-    3: NSPDK_sparseVect  | Generation of graph features via NSPDK
-
-    4: NSPDK_sparseVect | Combine all feature files into one data vector with all features
-
-  b) encoding predicted RNA structurs as graph features
- 
-    5: NSPDK_candidateClusters | min-hash based clustering of all feature vectors,
-    output top dense candidate clusters
-
-    6: premLocarana | Locarna based clustering of each candidate cluster, all-vs-all pairwise alignments
-
-    7: locarana_best_subtree, CMfinder, Build_covariance_models | create multiple alignments
-    along guide tree, select best subtree, create candidate model
-
-    8: Search_covariance_models | Scan full input sequences with Infernal's cmsearch
-    to find missing cluster members
-
+b) encoding predicted RNA structures as graph features
   c) iterative fast candidate clustering then refinement
-  
-    9: Report results | Collect final clusters and create example alignments of top cluster members
+ 
+|   Stage  | Galaxy Tool Name | Description|   
+| :--------------------: | :--------------- | :----------------|
+|1 | Preprocessing | Input preprocessing (fragmentation)|    
+|2 | fasta_gspan | Generation of structures via RNAshapes and conversion into graphs|
+|3 | NSPDK_sparseVect  | Generation of graph features via NSPDK |
+|4| NSPDK_candidateClusters | min-hash based clustering of all feature vectors, output top dense candidate clusters|
+|5| premLocarana,locarana_best_subtree, CMfinder | Locarna based clustering of each candidate cluster, all-vs-all pairwise alignments, create multiple alignments along guide tree, select best subtree,|
+|6|  Build_covariance_models |  create candidate model |
+|7| Search_covariance_models | Scan full input sequences with Infernal's cmsearch to find missing cluster members |
+|8,9| Report results | Collect final clusters and create example alignments of top cluster members|
 
-#### Graphical workflow editor
+<!-- #### Graphical workflow editor
 todo
-
+ -->
 # Contributors
 
  - [Milad Miladi](https://github.com/mmiladi/)
