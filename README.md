@@ -80,7 +80,7 @@ todo
 ===============================
 GraphClust pipeline for clustering similar RNA sequences together is a complex pipeline, for deatils please check GraphClust publication. Overall it consists of three major phases: a) sequence based pre-clustering b) encoding predicted RNA structurs as graph features c) iterative fast candidate clustering then refinement
 
-![GraphClust pipeline overview (Heyne et al. 2012)](https://raw.githubusercontent.com/BackofenLab/docker-galaxy-graphclust/master/graphclust_pipeline.svg)
+![GraphClust pipeline overview (Heyne et al. 2012)](https://raw.githubusercontent.com/BackofenLab/docker-galaxy-graphclust/master/graphclust_pipeline.png)
 
 Below is the correspondance list of Galaxy-GraphClust tool names with each step of GraphClust:
 
