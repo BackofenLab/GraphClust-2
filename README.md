@@ -81,27 +81,33 @@ todo
 GraphClust pipeline for clustering similar RNA sequences together is a complex pipeline, for deatils please check GraphClust publication. Overall it consists of three major phases: a) sequence based pre-clustering b) encoding predicted RNA structurs as graph features c) iterative fast candidate clustering then refinement
 
 Below is the correspondance list of Galaxy-GraphClust tool names with each step of GraphClust:
-a)
-b)
-Stage 1: Preprocessing | Input preprocessing (fragmentation)
 
-Stage 2: fasta_gspan | Generation of structures via RNAshapes and conversion into graphs
+  a) sequence based pre-clustering:
+    
+    1: Preprocessing | Input preprocessing (fragmentation)
+    
+    2: fasta_gspan | Generation of structures via RNAshapes and conversion into graphs
 
-Stage 3: NSPDK_sparseVect  | Generation of graph features via NSPDK
+    3: NSPDK_sparseVect  | Generation of graph features via NSPDK
 
-Stage 4: NSPDK_sparseVect | Combine all feature files into one data vector with all features
+    4: NSPDK_sparseVect | Combine all feature files into one data vector with all features
 
-c)
-Stage 5: NSPDK_candidateClusters | min-hash based clustering of all feature vectors, output top dense candidate clusters
+  b) encoding predicted RNA structurs as graph features
+ 
+    5: NSPDK_candidateClusters | min-hash based clustering of all feature vectors,
+    output top dense candidate clusters
 
-Stage 6: premLocarana | Locarna based clustering of each candidate cluster, all-vs-all pairwise alignments
+    6: premLocarana | Locarna based clustering of each candidate cluster, all-vs-all pairwise alignments
 
-Stage 7: locarana_best_subtree, CMfinder, Build_covariance_models | create multiple alignments along guide tree, select best subtree, create candidate model
+    7: locarana_best_subtree, CMfinder, Build_covariance_models | create multiple alignments
+    along guide tree, select best subtree, create candidate model
 
-Stage 8: Search_covariance_models | Scan full input sequences with Infernal's cmsearch to find missing cluster members
+    8: Search_covariance_models | Scan full input sequences with Infernal's cmsearch
+    to find missing cluster members
 
-d)
-Stage 9: Report results | Collect final clusters and create example alignments of top cluster members
+  c) iterative fast candidate clustering then refinement
+  
+    9: Report results | Collect final clusters and create example alignments of top cluster members
 
 #### Graphical workflow editor
 todo
