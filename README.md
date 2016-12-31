@@ -87,10 +87,10 @@ GraphClust pipeline for clustering similar RNA sequences together is a complex p
 
 Below is the correspondance list of Galaxy-GraphClust tool names with each step of GraphClust:
 
-  a) sequence based pre-clustering:
+<!--   a) sequence based pre-clustering:
 b) encoding predicted RNA structures as graph features
   c) iterative fast candidate clustering then refinement
- 
+ --> 
 |   Stage  | Galaxy Tool Name | Description|   
 | :--------------------: | :--------------- | :----------------|
 |1 | Preprocessing | Input preprocessing (fragmentation)|    
