@@ -68,6 +68,10 @@ To have distinct history and workflows the Galaxy server requires each user to r
 ### Interactive tours
 Interactive Tours are available for Galaxy and Galaxy-GraphClust. To run the tours please on top panel go to **Help→Interactive Tours** and click on one of the tours prefixed **GraphClust workflow**. You can check the other tours for a more general introduction to the Galaxy interface.
 
+### Video tutorial
+You can check this Youtube video on setting-up and running Galaxy-GraphClust.
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/fJ6tUt_6uas/0.jpg)](https://www.youtube.com/watch?v=fJ6tUt_6uas)
 
 <!-- ### Step-by-step guide to cluster a sample input data
 todo
