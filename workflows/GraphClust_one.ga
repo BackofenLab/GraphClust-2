@@ -2,7 +2,7 @@
     "a_galaxy_workflow": "true", 
     "annotation": "", 
     "format-version": "0.1", 
-    "name": "GraphClust_1_round (imported from uploaded file)", 
+    "name": "GraphClust_1_round", 
     "steps": {
         "0": {
             "annotation": "", 
@@ -767,6 +767,10 @@
                 {
                     "name": "final_used_cmsearch", 
                     "type": "txt"
+                }, 
+                {
+                    "name": "evaluation", 
+                    "type": "txt"
                 }
             ], 
             "position": {
@@ -798,7 +802,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_postprocessing/glob_report/0.1", 
             "tool_shed_repository": {
-                "changeset_revision": "b797e13169a0", 
+                "changeset_revision": "79b9117aef01", 
                 "name": "graphclust_postprocessing", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
