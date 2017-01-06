@@ -92,12 +92,6 @@ You can check this Youtube video on setting-up and running Galaxy-GraphClust.
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/fJ6tUt_6uas/0.jpg)](https://www.youtube.com/watch?v=fJ6tUt_6uas)
 
-<!-- ### Step-by-step guide to cluster a sample input data
-todo
-
-### Customize workflow steps
-todo
- -->
 
 GraphClust pipeline overview
 ===============================
@@ -125,9 +119,7 @@ b) encoding predicted RNA structures as graph features
 |7| Search_covariance_models | Scan full input sequences with Infernal's cmsearch to find missing cluster members |
 |8,9| Report results | Collect final clusters and create example alignments of top cluster members|
 
-<!-- #### Graphical workflow editor
-todo
- -->
+
 # Contributors
 
  - [Milad Miladi](https://github.com/mmiladi/)

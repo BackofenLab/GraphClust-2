@@ -29,7 +29,6 @@ ADD library_data.yaml $GALAXY_ROOT/library_data.yaml
 ADD import_workflows.py $GALAXY_ROOT/import_workflows.py
 ADD ./workflows/GraphClust_one.ga $GALAXY_ROOT/GraphClust_one.ga
 ADD ./workflows/GraphClust_two.ga $GALAXY_ROOT/GraphClust_two.ga
-ADD ./workflows/GraphClust_three.ga $GALAXY_ROOT/GraphClust_three.ga
 
 # Download training data and populate the data library
 RUN startup_lite && \
