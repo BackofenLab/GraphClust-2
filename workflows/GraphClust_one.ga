@@ -2,7 +2,7 @@
     "a_galaxy_workflow": "true", 
     "annotation": "", 
     "format-version": "0.1", 
-    "name": "GraphClust_1_round (imported from uploaded file) (imported from API)", 
+    "name": "GraphClust_1_round", 
     "steps": {
         "0": {
             "annotation": "", 
