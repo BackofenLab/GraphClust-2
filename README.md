@@ -119,6 +119,11 @@ b) encoding predicted RNA structures as graph features
 |7| Search_covariance_models | Scan full input sequences with Infernal's cmsearch to find missing cluster members |
 |8,9| Report results | Collect final clusters and create example alignments of top cluster members|
 
+### Input data:
+The input to the workflow is a set of putative RNA sequences in FASTA format. Inside the `sample_data` directory you can find examples of the input format. In this case the data is from a benchmark set based on Rfam 12.0 and additionally is optionally labeled with reference Rfam family members.
+
+### Output:
+The output contains the predicted clusters, where similar putative input RNA sequences form a cluster. Additionally overall status of the clusters and the matching of cluster elements is reported for each cluster. Please check the interactive tours and GraphClust README for more information about the reported info and files.
 
 # Contributors
 
