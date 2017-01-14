@@ -19,8 +19,8 @@
             "name": "Input dataset", 
             "outputs": [], 
             "position": {
-                "left": 200.00001525878906, 
-                "top": 200.00001525878906
+                "left": 200, 
+                "top": 200
             }, 
             "tool_errors": null, 
             "tool_id": null, 
@@ -77,8 +77,8 @@
                 }
             ], 
             "position": {
-                "left": 191.9965362548828, 
-                "top": 290.98960876464844
+                "left": 191.984375, 
+                "top": 290.984375
             }, 
             "post_job_actions": {
                 "HideDatasetActionFASTA": {
@@ -146,8 +146,8 @@
                 }
             ], 
             "position": {
-                "left": 389.98265075683594, 
-                "top": 155.00001525878906
+                "left": 389.96875, 
+                "top": 155
             }, 
             "post_job_actions": {
                 "HideDatasetActiongspan.zip": {
@@ -203,8 +203,8 @@
                 }
             ], 
             "position": {
-                "left": 407.9861297607422, 
-                "top": 262.9861297607422
+                "left": 407.984375, 
+                "top": 262.984375
             }, 
             "post_job_actions": {
                 "HideDatasetActiondata_svector": {
@@ -288,8 +288,8 @@
                 }
             ], 
             "position": {
-                "left": 420.98960876464844, 
-                "top": 440.98960876464844
+                "left": 420.984375, 
+                "top": 440.984375
             }, 
             "post_job_actions": {
                 "HideDatasetActionblack_list": {
@@ -402,8 +402,8 @@
                 }
             ], 
             "position": {
-                "left": 660.9896087646484, 
-                "top": 342.9861297607422
+                "left": 660.984375, 
+                "top": 338.984375
             }, 
             "post_job_actions": {
                 "HideDatasetActioncenters": {
@@ -495,8 +495,8 @@
                 }
             ], 
             "position": {
-                "left": 847.4826507568359, 
-                "top": 405.98960876464844
+                "left": 847.46875, 
+                "top": 405.984375
             }, 
             "post_job_actions": {
                 "HideDatasetActionmodel_tree_stk": {
@@ -552,8 +552,8 @@
                 }
             ], 
             "position": {
-                "left": 837.9861907958984, 
-                "top": 642.9861297607422
+                "left": 837.984375, 
+                "top": 642.984375
             }, 
             "post_job_actions": {
                 "HideDatasetActionmodel_cmfinder_stk": {
@@ -609,8 +609,8 @@
                 }
             ], 
             "position": {
-                "left": 1100.0001068115234, 
-                "top": 655.9896087646484
+                "left": 1100, 
+                "top": 655.984375
             }, 
             "post_job_actions": {
                 "HideDatasetActioncmfile_outfile": {
@@ -680,8 +680,8 @@
                 }
             ], 
             "position": {
-                "left": 833.4896087646484, 
-                "top": 822.9861297607422
+                "left": 833.484375, 
+                "top": 822.984375
             }, 
             "post_job_actions": {
                 "HideDatasetActionmultiple_alignment_output": {
@@ -757,6 +757,14 @@
                     "type": "input"
                 }, 
                 {
+                    "name": "topSecondaryStruct", 
+                    "type": "input"
+                }, 
+                {
+                    "name": "topDot", 
+                    "type": "input"
+                }, 
+                {
                     "name": "final_stats", 
                     "type": "txt"
                 }, 
@@ -778,8 +786,8 @@
                 }
             ], 
             "position": {
-                "left": 1172.9861907958984, 
-                "top": 937.9861297607422
+                "left": 1172.984375, 
+                "top": 937.984375
             }, 
             "post_job_actions": {
                 "HideDatasetActionfinal_soft": {
@@ -806,25 +814,35 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_postprocessing/glob_report/0.1", 
             "tool_shed_repository": {
-                "changeset_revision": "79b9117aef01", 
+                "changeset_revision": "4a9754d476fe", 
                 "name": "graphclust_postprocessing", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": 0, \"model_tree_files\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cm_max_eval\": \"\\\"0.001\\\"\", \"min_cluster_size\": \"\\\"3\\\"\", \"__rerun_remap_job_id__\": null, \"merge_cluster_ol\": \"\\\"0.66\\\"\", \"iteration_num\": \"{\\\"iteration_num_selector\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"cm_min_bitscore\": \"\\\"20\\\"\", \"cmsearch_results\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"merge_overlap\": \"\\\"0.51\\\"\", \"cm_bitscore_sig\": \"\\\"1\\\"\", \"FASTA\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cut_type\": \"\\\"true\\\"\", \"cdhit\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"partition_type\": \"\\\"true\\\"\"}", 
+            "tool_state": "{\"__page__\": 0, \"model_tree_files\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cm_max_eval\": \"\\\"0.001\\\"\", \"min_cluster_size\": \"\\\"3\\\"\", \"__rerun_remap_job_id__\": null, \"merge_cluster_ol\": \"\\\"0.66\\\"\", \"iteration_num\": \"{\\\"iteration_num_selector\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"cm_min_bitscore\": \"\\\"20\\\"\", \"cmsearch_results\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"results_top_num\": \"\\\"5\\\"\", \"merge_overlap\": \"\\\"0.51\\\"\", \"cm_bitscore_sig\": \"\\\"1\\\"\", \"FASTA\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cut_type\": \"\\\"true\\\"\", \"cdhit\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"partition_type\": \"\\\"true\\\"\"}", 
             "tool_version": "0.1", 
             "type": "tool", 
             "uuid": "2cf68268-36ab-4b5c-a0be-5bbe149970f4", 
             "workflow_outputs": [
                 {
                     "label": null, 
-                    "output_name": "clusters", 
-                    "uuid": "d2a96c0d-4702-40cd-9f89-79b95065dfe8"
+                    "output_name": "topSecondaryStruct", 
+                    "uuid": "e73c4935-1b80-4c65-aa9a-43e8a8159d23"
                 }, 
                 {
                     "label": null, 
                     "output_name": "evaluation", 
                     "uuid": "51dc83c0-5c56-48e8-91ee-e4b3fac56602"
+                }, 
+                {
+                    "label": null, 
+                    "output_name": "topDot", 
+                    "uuid": "14959ce4-9e2c-4174-8952-ed1dc12bd395"
+                }, 
+                {
+                    "label": null, 
+                    "output_name": "clusters", 
+                    "uuid": "d2a96c0d-4702-40cd-9f89-79b95065dfe8"
                 }, 
                 {
                     "label": null, 
@@ -834,5 +852,5 @@
             ]
         }
     }, 
-    "uuid": "a3aea6d4-2966-4f96-b494-25330499c770"
+    "uuid": "afdc2ffd-c454-42bb-9e5c-0295e558cfd4"
 }
