@@ -69,7 +69,7 @@ steps:
               Hit the <b>close</b> button when you see that the files are uploaded into your history."
       position: "top"
 
-  - title: "<b>Data Acquisition</b>"
+      title: "<b>Data Acquisition</b>"
       element: "#current-history-panel > div.controls"
       intro: "You've acquired your data. Now let's start using GraphCLust tools.<br><br>"
       position: "left"
@@ -80,15 +80,16 @@ steps:
               with set of tool necessary for GraphCLust process. <br>
               The first step of the process is <b>Preprocessing</b>."
       position: "right"
-      postclick:
-        - "#preproc > div.toolTitle > div > a"
-
+    
+    
     - title: "<b>Pre-processing</b>"
       intro: "This tool takes as an input file of sequences in Fasta format
                 and creates the final input for GraphCLust based on given parameters. Parameters allows us to
                 split long sequences into smaller fragments to enable the detection of local signals"
       position: "right"
-    
+      postclick:
+        - "#preproc > div.toolTitle > div > a"
+
 
     - title: "<b>Pre-processing</b>"
       element: "#s2id_uid-18_select > a"
