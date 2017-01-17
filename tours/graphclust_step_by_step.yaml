@@ -80,8 +80,8 @@ steps:
               with set of tool necessary for GraphCLust process. <br>
               The first step of the process is <b>Preprocessing</b>."
       position: "right"
-    
-    
+
+
     - title: "<b>Pre-processing</b>"
       intro: "This tool takes as an input file of sequences in Fasta format
                 and creates the final input for GraphCLust based on given parameters. Parameters allows us to
@@ -129,8 +129,13 @@ steps:
               <br><br>"
       position: "left"
 
+    - title: "<b>Preprocessing : DONE</b>"
+      intro: "Once preprocessing of the data is done we can move on to the next step :create a graph from FASTA file.<br>"
+      position: "right"
+
     - title: "<b>Creating a graph from FASTA</b>"
-      intro: "Next step is to create a graph from FASTA file.<br>"
+      intro: "To create a graph we need to use a tool called <b>fasta_to_gspan</b> which you
+              can find in GraphClust section of tool panel.<br>"
       position: "right"
       postclick:
         - "#gspan > div.toolTitle > div > a"
@@ -154,11 +159,18 @@ steps:
       intro:  "Once tool is executed it will produce <b>gspan.zip file</b>.<br>"
       position: "top"
 
-    - title: "<b>Creating a sparse vector</b>"
-      intro:  "Next comes creation of explicit sparse feature encoding usinf <b>NSPDK</b>.<br>"
+    - title: "<b>Creating a graph from FASTA : DONE</b>"
+      intro:  "Now we have <b>gspan.zip</b> file and can move on the next step.<br>
+               The next step is to create sparse vector using NSPDK. <br>
+               From GraphClust tools choose <b>NSPDK_sparseVect</b> to start the process. <br>"
       position: "top"
       postclick:
         - "#nspdk_sparse > div.toolTitle > div > a"
+
+    - title: "<b>Creating a sparse vector</b>"
+      intro:  "This tool will create explicit sparse feature encoding using <b>NSPDK</b>.<br>"
+      position: "top"
+
 
     - title: "<b>Creating a sparse vector</b>"
       intro:  "This tools requires 2 input files:
@@ -185,14 +197,20 @@ steps:
       intro:  "After tool is exec it will produce <b>data_svector</b> which we will use in the next step."
       position: "top"
 
+    - title: "<b>Creating a sparse vector: DONE</b>"
+      intro:  "Created <b>data_svector</b> file will be used in the next step for computing
+              candidate cluster. For that click on <b>NSPDK_candidateClusters</b> tool."
+      position: "top"
+      postclick:
+        - "#NSPDK_candidateClust > div.toolTitle > div > a"
+
 
     - title: "<b>Computing candidate clusters</b>"
       intro:  "During this step we will compute global feature index and get top dense sets.
               The candidate clusters are chosen as the top ranking neighborhoods provided that the
                 size of their overlap is below a specified threshold."
       position: "top"
-      postclick:
-        - "#NSPDK_candidateClust > div.toolTitle > div > a"
+
 
 
     - title: "<b>Computing candidate clusters</b>"
@@ -240,12 +258,17 @@ steps:
              of the single iteration it's empty. <br>"
       position: "top"
 
-
-    - title: "<b>Preprocessing data for computing best subtree</b>"
-      intro:  "Next step will do some pre-processing for computing best subtrees.<br>"
+    - title: "<b>Computing candidate clusters : DONE</b>"
+      intro:  "Once output files are ready we can move to the nexr step by clicking on
+                <b>premlocarna</b> tool.<br>"
       position: "top"
       postclick:
         - "#preMloc > div.toolTitle > div > a"
+
+    - title: "<b>Preprocessing data for computing best subtree</b>"
+      intro:  "This tool will do some pre-processing for computing best subtrees.<br>"
+      position: "top"
+
 
     - title: "<b>Preprocessing data for computing best subtree</b>"
       intro:  "This step needs 4 input files:
@@ -283,6 +306,12 @@ steps:
         <br>"
       position: "top"
 
+    - title: "<b>Preprocessing data for computing best subtree : DONE</b>"
+      intro:  "Preprocessing for the best tree computation is done, so we can now do the actual computation
+                of the best subtree. For that we need the tool called <b>locarna_best_subtree</b>.<br>"
+      position: "top"
+      postclick:
+        - "#locarna_best_subtree > div.toolTitle > div > a"
 
     - title: "<b>Computing best subtree using LocaRna</b>"
       intro:  "This step computes a multiple sequence-structure alignment of RNA sequences using <b>LocaRna</b>.
@@ -290,8 +319,7 @@ steps:
               The given tree is used as guide tree for the progressive alignment. It saves the calculation
               of pairwise all-vs-all similarities and construction of the guide tree. And at the end return the best subtree<br>"
       position: "top"
-      postclick:
-        - "#locarna_best_subtree > div.toolTitle > div > a"
+
 
     - title: "<b>Computing best subtree using LocaRna</b>"
       intro:  "This step takes as an input following files:
@@ -317,12 +345,18 @@ steps:
                 be used in next step to find consensus motives.<br>"
       position: "top"
 
+    - title: "<b>Computing best subtree using LocaRna : DONE</b>"
+      intro:  "Now we have <b>model.tree.stk</b> so we can find consensus motives using the next tool -
+                <b>CMFinder_v0</b>.<br>"
+      position: "top"
+      postclick:
+        - "#cmFinder > div.toolTitle > div > a"
+
     - title: "<b>Finding consensus motives</b>"
       intro:  "During this step conversion from CLUSTAL format files to STOCKHOLM format is done.
               Then using CMFinder we determine consensus motives for sequences.<br>"
       position: "top"
-      postclick:
-        - "#cmFinder > div.toolTitle > div > a"
+
 
     - title: "<b>Finding consensus motives</b>"
       intro:  "This tool takes as an input the following files:
@@ -331,6 +365,7 @@ steps:
                 <li>model_tree_stk : from previous step</li>
                 <li>cmfinder_fa : from 'Preprocessing data for computing best subtree' step </li>
                 <li>tree_matrix</li>
+                </b>
               </dir>
         <br>"
       position: "top"
@@ -344,13 +379,18 @@ steps:
       intro:  "Output of the tool is in STOCKHOLM format and contains the consensus structure. <br>"
       position: "top"
 
+    - title: "<b>Finding consensus motives : DONE</b>"
+      intro:  "Once we have consensus structure we can build covariance model with <b>cmbuild</b> tool.
+              For that click on the tool named <b>Build covariance models </b><br>"
+      position: "top"
+      postclick:
+        - "#infernal > div:nth-child(3) > div > a "
 
     - title: "<b>Building Covariance Model using cmbuild</b>"
       intro:  "In this step we cm build a covariance model of an RNA multiple alignment.
               <b>cmbuild</b> uses the consensus structure to determine the architecture of the covariance model. <br>"
       position: "top"
-      postclick:
-        - "#infernal > div:nth-child(3) > div > a "
+
 
     - title: "<b>Building Covariance Model using cmbuild</b>"
       intro:  "As an input for this tool we give 'model_cmfinder_stk' file containing consensus
@@ -363,8 +403,9 @@ steps:
       intro:  "Run the tool by pressing <b>'Execute' </b> button.<br>"
       position: "top"
 
-    - title: "<b>Searching homologous sequences using cmsearch</b>"
-      intro:  "After covariance model is built we can move on to <cmsearch>. <br>"
+    - title: "<b>Building Covariance Model using cmbuild : DONE</b>"
+      intro:  "After covariance model is built we can move on to <cmsearch>.
+              Simply click on <b>Search covariance model(s)</b>.<br>"
       position: "top"
       postclick:
         - "#infernal > div:nth-child(4) > div > a"
@@ -386,12 +427,18 @@ steps:
       intro:  "Run the tool by pressing <b>'Execute' </b> button.<br>"
       position: "top"
 
+    - title: "<b>Searching homologous sequences using cmsearch : DONE</b>"
+      intro:  "Finally we reached the last step of our workflow!
+                Click on <b>Report_Results</b> to do the final step. <br>"
+      position: "top"
+      postclick:
+        - "#glob_report > div.toolTitle > div > a"
+
     - title: "<b>Post-processing</b>"
       intro:  "Final step of our workflow is <b>Post-processing</b>.<br>
               In this step we will report clusters and merge them if needed."
       position: "top"
-      postclick:
-        - "#glob_report > div.toolTitle > div > a"
+
 
     - title: "<b>Post-processing</b>"
       intro:  "This tool takes as an input the following files:
@@ -401,6 +448,7 @@ steps:
                 <li>cmsearch_results : from previous step </li>
                 and
                 <li>model_tree_files : from <b>'Preprocessing data for computing best subtree'</b> step</li>
+              </b>
               </dir>
         <br>"
       position: "top"
