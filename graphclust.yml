@@ -176,6 +176,8 @@ tools:
   owner: bgruening
   tool_panel_section_label: "GraphClust"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+  - 'c47a7c52ac4f' #rev 4
   install_resolver_dependencies: False
   install_tool_dependencies: True
   
