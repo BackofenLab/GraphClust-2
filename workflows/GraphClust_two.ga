@@ -2,7 +2,7 @@
     "a_galaxy_workflow": "true", 
     "annotation": "", 
     "format-version": "0.1", 
-    "name": "GrapClust-2-rounds", 
+    "name": "GrapClust-2-rounds (imported from API)", 
     "steps": {
         "0": {
             "annotation": "", 
@@ -19,8 +19,8 @@
             "name": "Input dataset", 
             "outputs": [], 
             "position": {
-                "left": 122.96875, 
-                "top": 633.984375
+                "left": 117.96875, 
+                "top": 649.96875
             }, 
             "tool_errors": null, 
             "tool_id": null, 
@@ -77,8 +77,8 @@
                 }
             ], 
             "position": {
-                "left": 356.984375, 
-                "top": 635.984375
+                "left": 356.96875, 
+                "top": 635.96875
             }, 
             "post_job_actions": {
                 "HideDatasetActionFASTA": {
@@ -110,7 +110,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_preprocessing/preproc/0.1", 
             "tool_shed_repository": {
-                "changeset_revision": "3eb088816194", 
+                "changeset_revision": "cf2673f7eb44", 
                 "name": "graphclust_preprocessing", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -146,8 +146,8 @@
                 }
             ], 
             "position": {
-                "left": 527.984375, 
-                "top": 197.984375
+                "left": 527.96875, 
+                "top": 197.96875
             }, 
             "post_job_actions": {
                 "HideDatasetActiongspan.zip": {
@@ -159,7 +159,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_fasta_to_gspan/gspan/0.1", 
             "tool_shed_repository": {
-                "changeset_revision": "b6e6830ff06b", 
+                "changeset_revision": "358c52752305", 
                 "name": "graphclust_fasta_to_gspan", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -203,8 +203,8 @@
                 }
             ], 
             "position": {
-                "left": 540.984375, 
-                "top": 302.984375
+                "left": 540.96875, 
+                "top": 302.96875
             }, 
             "post_job_actions": {
                 "HideDatasetActiondata_svector": {
@@ -216,7 +216,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_nspdk/nspdk_sparse/9.2", 
             "tool_shed_repository": {
-                "changeset_revision": "165fe96228be", 
+                "changeset_revision": "90a4a2e7d876", 
                 "name": "graphclust_nspdk", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -288,8 +288,8 @@
                 }
             ], 
             "position": {
-                "left": 572.984375, 
-                "top": 430.984375
+                "left": 572.96875, 
+                "top": 430.96875
             }, 
             "post_job_actions": {
                 "HideDatasetActionblack_list": {
@@ -326,7 +326,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_nspdk/NSPDK_candidateClust/9.2", 
             "tool_shed_repository": {
-                "changeset_revision": "165fe96228be", 
+                "changeset_revision": "90a4a2e7d876", 
                 "name": "graphclust_nspdk", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -402,8 +402,8 @@
                 }
             ], 
             "position": {
-                "left": 809.96875, 
-                "top": 410.984375
+                "left": 809.953125, 
+                "top": 410.96875
             }, 
             "post_job_actions": {
                 "HideDatasetActioncenters": {
@@ -435,7 +435,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_prepocessing_for_mlocarna/preMloc/0.1.0", 
             "tool_shed_repository": {
-                "changeset_revision": "8ad3e79255c1", 
+                "changeset_revision": "8d3222b4b96b", 
                 "name": "graphclust_prepocessing_for_mlocarna", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -495,7 +495,7 @@
                 }
             ], 
             "position": {
-                "left": 1017.46875, 
+                "left": 1017.453125, 
                 "top": 390
             }, 
             "post_job_actions": {
@@ -508,12 +508,12 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_mlocarna/locarna_best_subtree/0.1.0", 
             "tool_shed_repository": {
-                "changeset_revision": "15bd4fb05e5c", 
+                "changeset_revision": "c6c4a7adb099", 
                 "name": "graphclust_mlocarna", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"tau\": \"\\\"50\\\"\", \"max_diff_am\": \"\\\"50\\\"\", \"center_fa_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0, \"__rerun_remap_job_id__\": null, \"tree_matrix\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"p\": \"\\\"0.001\\\"\", \"data_map\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"max_diff\": \"\\\"100\\\"\", \"tree_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"plfold_minlen\": \"\\\"210\\\"\"}", 
+            "tool_state": "{\"tau\": \"\\\"50\\\"\", \"max_diff_am\": \"\\\"50\\\"\", \"center_fa_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0, \"__rerun_remap_job_id__\": null, \"tree_matrix\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"p\": \"\\\"0.001\\\"\", \"data_map\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"param_type\": \"{\\\"tau\\\": \\\"50\\\", \\\"max_diff_am\\\": \\\"50\\\", \\\"struct_weight\\\": \\\"180\\\", \\\"p\\\": \\\"0.001\\\", \\\"plfold_winsize\\\": \\\"300\\\", \\\"alifold_consensus_dp\\\": \\\"true\\\", \\\"param_type_selector\\\": \\\"gclust\\\", \\\"indel\\\": \\\"-200\\\", \\\"__current_case__\\\": 0, \\\"max_diff\\\": \\\"100\\\", \\\"indel_opening\\\": \\\"-400\\\", \\\"plfold_minlen\\\": \\\"210\\\", \\\"plfold_span\\\": \\\"150\\\"}\", \"max_diff\": \"\\\"100\\\"\", \"tree_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"plfold_minlen\": \"\\\"210\\\"\"}", 
             "tool_version": "0.1.0", 
             "type": "tool", 
             "uuid": "8acfe63c-a4f5-4683-822a-64f115b37029", 
@@ -553,7 +553,7 @@
             ], 
             "position": {
                 "left": 1048.984375, 
-                "top": 595.984375
+                "top": 595.96875
             }, 
             "post_job_actions": {
                 "HideDatasetActionmodel_cmfinder_stk": {
@@ -565,7 +565,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_cmfinder/cmFinder/0.1.0", 
             "tool_shed_repository": {
-                "changeset_revision": "78772eedd780", 
+                "changeset_revision": "a4b009876214", 
                 "name": "graphclust_cmfinder", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -609,8 +609,8 @@
                 }
             ], 
             "position": {
-                "left": 1321.96875, 
-                "top": 444.96875
+                "left": 1321.953125, 
+                "top": 444.953125
             }, 
             "post_job_actions": {
                 "HideDatasetActioncmfile_outfile": {
@@ -783,11 +783,15 @@
                 {
                     "name": "evaluation", 
                     "type": "txt"
+                }, 
+                {
+                    "name": "RESULTS_zip", 
+                    "type": "zip"
                 }
             ], 
             "position": {
-                "left": 1865.984375, 
-                "top": 741.984375
+                "left": 1865.96875, 
+                "top": 741.96875
             }, 
             "post_job_actions": {
                 "HideDatasetActionfinal_soft": {
@@ -814,30 +818,30 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_postprocessing/glob_report/0.1", 
             "tool_shed_repository": {
-                "changeset_revision": "4a9754d476fe", 
+                "changeset_revision": "4310ac018d05", 
                 "name": "graphclust_postprocessing", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": 0, \"model_tree_files\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cm_max_eval\": \"\\\"0.001\\\"\", \"min_cluster_size\": \"\\\"3\\\"\", \"__rerun_remap_job_id__\": null, \"merge_cluster_ol\": \"\\\"0.66\\\"\", \"iteration_num\": \"{\\\"iteration_num_selector\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"cm_min_bitscore\": \"\\\"20\\\"\", \"cmsearch_results\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"results_top_num\": \"\\\"5\\\"\", \"merge_overlap\": \"\\\"0.51\\\"\", \"cm_bitscore_sig\": \"\\\"1\\\"\", \"FASTA\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cut_type\": \"\\\"true\\\"\", \"cdhit\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"partition_type\": \"\\\"true\\\"\"}", 
+            "tool_state": "{\"__page__\": 0, \"model_tree_files\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cm_max_eval\": \"\\\"0.001\\\"\", \"min_cluster_size\": \"\\\"3\\\"\", \"advanced_opts\": \"{\\\"__current_case__\\\": 0, \\\"advanced_opts_selector\\\": \\\"hide\\\"}\", \"merge_cluster_ol\": \"\\\"0.66\\\"\", \"iteration_num\": \"{\\\"iteration_num_selector\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"cm_min_bitscore\": \"\\\"20\\\"\", \"cmsearch_results\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"results_top_num\": \"\\\"5\\\"\", \"merge_overlap\": \"\\\"0.51\\\"\", \"cm_bitscore_sig\": \"\\\"1\\\"\", \"__rerun_remap_job_id__\": null, \"FASTA\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cut_type\": \"\\\"true\\\"\", \"cdhit\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"partition_type\": \"\\\"true\\\"\"}", 
             "tool_version": "0.1", 
             "type": "tool", 
             "uuid": "79fc9f8f-a9fc-4f41-aa6e-14d9acdcf5e8", 
             "workflow_outputs": [
                 {
                     "label": null, 
-                    "output_name": "topSecondaryStruct", 
-                    "uuid": "472fdd0c-0574-4106-91c1-e514c0228395"
-                }, 
-                {
-                    "label": null, 
-                    "output_name": "evaluation", 
-                    "uuid": "18232c1e-9a61-4fdc-a238-be9fe50d700d"
-                }, 
-                {
-                    "label": null, 
                     "output_name": "topDot", 
                     "uuid": "b8414c1d-3074-4cdf-978c-5efff9df2b8c"
+                }, 
+                {
+                    "label": null, 
+                    "output_name": "final_stats", 
+                    "uuid": "ad4b0f75-59f0-4b82-a99c-2f4de1cb3d12"
+                }, 
+                {
+                    "label": null, 
+                    "output_name": "topSecondaryStruct", 
+                    "uuid": "472fdd0c-0574-4106-91c1-e514c0228395"
                 }, 
                 {
                     "label": null, 
@@ -846,8 +850,13 @@
                 }, 
                 {
                     "label": null, 
-                    "output_name": "final_stats", 
-                    "uuid": "ad4b0f75-59f0-4b82-a99c-2f4de1cb3d12"
+                    "output_name": "evaluation", 
+                    "uuid": "18232c1e-9a61-4fdc-a238-be9fe50d700d"
+                }, 
+                {
+                    "label": null, 
+                    "output_name": "RESULTS_zip", 
+                    "uuid": "037a66c6-18bf-4063-9207-bf51935a54b8"
                 }
             ]
         }, 
@@ -937,7 +946,7 @@
             ], 
             "position": {
                 "left": 498.984375, 
-                "top": 855.984375
+                "top": 855.96875
             }, 
             "post_job_actions": {
                 "HideDatasetActionblack_list": {
@@ -974,7 +983,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_nspdk/NSPDK_candidateClust/9.2", 
             "tool_shed_repository": {
-                "changeset_revision": "165fe96228be", 
+                "changeset_revision": "90a4a2e7d876", 
                 "name": "graphclust_nspdk", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -1050,8 +1059,8 @@
                 }
             ], 
             "position": {
-                "left": 842.984375, 
-                "top": 1000.984375
+                "left": 842.96875, 
+                "top": 1000.96875
             }, 
             "post_job_actions": {
                 "HideDatasetActioncenters": {
@@ -1083,7 +1092,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_prepocessing_for_mlocarna/preMloc/0.1.0", 
             "tool_shed_repository": {
-                "changeset_revision": "8ad3e79255c1", 
+                "changeset_revision": "8d3222b4b96b", 
                 "name": "graphclust_prepocessing_for_mlocarna", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -1143,7 +1152,7 @@
                 }
             ], 
             "position": {
-                "left": 1075.484375, 
+                "left": 1075.46875, 
                 "top": 1085
             }, 
             "post_job_actions": {
@@ -1156,12 +1165,12 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_mlocarna/locarna_best_subtree/0.1.0", 
             "tool_shed_repository": {
-                "changeset_revision": "15bd4fb05e5c", 
+                "changeset_revision": "c6c4a7adb099", 
                 "name": "graphclust_mlocarna", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"tau\": \"\\\"50\\\"\", \"max_diff_am\": \"\\\"50\\\"\", \"center_fa_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0, \"__rerun_remap_job_id__\": null, \"tree_matrix\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"p\": \"\\\"0.001\\\"\", \"data_map\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"max_diff\": \"\\\"100\\\"\", \"tree_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"plfold_minlen\": \"\\\"210\\\"\"}", 
+            "tool_state": "{\"tau\": \"\\\"50\\\"\", \"max_diff_am\": \"\\\"50\\\"\", \"center_fa_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0, \"__rerun_remap_job_id__\": null, \"tree_matrix\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"p\": \"\\\"0.001\\\"\", \"data_map\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"param_type\": \"{\\\"tau\\\": \\\"50\\\", \\\"max_diff_am\\\": \\\"50\\\", \\\"struct_weight\\\": \\\"180\\\", \\\"p\\\": \\\"0.001\\\", \\\"plfold_winsize\\\": \\\"300\\\", \\\"alifold_consensus_dp\\\": \\\"true\\\", \\\"param_type_selector\\\": \\\"gclust\\\", \\\"indel\\\": \\\"-200\\\", \\\"__current_case__\\\": 0, \\\"max_diff\\\": \\\"100\\\", \\\"indel_opening\\\": \\\"-400\\\", \\\"plfold_minlen\\\": \\\"210\\\", \\\"plfold_span\\\": \\\"150\\\"}\", \"max_diff\": \"\\\"100\\\"\", \"tree_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"plfold_minlen\": \"\\\"210\\\"\"}", 
             "tool_version": "0.1.0", 
             "type": "tool", 
             "uuid": "ad74153d-010b-4198-bb43-a9a071513181", 
@@ -1213,7 +1222,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_cmfinder/cmFinder/0.1.0", 
             "tool_shed_repository": {
-                "changeset_revision": "78772eedd780", 
+                "changeset_revision": "a4b009876214", 
                 "name": "graphclust_cmfinder", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -1257,8 +1266,8 @@
                 }
             ], 
             "position": {
-                "left": 1595.984375, 
-                "top": 1185.984375
+                "left": 1595.96875, 
+                "top": 1185.96875
             }, 
             "post_job_actions": {
                 "HideDatasetActioncmfile_outfile": {
@@ -1329,7 +1338,7 @@
             ], 
             "position": {
                 "left": 1906.484375, 
-                "top": 1312.984375
+                "top": 1312.96875
             }, 
             "post_job_actions": {
                 "HideDatasetActionmultiple_alignment_output": {
@@ -1453,11 +1462,15 @@
                 {
                     "name": "evaluation", 
                     "type": "txt"
+                }, 
+                {
+                    "name": "RESULTS_zip", 
+                    "type": "zip"
                 }
             ], 
             "position": {
-                "left": 2316.3125, 
-                "top": 1155.8125
+                "left": 2316.296875, 
+                "top": 1155.796875
             }, 
             "post_job_actions": {
                 "HideDatasetActionfinal_soft": {
@@ -1484,30 +1497,30 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_postprocessing/glob_report/0.1", 
             "tool_shed_repository": {
-                "changeset_revision": "4a9754d476fe", 
+                "changeset_revision": "4310ac018d05", 
                 "name": "graphclust_postprocessing", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": 0, \"model_tree_files\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cm_max_eval\": \"\\\"0.001\\\"\", \"min_cluster_size\": \"\\\"3\\\"\", \"__rerun_remap_job_id__\": null, \"merge_cluster_ol\": \"\\\"0.66\\\"\", \"iteration_num\": \"{\\\"final_partition_used_cmsearch\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"iteration_num_selector\\\": \\\"true\\\", \\\"final_partition_soft\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"CI\\\": \\\"2\\\", \\\"__current_case__\\\": 0}\", \"cm_min_bitscore\": \"\\\"20\\\"\", \"cmsearch_results\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"results_top_num\": \"\\\"5\\\"\", \"merge_overlap\": \"\\\"0.51\\\"\", \"cm_bitscore_sig\": \"\\\"1\\\"\", \"FASTA\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cut_type\": \"\\\"true\\\"\", \"cdhit\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"partition_type\": \"\\\"true\\\"\"}", 
+            "tool_state": "{\"__page__\": 0, \"model_tree_files\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cm_max_eval\": \"\\\"0.001\\\"\", \"min_cluster_size\": \"\\\"3\\\"\", \"advanced_opts\": \"{\\\"__current_case__\\\": 0, \\\"advanced_opts_selector\\\": \\\"hide\\\"}\", \"merge_cluster_ol\": \"\\\"0.66\\\"\", \"iteration_num\": \"{\\\"final_partition_used_cmsearch\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"iteration_num_selector\\\": \\\"true\\\", \\\"final_partition_soft\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"CI\\\": \\\"2\\\", \\\"__current_case__\\\": 0}\", \"cm_min_bitscore\": \"\\\"20\\\"\", \"cmsearch_results\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"results_top_num\": \"\\\"5\\\"\", \"merge_overlap\": \"\\\"0.51\\\"\", \"cm_bitscore_sig\": \"\\\"1\\\"\", \"__rerun_remap_job_id__\": null, \"FASTA\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cut_type\": \"\\\"true\\\"\", \"cdhit\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"partition_type\": \"\\\"true\\\"\"}", 
             "tool_version": "0.1", 
             "type": "tool", 
             "uuid": "1dac24ab-fa75-41ec-bd20-e7e6b25244e2", 
             "workflow_outputs": [
                 {
                     "label": null, 
-                    "output_name": "topSecondaryStruct", 
-                    "uuid": "060f3493-53eb-41b0-b7be-56846e7d7866"
-                }, 
-                {
-                    "label": null, 
-                    "output_name": "evaluation", 
-                    "uuid": "d4f5cc53-95f9-490f-9705-760e0df4a8af"
-                }, 
-                {
-                    "label": null, 
                     "output_name": "topDot", 
                     "uuid": "b7b29fe9-f20d-4d7c-9872-115d85219d72"
+                }, 
+                {
+                    "label": null, 
+                    "output_name": "final_stats", 
+                    "uuid": "5c71d9da-1307-4667-8013-b0800a138ac9"
+                }, 
+                {
+                    "label": null, 
+                    "output_name": "topSecondaryStruct", 
+                    "uuid": "060f3493-53eb-41b0-b7be-56846e7d7866"
                 }, 
                 {
                     "label": null, 
@@ -1516,11 +1529,16 @@
                 }, 
                 {
                     "label": null, 
-                    "output_name": "final_stats", 
-                    "uuid": "5c71d9da-1307-4667-8013-b0800a138ac9"
+                    "output_name": "evaluation", 
+                    "uuid": "d4f5cc53-95f9-490f-9705-760e0df4a8af"
+                }, 
+                {
+                    "label": null, 
+                    "output_name": "RESULTS_zip", 
+                    "uuid": "7c911712-b1d1-4ace-9ecc-5d316fd0de49"
                 }
             ]
         }
     }, 
-    "uuid": "baaa26d8-d669-4307-902b-24cfc0668f05"
+    "uuid": "db714e81-b30d-4265-9d6f-422966e4ed28"
 }
