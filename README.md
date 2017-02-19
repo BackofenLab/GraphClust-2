@@ -90,7 +90,9 @@ Interactive Tours are available for Galaxy and Galaxy-GraphClust. To run the tou
 ### Video tutorial
 You can check this Youtube video on setting-up and running Galaxy-GraphClust.
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/fJ6tUt_6uas/0.jpg)](https://www.youtube.com/watch?v=fJ6tUt_6uas)
+https://www.youtube.com/watch?v=fJ6tUt_6uas
+
+[![IMAGE ALT TEXT HERE](video-thumbnail.png)](https://www.youtube.com/watch?v=fJ6tUt_6uas)
 
 
 GraphClust pipeline overview
