@@ -139,6 +139,6 @@ The output contains the predicted clusters, where similar putative input RNA seq
 You can file an [github issue](https://github.com/BackofenLab/docker-galaxy-graphclust/issues) or ask us on the [Galaxy development list](http://lists.bx.psu.edu/listinfo/galaxy-dev).
 
 # Publications
-[M. Miladi, E. Sokhoyan, F. Costa, R. Backofen and B. Gruening, Galaxy-GraphClust: scalable and accessible clustering of ncRNAs based on secondary structures, (submitted)]
+[M. Miladi, E. Sokhoyan, T. Houwaart, F. Costa, R. Backofen and B. Gruening, Galaxy-GraphClust: scalable and accessible clustering of ncRNAs based on secondary structures, (submitted)]
 
 [S. Heyne, F. Costa, D. Rose, R. Backofen, GraphClust: alignment-free structural clustering of local RNA secondary structures, Bioinformatics, 2012]
