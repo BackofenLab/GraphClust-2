@@ -2,7 +2,7 @@
     "a_galaxy_workflow": "true", 
     "annotation": "", 
     "format-version": "0.1", 
-    "name": "GrapClust-2-rounds (imported from API)", 
+    "name": "GrapClust-2-rounds", 
     "steps": {
         "0": {
             "annotation": "", 
@@ -19,8 +19,8 @@
             "name": "Input dataset", 
             "outputs": [], 
             "position": {
-                "left": 117.96875, 
-                "top": 649.96875
+                "left": 143.96875, 
+                "top": 638.96875
             }, 
             "tool_errors": null, 
             "tool_id": null, 
@@ -77,7 +77,7 @@
                 }
             ], 
             "position": {
-                "left": 356.96875, 
+                "left": 382.96875, 
                 "top": 635.96875
             }, 
             "post_job_actions": {
@@ -110,7 +110,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_preprocessing/preproc/0.1", 
             "tool_shed_repository": {
-                "changeset_revision": "cf2673f7eb44", 
+                "changeset_revision": "8e6617badf0e", 
                 "name": "graphclust_preprocessing", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -146,7 +146,7 @@
                 }
             ], 
             "position": {
-                "left": 527.96875, 
+                "left": 553.96875, 
                 "top": 197.96875
             }, 
             "post_job_actions": {
@@ -159,7 +159,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_fasta_to_gspan/gspan/0.1", 
             "tool_shed_repository": {
-                "changeset_revision": "358c52752305", 
+                "changeset_revision": "6942ec989fed", 
                 "name": "graphclust_fasta_to_gspan", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -203,7 +203,7 @@
                 }
             ], 
             "position": {
-                "left": 540.96875, 
+                "left": 566.96875, 
                 "top": 302.96875
             }, 
             "post_job_actions": {
@@ -216,7 +216,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_nspdk/nspdk_sparse/9.2", 
             "tool_shed_repository": {
-                "changeset_revision": "90a4a2e7d876", 
+                "changeset_revision": "d10410cfd17a", 
                 "name": "graphclust_nspdk", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -288,7 +288,7 @@
                 }
             ], 
             "position": {
-                "left": 572.96875, 
+                "left": 598.96875, 
                 "top": 430.96875
             }, 
             "post_job_actions": {
@@ -326,7 +326,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_nspdk/NSPDK_candidateClust/9.2", 
             "tool_shed_repository": {
-                "changeset_revision": "90a4a2e7d876", 
+                "changeset_revision": "d10410cfd17a", 
                 "name": "graphclust_nspdk", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -361,24 +361,24 @@
             }, 
             "inputs": [
                 {
-                    "description": "runtime parameter for tool premlocarna", 
+                    "description": "runtime parameter for tool pgma_graphclust", 
                     "name": "fasta_data"
                 }, 
                 {
-                    "description": "runtime parameter for tool premlocarna", 
+                    "description": "runtime parameter for tool pgma_graphclust", 
                     "name": "fast_cluster_sim"
                 }, 
                 {
-                    "description": "runtime parameter for tool premlocarna", 
+                    "description": "runtime parameter for tool pgma_graphclust", 
                     "name": "data_map"
                 }, 
                 {
-                    "description": "runtime parameter for tool premlocarna", 
+                    "description": "runtime parameter for tool pgma_graphclust", 
                     "name": "fast_cluster"
                 }
             ], 
             "label": null, 
-            "name": "premlocarna", 
+            "name": "pgma_graphclust", 
             "outputs": [
                 {
                     "name": "centers", 
@@ -402,7 +402,7 @@
                 }
             ], 
             "position": {
-                "left": 809.953125, 
+                "left": 835.953125, 
                 "top": 410.96875
             }, 
             "post_job_actions": {
@@ -435,7 +435,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_prepocessing_for_mlocarna/preMloc/0.1.0", 
             "tool_shed_repository": {
-                "changeset_revision": "8d3222b4b96b", 
+                "changeset_revision": "58a152ea0510", 
                 "name": "graphclust_prepocessing_for_mlocarna", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -470,24 +470,24 @@
             }, 
             "inputs": [
                 {
-                    "description": "runtime parameter for tool locarna_best_subtree", 
+                    "description": "runtime parameter for tool locarna_graphclust", 
                     "name": "center_fa_file"
                 }, 
                 {
-                    "description": "runtime parameter for tool locarna_best_subtree", 
+                    "description": "runtime parameter for tool locarna_graphclust", 
                     "name": "tree_matrix"
                 }, 
                 {
-                    "description": "runtime parameter for tool locarna_best_subtree", 
+                    "description": "runtime parameter for tool locarna_graphclust", 
                     "name": "data_map"
                 }, 
                 {
-                    "description": "runtime parameter for tool locarna_best_subtree", 
+                    "description": "runtime parameter for tool locarna_graphclust", 
                     "name": "tree_file"
                 }
             ], 
             "label": null, 
-            "name": "locarna_best_subtree", 
+            "name": "locarna_graphclust", 
             "outputs": [
                 {
                     "name": "model_tree_stk", 
@@ -495,7 +495,7 @@
                 }
             ], 
             "position": {
-                "left": 1017.453125, 
+                "left": 1043.453125, 
                 "top": 390
             }, 
             "post_job_actions": {
@@ -508,12 +508,12 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_mlocarna/locarna_best_subtree/0.1.0", 
             "tool_shed_repository": {
-                "changeset_revision": "c6c4a7adb099", 
+                "changeset_revision": "606440a3852d", 
                 "name": "graphclust_mlocarna", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"tau\": \"\\\"50\\\"\", \"max_diff_am\": \"\\\"50\\\"\", \"center_fa_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0, \"__rerun_remap_job_id__\": null, \"tree_matrix\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"p\": \"\\\"0.001\\\"\", \"data_map\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"param_type\": \"{\\\"tau\\\": \\\"50\\\", \\\"max_diff_am\\\": \\\"50\\\", \\\"struct_weight\\\": \\\"180\\\", \\\"p\\\": \\\"0.001\\\", \\\"plfold_winsize\\\": \\\"300\\\", \\\"alifold_consensus_dp\\\": \\\"true\\\", \\\"param_type_selector\\\": \\\"gclust\\\", \\\"indel\\\": \\\"-200\\\", \\\"__current_case__\\\": 0, \\\"max_diff\\\": \\\"100\\\", \\\"indel_opening\\\": \\\"-400\\\", \\\"plfold_minlen\\\": \\\"210\\\", \\\"plfold_span\\\": \\\"150\\\"}\", \"max_diff\": \"\\\"100\\\"\", \"tree_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"plfold_minlen\": \"\\\"210\\\"\"}", 
+            "tool_state": "{\"tau\": \"\\\"50\\\"\", \"max_diff_am\": \"\\\"50\\\"\", \"center_fa_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0, \"__rerun_remap_job_id__\": null, \"tree_matrix\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"p\": \"\\\"0.001\\\"\", \"allow_overlap\": \"\\\"false\\\"\", \"data_map\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"param_type\": \"{\\\"tau\\\": \\\"50\\\", \\\"max_diff_am\\\": \\\"50\\\", \\\"struct_weight\\\": \\\"180\\\", \\\"p\\\": \\\"0.001\\\", \\\"plfold_winsize\\\": \\\"300\\\", \\\"alifold_consensus_dp\\\": \\\"true\\\", \\\"param_type_selector\\\": \\\"gclust\\\", \\\"indel\\\": \\\"-200\\\", \\\"__current_case__\\\": 0, \\\"max_diff\\\": \\\"100\\\", \\\"indel_opening\\\": \\\"-400\\\", \\\"plfold_minlen\\\": \\\"210\\\", \\\"plfold_span\\\": \\\"150\\\"}\", \"max_diff\": \"\\\"100\\\"\", \"tree_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"plfold_minlen\": \"\\\"210\\\"\"}", 
             "tool_version": "0.1.0", 
             "type": "tool", 
             "uuid": "8acfe63c-a4f5-4683-822a-64f115b37029", 
@@ -535,16 +535,16 @@
             }, 
             "inputs": [
                 {
-                    "description": "runtime parameter for tool CMFinder_v0", 
+                    "description": "runtime parameter for tool cmfinder", 
                     "name": "model_tree_stk"
                 }, 
                 {
-                    "description": "runtime parameter for tool CMFinder_v0", 
+                    "description": "runtime parameter for tool cmfinder", 
                     "name": "cmfinder_fa"
                 }
             ], 
             "label": null, 
-            "name": "CMFinder_v0", 
+            "name": "cmfinder", 
             "outputs": [
                 {
                     "name": "model_cmfinder_stk", 
@@ -552,7 +552,7 @@
                 }
             ], 
             "position": {
-                "left": 1048.984375, 
+                "left": 1074.984375, 
                 "top": 595.96875
             }, 
             "post_job_actions": {
@@ -565,7 +565,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_cmfinder/cmFinder/0.1.0", 
             "tool_shed_repository": {
-                "changeset_revision": "a4b009876214", 
+                "changeset_revision": "271d673b9aef", 
                 "name": "graphclust_cmfinder", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -609,7 +609,7 @@
                 }
             ], 
             "position": {
-                "left": 1321.953125, 
+                "left": 1347.953125, 
                 "top": 444.953125
             }, 
             "post_job_actions": {
@@ -680,7 +680,7 @@
                 }
             ], 
             "position": {
-                "left": 1446.484375, 
+                "left": 1472.484375, 
                 "top": 710
             }, 
             "post_job_actions": {
@@ -729,24 +729,24 @@
             }, 
             "inputs": [
                 {
-                    "description": "runtime parameter for tool Report_Results", 
+                    "description": "runtime parameter for tool cluster_collection_report", 
                     "name": "model_tree_files"
                 }, 
                 {
-                    "description": "runtime parameter for tool Report_Results", 
+                    "description": "runtime parameter for tool cluster_collection_report", 
                     "name": "cmsearch_results"
                 }, 
                 {
-                    "description": "runtime parameter for tool Report_Results", 
+                    "description": "runtime parameter for tool cluster_collection_report", 
                     "name": "FASTA"
                 }, 
                 {
-                    "description": "runtime parameter for tool Report_Results", 
+                    "description": "runtime parameter for tool cluster_collection_report", 
                     "name": "cdhit"
                 }
             ], 
             "label": null, 
-            "name": "Report_Results", 
+            "name": "cluster_collection_report", 
             "outputs": [
                 {
                     "name": "clusters", 
@@ -762,6 +762,10 @@
                 }, 
                 {
                     "name": "topDot", 
+                    "type": "input"
+                }, 
+                {
+                    "name": "rscapePlot", 
                     "type": "input"
                 }, 
                 {
@@ -790,7 +794,7 @@
                 }
             ], 
             "position": {
-                "left": 1865.96875, 
+                "left": 1891.96875, 
                 "top": 741.96875
             }, 
             "post_job_actions": {
@@ -818,7 +822,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_postprocessing/glob_report/0.1", 
             "tool_shed_repository": {
-                "changeset_revision": "4310ac018d05", 
+                "changeset_revision": "9a69a6098b71", 
                 "name": "graphclust_postprocessing", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -837,6 +841,11 @@
                     "label": null, 
                     "output_name": "final_stats", 
                     "uuid": "ad4b0f75-59f0-4b82-a99c-2f4de1cb3d12"
+                }, 
+                {
+                    "label": null, 
+                    "output_name": "rscapePlot", 
+                    "uuid": "f25b50ae-dc80-4611-85f5-578e637fefbe"
                 }, 
                 {
                     "label": null, 
@@ -945,7 +954,7 @@
                 }
             ], 
             "position": {
-                "left": 498.984375, 
+                "left": 524.984375, 
                 "top": 855.96875
             }, 
             "post_job_actions": {
@@ -983,7 +992,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_nspdk/NSPDK_candidateClust/9.2", 
             "tool_shed_repository": {
-                "changeset_revision": "90a4a2e7d876", 
+                "changeset_revision": "d10410cfd17a", 
                 "name": "graphclust_nspdk", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -1018,24 +1027,24 @@
             }, 
             "inputs": [
                 {
-                    "description": "runtime parameter for tool premlocarna", 
+                    "description": "runtime parameter for tool pgma_graphclust", 
                     "name": "fasta_data"
                 }, 
                 {
-                    "description": "runtime parameter for tool premlocarna", 
+                    "description": "runtime parameter for tool pgma_graphclust", 
                     "name": "fast_cluster_sim"
                 }, 
                 {
-                    "description": "runtime parameter for tool premlocarna", 
+                    "description": "runtime parameter for tool pgma_graphclust", 
                     "name": "data_map"
                 }, 
                 {
-                    "description": "runtime parameter for tool premlocarna", 
+                    "description": "runtime parameter for tool pgma_graphclust", 
                     "name": "fast_cluster"
                 }
             ], 
             "label": null, 
-            "name": "premlocarna", 
+            "name": "pgma_graphclust", 
             "outputs": [
                 {
                     "name": "centers", 
@@ -1059,7 +1068,7 @@
                 }
             ], 
             "position": {
-                "left": 842.96875, 
+                "left": 868.96875, 
                 "top": 1000.96875
             }, 
             "post_job_actions": {
@@ -1092,7 +1101,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_prepocessing_for_mlocarna/preMloc/0.1.0", 
             "tool_shed_repository": {
-                "changeset_revision": "8d3222b4b96b", 
+                "changeset_revision": "58a152ea0510", 
                 "name": "graphclust_prepocessing_for_mlocarna", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -1127,24 +1136,24 @@
             }, 
             "inputs": [
                 {
-                    "description": "runtime parameter for tool locarna_best_subtree", 
+                    "description": "runtime parameter for tool locarna_graphclust", 
                     "name": "center_fa_file"
                 }, 
                 {
-                    "description": "runtime parameter for tool locarna_best_subtree", 
+                    "description": "runtime parameter for tool locarna_graphclust", 
                     "name": "tree_matrix"
                 }, 
                 {
-                    "description": "runtime parameter for tool locarna_best_subtree", 
+                    "description": "runtime parameter for tool locarna_graphclust", 
                     "name": "data_map"
                 }, 
                 {
-                    "description": "runtime parameter for tool locarna_best_subtree", 
+                    "description": "runtime parameter for tool locarna_graphclust", 
                     "name": "tree_file"
                 }
             ], 
             "label": null, 
-            "name": "locarna_best_subtree", 
+            "name": "locarna_graphclust", 
             "outputs": [
                 {
                     "name": "model_tree_stk", 
@@ -1152,7 +1161,7 @@
                 }
             ], 
             "position": {
-                "left": 1075.46875, 
+                "left": 1101.46875, 
                 "top": 1085
             }, 
             "post_job_actions": {
@@ -1165,12 +1174,12 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_mlocarna/locarna_best_subtree/0.1.0", 
             "tool_shed_repository": {
-                "changeset_revision": "c6c4a7adb099", 
+                "changeset_revision": "606440a3852d", 
                 "name": "graphclust_mlocarna", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"tau\": \"\\\"50\\\"\", \"max_diff_am\": \"\\\"50\\\"\", \"center_fa_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0, \"__rerun_remap_job_id__\": null, \"tree_matrix\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"p\": \"\\\"0.001\\\"\", \"data_map\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"param_type\": \"{\\\"tau\\\": \\\"50\\\", \\\"max_diff_am\\\": \\\"50\\\", \\\"struct_weight\\\": \\\"180\\\", \\\"p\\\": \\\"0.001\\\", \\\"plfold_winsize\\\": \\\"300\\\", \\\"alifold_consensus_dp\\\": \\\"true\\\", \\\"param_type_selector\\\": \\\"gclust\\\", \\\"indel\\\": \\\"-200\\\", \\\"__current_case__\\\": 0, \\\"max_diff\\\": \\\"100\\\", \\\"indel_opening\\\": \\\"-400\\\", \\\"plfold_minlen\\\": \\\"210\\\", \\\"plfold_span\\\": \\\"150\\\"}\", \"max_diff\": \"\\\"100\\\"\", \"tree_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"plfold_minlen\": \"\\\"210\\\"\"}", 
+            "tool_state": "{\"tau\": \"\\\"50\\\"\", \"max_diff_am\": \"\\\"50\\\"\", \"center_fa_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0, \"__rerun_remap_job_id__\": null, \"tree_matrix\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"p\": \"\\\"0.001\\\"\", \"allow_overlap\": \"\\\"false\\\"\", \"data_map\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"param_type\": \"{\\\"tau\\\": \\\"50\\\", \\\"max_diff_am\\\": \\\"50\\\", \\\"struct_weight\\\": \\\"180\\\", \\\"p\\\": \\\"0.001\\\", \\\"plfold_winsize\\\": \\\"300\\\", \\\"alifold_consensus_dp\\\": \\\"true\\\", \\\"param_type_selector\\\": \\\"gclust\\\", \\\"indel\\\": \\\"-200\\\", \\\"__current_case__\\\": 0, \\\"max_diff\\\": \\\"100\\\", \\\"indel_opening\\\": \\\"-400\\\", \\\"plfold_minlen\\\": \\\"210\\\", \\\"plfold_span\\\": \\\"150\\\"}\", \"max_diff\": \"\\\"100\\\"\", \"tree_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"plfold_minlen\": \"\\\"210\\\"\"}", 
             "tool_version": "0.1.0", 
             "type": "tool", 
             "uuid": "ad74153d-010b-4198-bb43-a9a071513181", 
@@ -1192,16 +1201,16 @@
             }, 
             "inputs": [
                 {
-                    "description": "runtime parameter for tool CMFinder_v0", 
+                    "description": "runtime parameter for tool cmfinder", 
                     "name": "model_tree_stk"
                 }, 
                 {
-                    "description": "runtime parameter for tool CMFinder_v0", 
+                    "description": "runtime parameter for tool cmfinder", 
                     "name": "cmfinder_fa"
                 }
             ], 
             "label": null, 
-            "name": "CMFinder_v0", 
+            "name": "cmfinder", 
             "outputs": [
                 {
                     "name": "model_cmfinder_stk", 
@@ -1209,7 +1218,7 @@
                 }
             ], 
             "position": {
-                "left": 1328.984375, 
+                "left": 1354.984375, 
                 "top": 1130
             }, 
             "post_job_actions": {
@@ -1222,7 +1231,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_cmfinder/cmFinder/0.1.0", 
             "tool_shed_repository": {
-                "changeset_revision": "a4b009876214", 
+                "changeset_revision": "271d673b9aef", 
                 "name": "graphclust_cmfinder", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -1266,7 +1275,7 @@
                 }
             ], 
             "position": {
-                "left": 1595.96875, 
+                "left": 1621.96875, 
                 "top": 1185.96875
             }, 
             "post_job_actions": {
@@ -1337,7 +1346,7 @@
                 }
             ], 
             "position": {
-                "left": 1906.484375, 
+                "left": 1932.484375, 
                 "top": 1312.96875
             }, 
             "post_job_actions": {
@@ -1400,32 +1409,32 @@
             }, 
             "inputs": [
                 {
-                    "description": "runtime parameter for tool Report_Results", 
+                    "description": "runtime parameter for tool cluster_collection_report", 
                     "name": "model_tree_files"
                 }, 
                 {
-                    "description": "runtime parameter for tool Report_Results", 
+                    "description": "runtime parameter for tool cluster_collection_report", 
                     "name": "iteration_num"
                 }, 
                 {
-                    "description": "runtime parameter for tool Report_Results", 
+                    "description": "runtime parameter for tool cluster_collection_report", 
                     "name": "iteration_num"
                 }, 
                 {
-                    "description": "runtime parameter for tool Report_Results", 
+                    "description": "runtime parameter for tool cluster_collection_report", 
                     "name": "cmsearch_results"
                 }, 
                 {
-                    "description": "runtime parameter for tool Report_Results", 
+                    "description": "runtime parameter for tool cluster_collection_report", 
                     "name": "FASTA"
                 }, 
                 {
-                    "description": "runtime parameter for tool Report_Results", 
+                    "description": "runtime parameter for tool cluster_collection_report", 
                     "name": "cdhit"
                 }
             ], 
             "label": null, 
-            "name": "Report_Results", 
+            "name": "cluster_collection_report", 
             "outputs": [
                 {
                     "name": "clusters", 
@@ -1441,6 +1450,10 @@
                 }, 
                 {
                     "name": "topDot", 
+                    "type": "input"
+                }, 
+                {
+                    "name": "rscapePlot", 
                     "type": "input"
                 }, 
                 {
@@ -1469,7 +1482,7 @@
                 }
             ], 
             "position": {
-                "left": 2316.296875, 
+                "left": 2342.296875, 
                 "top": 1155.796875
             }, 
             "post_job_actions": {
@@ -1497,7 +1510,7 @@
             "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_postprocessing/glob_report/0.1", 
             "tool_shed_repository": {
-                "changeset_revision": "4310ac018d05", 
+                "changeset_revision": "9a69a6098b71", 
                 "name": "graphclust_postprocessing", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -1516,6 +1529,11 @@
                     "label": null, 
                     "output_name": "final_stats", 
                     "uuid": "5c71d9da-1307-4667-8013-b0800a138ac9"
+                }, 
+                {
+                    "label": null, 
+                    "output_name": "rscapePlot", 
+                    "uuid": "aba34e1e-1d59-4bb7-8e89-5655e5819e36"
                 }, 
                 {
                     "label": null, 
@@ -1540,5 +1558,5 @@
             ]
         }
     }, 
-    "uuid": "db714e81-b30d-4265-9d6f-422966e4ed28"
+    "uuid": "670aa354-c106-4d9e-977d-cfb02ba88d70"
 }
