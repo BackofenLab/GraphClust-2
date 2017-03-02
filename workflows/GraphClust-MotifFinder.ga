@@ -2,7 +2,7 @@
     "a_galaxy_workflow": "true", 
     "annotation": "", 
     "format-version": "0.1", 
-    "name": "MotifFinder", 
+    "name": "MotifFinder (imported from API)", 
     "steps": {
         "0": {
             "annotation": "", 
@@ -20,7 +20,7 @@
             "outputs": [], 
             "position": {
                 "left": 206, 
-                "top": 238
+                "top": 249
             }, 
             "tool_errors": null, 
             "tool_id": null, 
@@ -78,7 +78,7 @@
             ], 
             "position": {
                 "left": 381.984375, 
-                "top": 290.984375
+                "top": 301.984375
             }, 
             "post_job_actions": {
                 "HideDatasetActionFASTA": {
@@ -115,7 +115,7 @@
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"fastaFile\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"in_winShift\": \"\\\"70\\\"\", \"__page__\": 0, \"__rerun_remap_job_id__\": null, \"min_seq_length\": \"\\\"5\\\"\", \"max_length\": \"\\\"100\\\"\"}", 
+            "tool_state": "{\"fastaFile\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"in_winShift\": \"\\\"30\\\"\", \"__page__\": 0, \"__rerun_remap_job_id__\": null, \"min_seq_length\": \"\\\"5\\\"\", \"max_length\": \"\\\"50\\\"\"}", 
             "tool_version": "0.1", 
             "type": "tool", 
             "uuid": "0e367ec4-acb3-4f38-93ba-4c900aee99d0", 
@@ -147,7 +147,7 @@
             ], 
             "position": {
                 "left": 579.96875, 
-                "top": 155
+                "top": 166
             }, 
             "post_job_actions": {
                 "HideDatasetActiongspan.zip": {
@@ -204,7 +204,7 @@
             ], 
             "position": {
                 "left": 597.984375, 
-                "top": 262.984375
+                "top": 273.984375
             }, 
             "post_job_actions": {
                 "HideDatasetActiondata_svector": {
@@ -289,7 +289,7 @@
             ], 
             "position": {
                 "left": 610.984375, 
-                "top": 440.984375
+                "top": 451.984375
             }, 
             "post_job_actions": {
                 "HideDatasetActionblack_list": {
@@ -403,7 +403,7 @@
             ], 
             "position": {
                 "left": 850.984375, 
-                "top": 338.984375
+                "top": 349.984375
             }, 
             "post_job_actions": {
                 "HideDatasetActioncenters": {
@@ -496,7 +496,7 @@
             ], 
             "position": {
                 "left": 1093.5, 
-                "top": 378
+                "top": 389
             }, 
             "post_job_actions": {
                 "HideDatasetActionmodel_tree_stk": {
@@ -513,7 +513,7 @@
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": 0, \"center_fa_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"tree_matrix\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"allow_overlap\": \"\\\"false\\\"\", \"data_map\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"param_type\": \"{\\\"tau\\\": \\\"50\\\", \\\"max_diff_am\\\": \\\"50\\\", \\\"struct_weight\\\": \\\"180\\\", \\\"p\\\": \\\"0.001\\\", \\\"plfold_winsize\\\": \\\"300\\\", \\\"alifold_consensus_dp\\\": \\\"true\\\", \\\"param_type_selector\\\": \\\"gclust\\\", \\\"indel\\\": \\\"-200\\\", \\\"__current_case__\\\": 0, \\\"max_diff\\\": \\\"100\\\", \\\"indel_opening\\\": \\\"-400\\\", \\\"plfold_minlen\\\": \\\"210\\\", \\\"plfold_span\\\": \\\"150\\\"}\", \"tree_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_state": "{\"__page__\": 0, \"center_fa_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"tree_matrix\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"allow_overlap\": \"\\\"false\\\"\", \"data_map\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"param_type\": \"{\\\"param_type_selector\\\": \\\"locarna\\\", \\\"__current_case__\\\": 1}\", \"tree_file\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
             "tool_version": "0.1.0", 
             "type": "tool", 
             "uuid": "942e1024-d996-4018-92ad-e7e7e31bede6", 
@@ -553,7 +553,7 @@
             ], 
             "position": {
                 "left": 1027.984375, 
-                "top": 642.984375
+                "top": 653.984375
             }, 
             "post_job_actions": {
                 "HideDatasetActionmodel_cmfinder_stk": {
@@ -610,7 +610,7 @@
             ], 
             "position": {
                 "left": 1290, 
-                "top": 655.984375
+                "top": 666.984375
             }, 
             "post_job_actions": {
                 "HideDatasetActioncmfile_outfile": {
@@ -681,7 +681,7 @@
             ], 
             "position": {
                 "left": 1023.484375, 
-                "top": 822.984375
+                "top": 833.984375
             }, 
             "post_job_actions": {
                 "HideDatasetActionmultiple_alignment_output": {
@@ -703,7 +703,7 @@
                 "owner": "bgruening", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"A\": \"\\\"false\\\"\", \"nohmm\": \"\\\"false\\\"\", \"--acyk\": \"\\\"false\\\"\", \"bottomonly\": \"\\\"false\\\"\", \"g\": \"\\\"false\\\"\", \"inclusion_thresholds_opts\": \"{\\\"__current_case__\\\": 0, \\\"inclusion_thresholds_selector\\\": \\\"\\\"}\", \"__page__\": 0, \"max\": \"\\\"false\\\"\", \"notrunc\": \"\\\"false\\\"\", \"mid\": \"\\\"false\\\"\", \"seqdb\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"toponly\": \"\\\"false\\\"\", \"cm_opts\": \"{\\\"cmfile\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 1, \\\"cm_opts_selector\\\": \\\"histdb\\\"}\", \"reporting_thresholds_opts\": \"{\\\"reporting_thresholds_selector\\\": \\\"\\\", \\\"__current_case__\\\": 0}\", \"cyk\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null}", 
+            "tool_state": "{\"A\": \"\\\"false\\\"\", \"nohmm\": \"\\\"true\\\"\", \"--acyk\": \"\\\"false\\\"\", \"bottomonly\": \"\\\"false\\\"\", \"g\": \"\\\"true\\\"\", \"inclusion_thresholds_opts\": \"{\\\"__current_case__\\\": 0, \\\"inclusion_thresholds_selector\\\": \\\"\\\"}\", \"__page__\": 0, \"max\": \"\\\"false\\\"\", \"notrunc\": \"\\\"false\\\"\", \"mid\": \"\\\"false\\\"\", \"seqdb\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"toponly\": \"\\\"false\\\"\", \"cm_opts\": \"{\\\"cmfile\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 1, \\\"cm_opts_selector\\\": \\\"histdb\\\"}\", \"reporting_thresholds_opts\": \"{\\\"reporting_thresholds_selector\\\": \\\"\\\", \\\"__current_case__\\\": 0}\", \"cyk\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null}", 
             "tool_version": "1.1.0.2", 
             "type": "tool", 
             "uuid": "04a643c3-4ee6-4241-bba2-0df6535f32eb", 
@@ -795,7 +795,7 @@
             ], 
             "position": {
                 "left": 1362.984375, 
-                "top": 937.984375
+                "top": 948.984375
             }, 
             "post_job_actions": {
                 "HideDatasetActionfinal_soft": {
@@ -827,7 +827,7 @@
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": 0, \"model_tree_files\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cm_max_eval\": \"\\\"0.001\\\"\", \"min_cluster_size\": \"\\\"3\\\"\", \"advanced_opts\": \"{\\\"__current_case__\\\": 0, \\\"advanced_opts_selector\\\": \\\"hide\\\"}\", \"merge_cluster_ol\": \"\\\"0.66\\\"\", \"iteration_num\": \"{\\\"iteration_num_selector\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"cm_min_bitscore\": \"\\\"20\\\"\", \"cmsearch_results\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"results_top_num\": \"\\\"20\\\"\", \"merge_overlap\": \"\\\"0.51\\\"\", \"cm_bitscore_sig\": \"\\\"1\\\"\", \"__rerun_remap_job_id__\": null, \"FASTA\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cut_type\": \"\\\"true\\\"\", \"cdhit\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"partition_type\": \"\\\"true\\\"\"}", 
+            "tool_state": "{\"__page__\": 0, \"model_tree_files\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cm_max_eval\": \"\\\"0.01\\\"\", \"min_cluster_size\": \"\\\"3\\\"\", \"advanced_opts\": \"{\\\"param_type\\\": {\\\"param_type_selector\\\": \\\"locarna\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 1, \\\"advanced_opts_selector\\\": \\\"show\\\"}\", \"merge_cluster_ol\": \"\\\"0.66\\\"\", \"iteration_num\": \"{\\\"iteration_num_selector\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"cm_min_bitscore\": \"\\\"20\\\"\", \"cmsearch_results\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"results_top_num\": \"\\\"100\\\"\", \"merge_overlap\": \"\\\"0.51\\\"\", \"cm_bitscore_sig\": \"\\\"1\\\"\", \"__rerun_remap_job_id__\": null, \"FASTA\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cut_type\": \"\\\"false\\\"\", \"cdhit\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"partition_type\": \"\\\"true\\\"\"}", 
             "tool_version": "0.1", 
             "type": "tool", 
             "uuid": "2cf68268-36ab-4b5c-a0be-5bbe149970f4", 
@@ -870,5 +870,5 @@
             ]
         }
     }, 
-    "uuid": "8a0db269-8c08-424e-857c-76dfe4eeaeee"
+    "uuid": "81a8b87e-9eef-4e0c-ad70-b71402713154"
 }

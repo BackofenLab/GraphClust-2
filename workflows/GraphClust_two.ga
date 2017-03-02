@@ -703,7 +703,7 @@
                 "owner": "bgruening", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"A\": \"\\\"false\\\"\", \"nohmm\": \"\\\"false\\\"\", \"--acyk\": \"\\\"false\\\"\", \"bottomonly\": \"\\\"false\\\"\", \"g\": \"\\\"false\\\"\", \"inclusion_thresholds_opts\": \"{\\\"__current_case__\\\": 0, \\\"inclusion_thresholds_selector\\\": \\\"\\\"}\", \"__page__\": 0, \"max\": \"\\\"false\\\"\", \"notrunc\": \"\\\"false\\\"\", \"mid\": \"\\\"false\\\"\", \"seqdb\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"toponly\": \"\\\"false\\\"\", \"cm_opts\": \"{\\\"cmfile\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 1, \\\"cm_opts_selector\\\": \\\"histdb\\\"}\", \"reporting_thresholds_opts\": \"{\\\"reporting_thresholds_selector\\\": \\\"\\\", \\\"__current_case__\\\": 0}\", \"cyk\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null}", 
+            "tool_state": "{\"A\": \"\\\"false\\\"\", \"nohmm\": \"\\\"true\\\"\", \"--acyk\": \"\\\"false\\\"\", \"bottomonly\": \"\\\"false\\\"\", \"g\": \"\\\"true\\\"\", \"inclusion_thresholds_opts\": \"{\\\"__current_case__\\\": 0, \\\"inclusion_thresholds_selector\\\": \\\"\\\"}\", \"__page__\": 0, \"max\": \"\\\"false\\\"\", \"notrunc\": \"\\\"false\\\"\", \"mid\": \"\\\"false\\\"\", \"seqdb\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"toponly\": \"\\\"false\\\"\", \"cm_opts\": \"{\\\"cmfile\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 1, \\\"cm_opts_selector\\\": \\\"histdb\\\"}\", \"reporting_thresholds_opts\": \"{\\\"reporting_thresholds_selector\\\": \\\"\\\", \\\"__current_case__\\\": 0}\", \"cyk\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null}", 
             "tool_version": "1.1.0.2", 
             "type": "tool", 
             "uuid": "738543b5-0b1f-40b6-9d3b-07af5ea9bc92", 
@@ -827,7 +827,7 @@
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": 0, \"model_tree_files\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cm_max_eval\": \"\\\"0.001\\\"\", \"min_cluster_size\": \"\\\"3\\\"\", \"advanced_opts\": \"{\\\"__current_case__\\\": 0, \\\"advanced_opts_selector\\\": \\\"hide\\\"}\", \"merge_cluster_ol\": \"\\\"0.66\\\"\", \"iteration_num\": \"{\\\"iteration_num_selector\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"cm_min_bitscore\": \"\\\"20\\\"\", \"cmsearch_results\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"results_top_num\": \"\\\"5\\\"\", \"merge_overlap\": \"\\\"0.51\\\"\", \"cm_bitscore_sig\": \"\\\"1\\\"\", \"__rerun_remap_job_id__\": null, \"FASTA\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cut_type\": \"\\\"true\\\"\", \"cdhit\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"partition_type\": \"\\\"true\\\"\"}", 
+            "tool_state": "{\"__page__\": 0, \"model_tree_files\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cm_max_eval\": \"\\\"0.001\\\"\", \"min_cluster_size\": \"\\\"3\\\"\", \"advanced_opts\": \"{\\\"param_type\\\": {\\\"param_type_selector\\\": \\\"locarna\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 1, \\\"advanced_opts_selector\\\": \\\"show\\\"}\", \"merge_cluster_ol\": \"\\\"0.66\\\"\", \"iteration_num\": \"{\\\"iteration_num_selector\\\": \\\"false\\\", \\\"__current_case__\\\": 1}\", \"cm_min_bitscore\": \"\\\"20\\\"\", \"cmsearch_results\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"results_top_num\": \"\\\"5\\\"\", \"merge_overlap\": \"\\\"0.51\\\"\", \"cm_bitscore_sig\": \"\\\"1\\\"\", \"__rerun_remap_job_id__\": null, \"FASTA\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cut_type\": \"\\\"false\\\"\", \"cdhit\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"partition_type\": \"\\\"true\\\"\"}", 
             "tool_version": "0.1", 
             "type": "tool", 
             "uuid": "79fc9f8f-a9fc-4f41-aa6e-14d9acdcf5e8", 
@@ -1369,7 +1369,7 @@
                 "owner": "bgruening", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"A\": \"\\\"false\\\"\", \"nohmm\": \"\\\"false\\\"\", \"--acyk\": \"\\\"false\\\"\", \"bottomonly\": \"\\\"false\\\"\", \"g\": \"\\\"false\\\"\", \"inclusion_thresholds_opts\": \"{\\\"__current_case__\\\": 0, \\\"inclusion_thresholds_selector\\\": \\\"\\\"}\", \"__page__\": 0, \"max\": \"\\\"false\\\"\", \"notrunc\": \"\\\"false\\\"\", \"mid\": \"\\\"false\\\"\", \"seqdb\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"toponly\": \"\\\"false\\\"\", \"cm_opts\": \"{\\\"cmfile\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 1, \\\"cm_opts_selector\\\": \\\"histdb\\\"}\", \"reporting_thresholds_opts\": \"{\\\"reporting_thresholds_selector\\\": \\\"\\\", \\\"__current_case__\\\": 0}\", \"cyk\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null}", 
+            "tool_state": "{\"A\": \"\\\"false\\\"\", \"nohmm\": \"\\\"true\\\"\", \"--acyk\": \"\\\"false\\\"\", \"bottomonly\": \"\\\"false\\\"\", \"g\": \"\\\"true\\\"\", \"inclusion_thresholds_opts\": \"{\\\"__current_case__\\\": 0, \\\"inclusion_thresholds_selector\\\": \\\"\\\"}\", \"__page__\": 0, \"max\": \"\\\"false\\\"\", \"notrunc\": \"\\\"false\\\"\", \"mid\": \"\\\"false\\\"\", \"seqdb\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"toponly\": \"\\\"false\\\"\", \"cm_opts\": \"{\\\"cmfile\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 1, \\\"cm_opts_selector\\\": \\\"histdb\\\"}\", \"reporting_thresholds_opts\": \"{\\\"reporting_thresholds_selector\\\": \\\"\\\", \\\"__current_case__\\\": 0}\", \"cyk\": \"\\\"false\\\"\", \"__rerun_remap_job_id__\": null}", 
             "tool_version": "1.1.0.2", 
             "type": "tool", 
             "uuid": "98fb46d9-de34-4eb0-aa2c-9775b4fd2dff", 
@@ -1515,7 +1515,7 @@
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": 0, \"model_tree_files\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cm_max_eval\": \"\\\"0.001\\\"\", \"min_cluster_size\": \"\\\"3\\\"\", \"advanced_opts\": \"{\\\"__current_case__\\\": 0, \\\"advanced_opts_selector\\\": \\\"hide\\\"}\", \"merge_cluster_ol\": \"\\\"0.66\\\"\", \"iteration_num\": \"{\\\"final_partition_used_cmsearch\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"iteration_num_selector\\\": \\\"true\\\", \\\"final_partition_soft\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"CI\\\": \\\"2\\\", \\\"__current_case__\\\": 0}\", \"cm_min_bitscore\": \"\\\"20\\\"\", \"cmsearch_results\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"results_top_num\": \"\\\"5\\\"\", \"merge_overlap\": \"\\\"0.51\\\"\", \"cm_bitscore_sig\": \"\\\"1\\\"\", \"__rerun_remap_job_id__\": null, \"FASTA\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cut_type\": \"\\\"true\\\"\", \"cdhit\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"partition_type\": \"\\\"true\\\"\"}", 
+            "tool_state": "{\"__page__\": 0, \"model_tree_files\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cm_max_eval\": \"\\\"0.001\\\"\", \"min_cluster_size\": \"\\\"3\\\"\", \"advanced_opts\": \"{\\\"param_type\\\": {\\\"param_type_selector\\\": \\\"locarna\\\", \\\"__current_case__\\\": 1}, \\\"__current_case__\\\": 1, \\\"advanced_opts_selector\\\": \\\"show\\\"}\", \"merge_cluster_ol\": \"\\\"0.66\\\"\", \"iteration_num\": \"{\\\"final_partition_used_cmsearch\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"iteration_num_selector\\\": \\\"true\\\", \\\"final_partition_soft\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"CI\\\": \\\"2\\\", \\\"__current_case__\\\": 0}\", \"cm_min_bitscore\": \"\\\"20\\\"\", \"cmsearch_results\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"results_top_num\": \"\\\"5\\\"\", \"merge_overlap\": \"\\\"0.51\\\"\", \"cm_bitscore_sig\": \"\\\"1\\\"\", \"__rerun_remap_job_id__\": null, \"FASTA\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cut_type\": \"\\\"false\\\"\", \"cdhit\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"partition_type\": \"\\\"true\\\"\"}", 
             "tool_version": "0.1", 
             "type": "tool", 
             "uuid": "1dac24ab-fa75-41ec-bd20-e7e6b25244e2", 
@@ -1558,5 +1558,5 @@
             ]
         }
     }, 
-    "uuid": "670aa354-c106-4d9e-977d-cfb02ba88d70"
+    "uuid": "727ab5c0-ff73-498e-9d88-7daa8a219d7c"
 }
