@@ -61,6 +61,11 @@ For more details about this command line or specific usage, please consult the
 ### Using Kitematic graphic interface (Windows/MacOS):
 Please check this [step-by-step guide](./kitematic/kitematic.md).
 
+### Demo instance:
+A running demo instance of Galaxy-GraphClust is available at http://bit.ly/GalaxyGraphClust.
+Please note this instance is exactly the same Docker container which we offer here. It has limited computation 
+capacity, intended for demonstration and limited testing purposes and currently there is not planned to have long-time availability. We recommend to follow instructions above.
+
 # Usage - How to run Galaxy-GraphClust:
 
 ## Browser access to the server:
