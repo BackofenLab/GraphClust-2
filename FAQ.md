@@ -28,4 +28,15 @@
   ```
   For more information please check Docker documentation: https://docs.docker.com/engine/userguide/storagedriver/aufs-driver/
   
-  
+      
+# Registration and Login: 
+To have distinct history and workflows the Galaxy server requires each user to register for first access time. **By default anyone with access to the host network can register. No registration confirmation email will be sent to the given email.** So you can register with any custom (including non-existent) email address. There exist also a default Admin user [described here](https://bgruening.github.io/docker-galaxy-stable/users-passwords.html).  To change the default authorization settings please refer to the Galaxy Wiki section [Authentication](https://wiki.galaxyproject.org/Develop/Authentication) 
+
+* To register (first time only):
+    * On top right of the panel goto **User→Register**
+    * Provide a custom email address and password, confirm your password and enter a public name
+
+* To login:
+    * On top right of the panel goto **User→Login**
+    * Provide your registered email address and password
+
