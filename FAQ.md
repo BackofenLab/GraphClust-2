@@ -8,7 +8,7 @@
 2. Q: In my Ubuntu host system the container is running but constantly reports error: `could not connect to server: Connection refused`
 
    A0: Minimum supported Linux kernel is 4.2, please get your kernel by running `uname -r`
-   For e.e.g if you have Ubuntu 14.04 you can upgrade the kernel from 3.X to 4.2 version by this command.
+   E.g if you have Ubuntu 14.04 you can upgrade the kernel from 3.X to 4.2 version by this command.
    ```
    # For Ubuntu 14.04 with kernel 3.x
    sudo apt-get install linux-generic-lts-wily
