@@ -3,7 +3,7 @@
 1. Q: How can I stop a running docker instance of Galaxy-GraphClust?
 
    A: If you are runnig the container in interactive mode (i.e. docker run -i) use `Ctrl+C`. To stop ALL docker instances on your computer you can run this command in terminal:
-`docker stop $(docker ps -a -q)`
+`sudo docker stop $(sudo docker ps -a -q)`
 
 2. Q: In my Ubuntu host system the container is running but constantly reports error: `could not connect to server: Connection refused`
 
@@ -18,3 +18,4 @@
   sudo rm -rf /var/lib/docker/overlay*
   sudo service docker restart
   ```
+  For more information please check Docker documentation: https://docs.docker.com/engine/userguide/storagedriver/aufs-driver/
