@@ -10,7 +10,7 @@
    A0: Minimum supported Linux kernel is 4.2, please get your kernel by running `uname -r`
    For e.e.g if you have Ubuntu 14.04 you can upgrade the kernel from 3.X to 4.2 version by this command.
    ```
-   # For Ububntu 14.04 with kernel 3.x
+   # For Ubuntu 14.04 with kernel 3.x
    sudo apt-get install linux-generic-lts-wily
    # Reboot the system and continue with A1
    ```
