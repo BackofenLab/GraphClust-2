@@ -64,7 +64,7 @@ Please check this [step-by-step guide](./kitematic/kitematic.md).
 ### Demo instance:
 A running demo instance of Galaxy-GraphClust is available at http://bit.ly/GalaxyGraphClust.
 Please note this instance is exactly the same Docker container which we offer here. It has limited computation 
-capacity, intended for demonstration and limited testing purposes and currently it is not planned to have a long-time availability. We recommend to follow instructions above.
+capacity and intended for demonstration and testing purposes. Currently it is not planned to have a long-time availability. We recommend to follow instructions above.
 
 #### Setup support:
 In case you encountered problems please check the [FAQ page](./FAQ.md) or contact us using Issues tab.
