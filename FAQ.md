@@ -7,7 +7,16 @@
 
 2. Q: In my Ubuntu host system the container is running but constantly reports error: `could not connect to server: Connection refused`
 
-   A: Docker manager is tightly coupled with the host Linux kernel. Under certain Linux kernel the docker storage system might fail. 
+   A0: Minimum supported Linux kernel is 4.2, please get your kernel by running `uname -r`
+   For e.e.g if you have Ubuntu 14.04 you can upgrade the kernel from 3.X to 4.2 version by this command.
+   ```
+   # For Ububntu 14.04
+   sudo apt-get install linux-generic-lts-wily
+   Please restart the system aftertwards.
+   # Reboot the system and continue with A1
+   ```
+   
+   A1: Docker manager is tightly coupled with the host Linux kernel. Under certain Linux kernel the docker storage system might fail. 
    Please proceed with the following commands or contact you administrator:
 
   ```
@@ -19,3 +28,5 @@
   sudo service docker restart
   ```
   For more information please check Docker documentation: https://docs.docker.com/engine/userguide/storagedriver/aufs-driver/
+  
+  
