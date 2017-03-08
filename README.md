@@ -47,6 +47,15 @@ Docker supports the three major desktop operating systems  Linux, Windows and Ma
     The [Freibuger Galaxy Instance](http://galaxy.uni-freiburg.de) for example
     offers next to 700 other tools also the GraphClust Pipeline.
 
+### Recommend settings:
+#### Operating System versions:
+* Linux: Kernel 4.2> with linux-image-extra and linux-image-extra-virtual packages (check FAQ page)
+* Windows : 10
+* MacOSx: 10.12>
+
+#### Hardware:
+* 8GB RAM
+* 20GB Free disk space
 
 ## Running the Galaxy server
 ### From the command line (Linux/Windows/MacOS):
