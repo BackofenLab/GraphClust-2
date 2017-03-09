@@ -4,7 +4,7 @@
 
 Galaxy-GraphClust
 ========================
-Galaxy-GraphClust is a workflow for structural clustering of RNA secondary structures developed as an extension of [GraphClust](http://www.bioinf.uni-freiburg.de/Software/GraphClust) clustering pipeline ([Heyne et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3371856)) inside the Galaxy framework. It consists of a set of integrated Galaxy tools and different flavors of clustering workflows built upon these tools.
+Galaxy-GraphClust is a web-based workflow for structural clustering of RNA secondary structures developed as an extension of [GraphClust](http://www.bioinf.uni-freiburg.de/Software/GraphClust) clustering pipeline ([Heyne et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3371856)) inside the Galaxy framework. It consists of a set of integrated Galaxy tools and different flavors of clustering workflows built upon these tools.
 
 :whale: Galaxy-GraphClust Docker Image
 ========================
@@ -33,32 +33,30 @@ Table of Contents
 # Installation and Setup:
 ## Requirements:
 
-The only requirement to run this Webserver locally is [Docker](https://docs.docker.com/installation).
+The only requirement to run this webserver locally is [Docker](https://docs.docker.com/installation).
 Docker supports the three major desktop operating systems  Linux, Windows and Mac OSX. Please refer to Docker [installation guideline](https://docs.docker.com/installation) for details.
 
-  * For Windows and Mac systems it is additinally possible
+  * For Windows and Mac systems it is additionally possible
     to use [Kitematic](https://kitematic.com) and launch
-    Galaxy GraphClust Flavor from the OS graphical user interface.
+    Galaxy GraphClust using the OS graphical user interface.
 
-  * Alternative to launching our Docker container, having admin access
-    to any Galaxy instance will enable you to install all needed tools to run the 
-    GraphClust pipeline. All tools are listed in 
-    [`graphclust.yml`](https://github.com/BackofenLab/docker-galaxy-graphclust/blob/master/graphclust.yml).
-    The [Freibuger Galaxy Instance](http://galaxy.uni-freiburg.de) for example
+  * Alternatively Galaxy-GraphClust can be integrated into a running Galaxy server. All the Galaxy-GraphClust tools and workflows needed to run the 
+    GraphClust pipeline are listed in [workflows](./workflows/) and 
+    [tools-list](graphclust.yml).
+    The [Freibug Galaxy Instance](http://galaxy.uni-freiburg.de) for example
     offers next to 700 other tools also the GraphClust Pipeline.
 
 
 ## Running the Galaxy server
-### From the command line (Linux/Windows/MacOS):
+#### From the command line (Linux/Windows/MacOS):
 
 ```bash
 docker run -i -t -p 8080:80 backofenlab/docker-galaxy-graphclust
 ```
 
-For more details about this command line or specific usage, please consult the
-[`README`](https://github.com/bgruening/docker-galaxy-stable/blob/master/README.md) of the main Galaxy Docker image, on which the current image is based.
+For more details about this command line or specific usage, please consult the Galaxy Docker [`guide`](https://github.com/bgruening/docker-galaxy-stable/blob/master/README.md).
 
-### Using Kitematic graphic interface (Windows/MacOS):
+#### Using graphic interface (Windows/MacOS):
 Please check this [step-by-step guide](./kitematic/kitematic.md).
 
 ### Demo instance:
@@ -67,17 +65,17 @@ Please note this instance is exactly the same Docker container which we offer he
 capacity and intended for demonstration and testing purposes. Currently it is not planned to have a long-time availability. We recommend to follow instructions above.
 
 #### Setup support:
-In case you encountered problems please first check the [FAQ page](./FAQ.md) and contact us using Issues tab.
+In case you encountered problems please use the recommended settings, check the [FAQs](./FAQ.md) or contact us via [*Issues*](https://github.com/BackofenLab/docker-galaxy-graphclust/issues) section of the repository.
 
 #### Recommended settings:
-**Operating System versions:**
-* Linux: Kernel 4.2> with linux-image-extra and linux-image-extra-virtual packages (check FAQ page)
-* Windows : 10
-* MacOSx: 10.12>
+**Galaxy-GraphClust has been tested One of these operating systems:**
+* *Windows* : 10 using [Kitematic](https://kitematic.com/)
+* *MacOSx*: 10.1x or higher using [Kitematic](https://kitematic.com/)
+* *Linux*: Kernel 4.2 or higher, preferably with aufs support (see [FAQ](FAQ.md))
 
 **Hardware:**
-* 8GB RAM
-* 20GB Free disk space
+* Minimum 8GB RAM
+* Minimum 20GB Free disk space
 
 
 # Usage - How to run Galaxy-GraphClust:
@@ -94,26 +92,26 @@ After running the Galaxy server, a web server is established under the host IP/U
 ## Help
 
 ### Video tutorial
-You can check this Youtube video on setting-up and running Galaxy-GraphClust.
+[This video tutorial](https://www.youtube.com/watch?v=fJ6tUt_6uas) can be helpful to get a visually comprehensive introduction on setting-up and running Galaxy-GraphClust.
 
-https://www.youtube.com/watch?v=fJ6tUt_6uas
 
 [![IMAGE ALT TEXT HERE](video-thumbnail.png)](https://www.youtube.com/watch?v=fJ6tUt_6uas)
 
 ### Interactive tours
 Interactive Tours are available for Galaxy and Galaxy-GraphClust. To run the tours please on top panel go to **Help→Interactive Tours** and click on one of the tours prefixed **GraphClust workflow**. You can check the other tours for a more general introduction to the Galaxy interface.
 
+#### [Frequently Asked Questions](FAQ.md) 
 
 GraphClust pipeline overview
 ===============================
 
-GraphClust pipeline for clustering similar RNA sequences together is a complex pipeline, for deatils please check GraphClust publication. Overall it consists of three major phases: a) sequence based pre-clustering b) encoding predicted RNA structurs as graph features c) iterative fast candidate clustering then refinement
+GraphClust pipeline for clustering similar RNA sequences together is a complex pipeline, for details please check GraphClust publication. Overall it consists of three major phases: a) sequence based pre-clustering b) encoding predicted RNA structures as graph features c) iterative fast candidate clustering then refinement
 
 ![GraphClust pipeline overview (Heyne et al. 2012)](https://raw.githubusercontent.com/BackofenLab/docker-galaxy-graphclust/master/graphclust_pipeline.png)
 
 *GraphClust pipeline overview (Heyne et al. 2012)*
 
-Below is the correspondance list of Galaxy-GraphClust tool names with each step of GraphClust:
+Below is the correspondence list of Galaxy-GraphClust tool names with each step of GraphClust:
 
 <!--   a) sequence based pre-clustering:
 b) encoding predicted RNA structures as graph features
@@ -130,11 +128,17 @@ b) encoding predicted RNA structures as graph features
 |7| Search_covariance_models | Scan full input sequences with Infernal's cmsearch to find missing cluster members |
 |8,9| Report results | Collect final clusters and create example alignments of top cluster members|
 
-### Input data:
+### Input:
 The input to the workflow is a set of putative RNA sequences in FASTA format. Inside the `sample_data` directory you can find examples of the input format. In this case the data is from a benchmark set based on Rfam 12.0 and additionally is optionally labeled with reference Rfam family members.
 
+### Configuring the workflows:
+Please proceed with the interactive tour named `GraphClust workflow step by step`, available under `Help->Interactive Tours`
+Check FAQs for understanding the frequently important parameters. 
+
 ### Output:
-The output contains the predicted clusters, where similar putative input RNA sequences form a cluster. Additionally overall status of the clusters and the matching of cluster elements is reported for each cluster. Please check the interactive tours and GraphClust [README](http://www.bioinf.uni-freiburg.de/Software/GraphClust/README) for more information about the reported info and files.
+The output contains the predicted clusters, where similar putative input RNA sequences form a cluster. Additionally overall status of the clusters and the matching of cluster elements is reported for each cluster. 
+
+Please check the interactive tours and GraphClust [README](http://www.bioinf.uni-freiburg.de/Software/GraphClust/README) for more information about the reported info and files.
 
 # Contributors
 
