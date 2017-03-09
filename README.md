@@ -47,15 +47,6 @@ Docker supports the three major desktop operating systems  Linux, Windows and Ma
     The [Freibuger Galaxy Instance](http://galaxy.uni-freiburg.de) for example
     offers next to 700 other tools also the GraphClust Pipeline.
 
-#### Recommend settings:
-**Operating System versions:**
-* Linux: Kernel 4.2> with linux-image-extra and linux-image-extra-virtual packages (check FAQ page)
-* Windows : 10
-* MacOSx: 10.12>
-
-**Hardware:**
-* 8GB RAM
-* 20GB Free disk space
 
 ## Running the Galaxy server
 ### From the command line (Linux/Windows/MacOS):
@@ -76,7 +67,18 @@ Please note this instance is exactly the same Docker container which we offer he
 capacity and intended for demonstration and testing purposes. Currently it is not planned to have a long-time availability. We recommend to follow instructions above.
 
 #### Setup support:
-In case you encountered problems please check the [FAQ page](./FAQ.md) or contact us using Issues tab.
+In case you encountered problems please first check the [FAQ page](./FAQ.md) and contact us using Issues tab.
+
+#### Recommended settings:
+**Operating System versions:**
+* Linux: Kernel 4.2> with linux-image-extra and linux-image-extra-virtual packages (check FAQ page)
+* Windows : 10
+* MacOSx: 10.12>
+
+**Hardware:**
+* 8GB RAM
+* 20GB Free disk space
+
 
 # Usage - How to run Galaxy-GraphClust:
 
@@ -90,8 +92,6 @@ After running the Galaxy server, a web server is established under the host IP/U
   * In **any computer with network connection to the host**: [http://HOSTIP:8080]()
 
 ## Help
-### Interactive tours
-Interactive Tours are available for Galaxy and Galaxy-GraphClust. To run the tours please on top panel go to **Help→Interactive Tours** and click on one of the tours prefixed **GraphClust workflow**. You can check the other tours for a more general introduction to the Galaxy interface.
 
 ### Video tutorial
 You can check this Youtube video on setting-up and running Galaxy-GraphClust.
@@ -99,6 +99,9 @@ You can check this Youtube video on setting-up and running Galaxy-GraphClust.
 https://www.youtube.com/watch?v=fJ6tUt_6uas
 
 [![IMAGE ALT TEXT HERE](video-thumbnail.png)](https://www.youtube.com/watch?v=fJ6tUt_6uas)
+
+### Interactive tours
+Interactive Tours are available for Galaxy and Galaxy-GraphClust. To run the tours please on top panel go to **Help→Interactive Tours** and click on one of the tours prefixed **GraphClust workflow**. You can check the other tours for a more general introduction to the Galaxy interface.
 
 
 GraphClust pipeline overview
