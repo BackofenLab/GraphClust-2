@@ -1,10 +1,14 @@
 ### Galaxy-GraphClust
 ## Step-by-step setup guide with Kitematic (Windows/MacOS):  ##
 
+0. Obtain and install Kitematic from https://kitematic.com/
+
+1. For detailed info you may check [Kitematic guide](https://docs.docker.com/kitematic/userguide/#docker-command-line-access)
+
 1. Run kitematic,  search for `graphclust` and click on `create` button
 <img src="./kitematic-1.png" width="800" />
 
-2. Wait for image to be downloaded
+2. Wait for image to be downloaded. With the first time run this step may take few minutes. 
 <img src="./kitematic-2.png" width="800" />
 
 3. Galaxy instance starts loading, wait for message `Binding and starting galaxy control worker for main` 
