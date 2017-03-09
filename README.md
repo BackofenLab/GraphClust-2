@@ -4,7 +4,7 @@
 
 Galaxy-GraphClust
 ========================
-Galaxy-GraphClust is a web-based workflow for structural clustering of RNA secondary structures developed as an instance of [GraphClust](http://www.bioinf.uni-freiburg.de/Software/GraphClust) Perl pipeline ([Heyne et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3371856)) inside the Galaxy framework. It consists of a set of integrated Galaxy tools and different flavors of clustering workflows built upon these tools.
+Galaxy-GraphClust is a web-based workflow for structural clustering of RNA secondary structures developed as an instance of [GraphClust](http://www.bioinf.uni-freiburg.de/Software/GraphClust) Perl pipeline inside the Galaxy framework. It consists of a set of integrated Galaxy tools and different flavors of clustering workflows built upon these tools.
 
 :whale: Galaxy-GraphClust Docker Image
 ========================
