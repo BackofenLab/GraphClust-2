@@ -3,6 +3,8 @@
 
 0. Obtain and install Kitematic from https://kitematic.com/
 
+1. For detailed info you may check [Kitematic guide](https://docs.docker.com/kitematic/userguide/#docker-command-line-access)
+
 1. Run kitematic,  search for `graphclust` and click on `create` button
 <img src="./kitematic-1.png" width="800" />
 
