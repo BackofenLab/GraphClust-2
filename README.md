@@ -78,6 +78,9 @@ In case you encountered problems please use the recommended settings, check the 
 * Minimum 20GB Free disk space
 
 
+#### Setup support:
+In case you encountered problems please check the [FAQ page](./FAQ.md) or contact us using Issues tab.
+
 # Usage - How to run Galaxy-GraphClust:
 
 ## Browser access to the server:
