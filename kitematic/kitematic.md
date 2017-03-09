@@ -1,6 +1,8 @@
 ### Galaxy-GraphClust
 ## Step-by-step setup guide with Kitematic (Windows/MacOS):  ##
 
+0. Obtain and install Kitematic from https://kitematic.com/
+
 1. Run kitematic,  search for `graphclust` and click on `create` button
 <img src="./kitematic-1.png" width="800" />
 
