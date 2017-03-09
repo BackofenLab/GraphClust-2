@@ -84,7 +84,7 @@ In case you encountered problems please check the [FAQ page](./FAQ.md) or contac
 # Usage - How to run Galaxy-GraphClust:
 
 ## Browser access to the server:
-After running the Galaxy server, a web server is established under the host IP/URL and designated port.
+After running the Galaxy server, a web server is established under the host IP/URL and designated port (default 8080).
 
 * Inside your browser goto IP/URL:PORT
 * Following same settings as previous step
