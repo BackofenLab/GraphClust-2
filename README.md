@@ -105,7 +105,11 @@ Interactive Tours are available for Galaxy and Galaxy-GraphClust. To run the tou
 
 ### Import or upload a workflow
 
-To import or upload an existing workflow, on the top panel go to **Workflow** menu. On top right side of the screen click on **Upload or import workflow** button. You can either upload workflow from your local system or by providing the URL of the workflow. To have an access to workflow menu you must be logged in. 
+To import or upload an existing workflow, on the top panel go to **Workflow** menu. On top right side of the screen click on **Upload or import workflow** button. You can either upload workflow from your local system or by providing the URL of the workflow. To have an access to workflow menu you must be logged in. You can download workflows from the following link 
+
+  * MotifFinder : [GraphClust-MotifFinder](https://raw.githubusercontent.com/BackofenLab/docker-galaxy-graphclust/master/workflows/GraphClust-MotifFinder.ga)
+  * Workflow for one round : [GraphClust_one](https://raw.githubusercontent.com/BackofenLab/docker-galaxy-graphclust/master/workflows/GraphClust_one.ga)
+  * Workflow for two rounds : [GraphClust_two](https://raw.githubusercontent.com/BackofenLab/docker-galaxy-graphclust/master/workflows/GraphClust_two.ga)
 
 
 #### [Frequently Asked Questions](FAQ.md) 
