@@ -109,7 +109,7 @@ To import or upload an existing workflow, on the top panel go to **Workflow** me
 
   * MotifFinder : [GraphClust-MotifFinder](https://raw.githubusercontent.com/BackofenLab/docker-galaxy-graphclust/master/workflows/GraphClust-MotifFinder.ga)
   * Workflow for one round : [GraphClust_one](https://raw.githubusercontent.com/BackofenLab/docker-galaxy-graphclust/master/workflows/GraphClust_one.ga)
-  * Workflow for two rounds : [GraphClust_two](https://raw.githubusercontent.com/BackofenLab/docker-galaxy-graphclust/master/workflows/GraphClust_two.ga)
+  * Workflow for two rounds : [GraphClust_two](https://github.com/BackofenLab/docker-galaxy-graphclust/blob/master/workflows/GraphClust_two.ga)
 
 
 #### [Frequently Asked Questions](FAQ.md) 
