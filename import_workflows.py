@@ -8,6 +8,7 @@ url = "http://localhost:8080"
 gi = galaxy.GalaxyInstance(url=url, email=admin_email, password=admin_pass)
 
 wf = galaxy.workflows.WorkflowClient(gi)
-wf.import_workflow_from_local_path('/galaxy-central/GraphClust_two.ga')
-wf.import_workflow_from_local_path('/galaxy-central/GraphClust_one.ga')
-wf.import_workflow_from_local_path('/galaxy-central/GraphClust-MotifFinder.ga')
+
+for filepath in os.listdir('/home/galaxy/'):
+    if filepath.endswith('.ga'):
+        wf.import_workflow_from_local_path( os.path.join('/home/galaxy/', filepath) )
