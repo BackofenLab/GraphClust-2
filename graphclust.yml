@@ -60,6 +60,13 @@ tools:
   install_resolver_dependencies: True
   install_tool_dependencies: False
 
+- name: structure_to_gspan
+  owner: rnateam
+  tool_panel_section_label: "GraphClust"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_resolver_dependencies: True
+  install_tool_dependencies: False
+
 - name: graphclust_mlocarna
   owner: rnateam
   tool_panel_section_label: "GraphClust"
