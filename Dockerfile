@@ -1,16 +1,11 @@
 # Galaxy - GraphClust
 
-FROM bgruening/galaxy-stable:17.01
+FROM bgruening/galaxy-stable:17.05
 
 MAINTAINER Björn A. Grüning, bjoern.gruening@gmail.com
 
 ENV GALAXY_CONFIG_BRAND GraphClust
 ENV ENABLE_TTS_INSTALL True
-
-# Enable Conda dependency resolution
-ENV GALAXY_CONFIG_CONDA_AUTO_INSTALL=True \
-    GALAXY_CONFIG_CONDA_AUTO_INIT=True \
-    GALAXY_CONFIG_USE_CACHED_DEPENDENCY_MANAGER=True
 
 # Install tools
 ADD graphclust.yml $GALAXY_ROOT/tools.yaml
