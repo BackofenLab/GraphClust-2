@@ -38,173 +38,103 @@
 
 api_key: admin
 galaxy_instance: http://localhost:8080
+install_resolver_dependencies: True
+install_tool_dependencies: False
 tools:
 - name: graphclust_cmfinder
   owner: rnateam
   tool_panel_section_label: "GraphClust"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: graphclust_postprocessing
   owner: rnateam
   tool_panel_section_label: "GraphClust"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: graphclust_fasta_to_gspan
   owner: rnateam
   tool_panel_section_label: "GraphClust"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: structure_to_gspan
   owner: rnateam
   tool_panel_section_label: "GraphClust"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: graphclust_mlocarna
   owner: rnateam
   tool_panel_section_label: "GraphClust"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: graphclust_nspdk
   owner: rnateam
   tool_panel_section_label: "GraphClust"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: graphclust_prepocessing_for_mlocarna
   owner: rnateam
   tool_panel_section_label: "GraphClust"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: graphclust_preprocessing
   owner: rnateam
   tool_panel_section_label: "GraphClust"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: graphclust_motif_finder_plot
   owner: rnateam
   tool_panel_section_label: "GraphClust"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: text_processing
   owner: bgruening
   tool_panel_section_id: "textutil"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: fasta_compute_length
   owner: devteam
   tool_panel_section_label: "FASTA manipulation tools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: fasta_formatter
   owner: devteam
   tool_panel_section_label: "FASTA manipulation tools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: fasta_nucleotide_changer
   owner: devteam
   tool_panel_section_label: "FASTA manipulation tools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: fasta_to_tabular
   owner: devteam
   tool_panel_section_label: "FASTA manipulation tools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: tabular_to_fasta
   owner: devteam
   tool_panel_section_label: "FASTA manipulation tools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: find_subsequences
   owner: bgruening
   tool_panel_section_label: "FASTA manipulation tools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: fasta_merge_files_and_filter_unique_sequences
   owner: galaxyp
   tool_panel_section_label: "FASTA manipulation tools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: get_orfs_or_cdss
   owner: peterjc
   tool_panel_section_label: "FASTA manipulation tools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: seq_filter_by_id
   owner: peterjc
   tool_panel_section_label: "FASTA manipulation tools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: seq_select_by_id 
   owner: peterjc
   tool_panel_section_label: "FASTA manipulation tools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: seq_rename
   owner: peterjc
   tool_panel_section_label: "FASTA manipulation tools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: True
-  install_tool_dependencies: False
 
 - name: infernal
   owner: bgruening
   tool_panel_section_label: "GraphClust"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
   revisions:
   - 'c47a7c52ac4f' #rev 4
-  install_resolver_dependencies: False
-  install_tool_dependencies: True
-  
+
 - name: cdhit
   owner: jjohnson
   tool_panel_section_label: "CD-HIT"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: False
-  install_tool_dependencies: True
 
 - name: viennarna_rnafold
   owner: rnateam
   tool_panel_section_label: "GraphClust"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_resolver_dependencies: False
-  install_tool_dependencies: True
