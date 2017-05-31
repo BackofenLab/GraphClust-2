@@ -13,14 +13,14 @@ This Docker image is a flavor of [Galaxy Docker image](https://github.com/bgruen
 Table of Contents
 =================
  
-   * [Installation and Setup:](#installation-and-setup)
-      * [Requirements:](#requirements)
+   * [Installation and Setup](#installation-and-setup)
+      * [Requirements](#requirements)
       * [Running the Galaxy server](#running-the-galaxy-server)
-         * [From the command line (Linux/Windows/MacOS):](#from-the-command-line-linuxwindowsmacos)
-         * [Using Kitematic graphic interface (Windows/MacOS):](#using-kitematic-graphic-interface-windowsmacos)
-   * [Usage - How to run Galaxy-GraphClust:](#usage---how-to-run-galaxy-graphclust)
-      * [Browser access to the server:](#browser-access-to-the-server)
-      * [Registration and Login:](#registration-and-login)
+         * [From the command line (Linux/Windows/MacOS)](#from-the-command-line-linuxwindowsmacos)
+         * [Using Kitematic graphic interface (Windows/MacOS)](#using-kitematic-graphic-interface-windowsmacos)
+   * [Usage - How to run Galaxy-GraphClust](#usage---how-to-run-galaxy-graphclust)
+      * [Browser access to the server](#browser-access-to-the-server)
+      * [Registration and Login](#registration-and-login)
       * [Help](#help)
          * [Interactive tours](#interactive-tours)
          * [Video tutorial](#video-tutorial)
