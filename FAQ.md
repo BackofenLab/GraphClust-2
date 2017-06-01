@@ -16,7 +16,7 @@
   sudo apt-get install linux-image-extra-$(uname -r)  linux-image-extra-virtual
   sudo modprobe aufs
   sudo service docker stop
-  sudo rm -rf /var/lib/docker/overlay*
+  sudo rm -rf /var/lib/docker/overlay2
   sudo service docker restart
   ```
   For more information please check Docker documentation: https://docs.docker.com/engine/userguide/storagedriver/aufs-driver/
