@@ -12,19 +12,14 @@ ADD graphclust.yml $GALAXY_ROOT/tools.yaml
 RUN install-tools $GALAXY_ROOT/tools.yaml && \
     /tool_deps/_conda/bin/conda clean --tarballs
 
-ADD ./tours/graphclust_tutorial.yaml $GALAXY_ROOT/config/plugins/tours/graphclust.tutorial.yaml
-ADD ./tours/graphclust_step_by_step.yaml $GALAXY_ROOT/config/plugins/tours/graphclust.step_by_step.yaml
-ADD ./tours/graphclust_very_short.yaml $GALAXY_ROOT/config/plugins/tours/graphclust.short.yaml
+# Add Galaxy interactive tours
+ADD ./tours/* $GALAXY_ROOT/config/plugins/tours/
 
 # Data libraries
-ADD setup_data_libraries.py $GALAXY_ROOT/setup_data_libraries.py
 ADD library_data.yaml $GALAXY_ROOT/library_data.yaml
 
-# Hacky script to import workflows into Galaxy after installation. I would argue this step is redundant.
-ADD import_workflows.py $GALAXY_ROOT/import_workflows.py
-ADD ./workflows/GraphClust_one.ga $GALAXY_ROOT/GraphClust_one.ga
-ADD ./workflows/GraphClust_two.ga $GALAXY_ROOT/GraphClust_two.ga
-ADD ./workflows/GraphClust-MotifFinder.ga $GALAXY_ROOT/GraphClust-MotifFinder.ga
+# Add workflows to the Docker image
+ADD ./workflows/* $GALAXY_ROOT/workflows/
 
 # Download training data and populate the data library
 RUN startup_lite && \
