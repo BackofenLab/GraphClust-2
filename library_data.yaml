@@ -1,5 +1,7 @@
 libraries:
     - name: "FASTA"
       files:
-        - https://raw.githubusercontent.com/eteriSokhoyan/test-data/master/cliques-high-representatives.fa
-        - https://raw.githubusercontent.com/eteriSokhoyan/test-data/master/cliques-low-representatives.fa
+        - url: https://raw.githubusercontent.com/eteriSokhoyan/test-data/master/cliques-high-representatives.fa
+          file_type: fasta
+        - url: https://raw.githubusercontent.com/eteriSokhoyan/test-data/master/cliques-low-representatives.fa
+          file_type: fasta
