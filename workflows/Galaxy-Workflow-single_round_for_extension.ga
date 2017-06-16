@@ -2,11 +2,12 @@
     "a_galaxy_workflow": "true", 
     "annotation": "", 
     "format-version": "0.1", 
-    "name": "single_round_for_extension (imported from uploaded file)", 
+    "name": "single_round_for_extension (imported from uploaded file) (imported from uploaded file)", 
     "steps": {
         "0": {
             "annotation": "", 
             "content_id": null, 
+            "errors": null, 
             "id": 0, 
             "input_connections": {}, 
             "inputs": [
@@ -22,7 +23,6 @@
                 "left": 137.5, 
                 "top": 190.5
             }, 
-            "tool_errors": null, 
             "tool_id": null, 
             "tool_state": "{\"collection_type\": \"list\", \"name\": \"data_svector_col\"}", 
             "tool_version": null, 
@@ -39,6 +39,7 @@
         "1": {
             "annotation": "", 
             "content_id": null, 
+            "errors": null, 
             "id": 1, 
             "input_connections": {}, 
             "inputs": [
@@ -54,7 +55,6 @@
                 "left": 217, 
                 "top": 314
             }, 
-            "tool_errors": null, 
             "tool_id": null, 
             "tool_state": "{\"name\": \"data_fasta\"}", 
             "tool_version": null, 
@@ -71,6 +71,7 @@
         "2": {
             "annotation": "", 
             "content_id": null, 
+            "errors": null, 
             "id": 2, 
             "input_connections": {}, 
             "inputs": [
@@ -86,7 +87,6 @@
                 "left": 218, 
                 "top": 409
             }, 
-            "tool_errors": null, 
             "tool_id": null, 
             "tool_state": "{\"name\": \"data_names\"}", 
             "tool_version": null, 
@@ -103,6 +103,7 @@
         "3": {
             "annotation": "", 
             "content_id": null, 
+            "errors": null, 
             "id": 3, 
             "input_connections": {}, 
             "inputs": [
@@ -118,7 +119,6 @@
                 "left": 189, 
                 "top": 525
             }, 
-            "tool_errors": null, 
             "tool_id": null, 
             "tool_state": "{\"name\": \"blacklist\"}", 
             "tool_version": null, 
@@ -135,39 +135,8 @@
         "4": {
             "annotation": "", 
             "content_id": null, 
+            "errors": null, 
             "id": 4, 
-            "input_connections": {}, 
-            "inputs": [
-                {
-                    "description": "", 
-                    "name": "fast_cluster_last_round"
-                }
-            ], 
-            "label": "fast_cluster_last_round", 
-            "name": "Input dataset", 
-            "outputs": [], 
-            "position": {
-                "left": 224, 
-                "top": 709
-            }, 
-            "tool_errors": null, 
-            "tool_id": null, 
-            "tool_state": "{\"name\": \"fast_cluster_last_round\"}", 
-            "tool_version": null, 
-            "type": "data_input", 
-            "uuid": "debc9c24-2768-4196-9c4d-e41d71cc4f28", 
-            "workflow_outputs": [
-                {
-                    "label": null, 
-                    "output_name": "output", 
-                    "uuid": "4aa662ab-b281-4583-b246-d5cf9cf670f0"
-                }
-            ]
-        }, 
-        "5": {
-            "annotation": "", 
-            "content_id": null, 
-            "id": 5, 
             "input_connections": {}, 
             "inputs": [
                 {
@@ -182,7 +151,6 @@
                 "left": 223, 
                 "top": 632
             }, 
-            "tool_errors": null, 
             "tool_id": null, 
             "tool_state": "{\"name\": \"final_part_soft\"}", 
             "tool_version": null, 
@@ -196,9 +164,42 @@
                 }
             ]
         }, 
+        "5": {
+            "annotation": "", 
+            "content_id": null, 
+            "errors": null, 
+            "id": 5, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "fast_cluster_last_round"
+                }
+            ], 
+            "label": "fast_cluster_last_round", 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 224, 
+                "top": 709
+            }, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"fast_cluster_last_round\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "debc9c24-2768-4196-9c4d-e41d71cc4f28", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "4aa662ab-b281-4583-b246-d5cf9cf670f0"
+                }
+            ]
+        }, 
         "6": {
             "annotation": "", 
             "content_id": null, 
+            "errors": null, 
             "id": 6, 
             "input_connections": {}, 
             "inputs": [
@@ -214,7 +215,6 @@
                 "left": 488, 
                 "top": 597
             }, 
-            "tool_errors": null, 
             "tool_id": null, 
             "tool_state": "{\"name\": \"data_map\"}", 
             "tool_version": null, 
@@ -231,6 +231,7 @@
         "7": {
             "annotation": "", 
             "content_id": null, 
+            "errors": null, 
             "id": 7, 
             "input_connections": {}, 
             "inputs": [
@@ -246,7 +247,6 @@
                 "left": 961, 
                 "top": 738
             }, 
-            "tool_errors": null, 
             "tool_id": null, 
             "tool_state": "{\"name\": \"FASTA_zip\"}", 
             "tool_version": null, 
@@ -263,6 +263,7 @@
         "8": {
             "annotation": "", 
             "content_id": null, 
+            "errors": null, 
             "id": 8, 
             "input_connections": {}, 
             "inputs": [
@@ -278,7 +279,6 @@
                 "left": 1110, 
                 "top": 924
             }, 
-            "tool_errors": null, 
             "tool_id": null, 
             "tool_state": "{\"name\": \"final_part_used_cmsearch\"}", 
             "tool_version": null, 
@@ -295,6 +295,7 @@
         "9": {
             "annotation": "", 
             "content_id": null, 
+            "errors": null, 
             "id": 9, 
             "input_connections": {}, 
             "inputs": [
@@ -310,7 +311,6 @@
                 "left": 1098, 
                 "top": 1020
             }, 
-            "tool_errors": null, 
             "tool_id": null, 
             "tool_state": "{\"name\": \"combined_cmsearch_output\"}", 
             "tool_version": null, 
@@ -327,6 +327,7 @@
         "10": {
             "annotation": "", 
             "content_id": null, 
+            "errors": null, 
             "id": 10, 
             "input_connections": {}, 
             "inputs": [
@@ -342,7 +343,6 @@
                 "left": 1455, 
                 "top": 651
             }, 
-            "tool_errors": null, 
             "tool_id": null, 
             "tool_state": "{\"name\": \"data_fasta_scan\"}", 
             "tool_version": null, 
@@ -359,6 +359,7 @@
         "11": {
             "annotation": "", 
             "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_nspdk/NSPDK_candidateClust/9.2", 
+            "errors": null, 
             "id": 11, 
             "input_connections": {
                 "data_fasta": {
@@ -378,11 +379,11 @@
                     "output_name": "output"
                 }, 
                 "iteration_num|fast_cluster_last_round": {
-                    "id": 4, 
+                    "id": 5, 
                     "output_name": "output"
                 }, 
                 "iteration_num|final_partition_soft": {
-                    "id": 5, 
+                    "id": 4, 
                     "output_name": "output"
                 }
             }, 
@@ -405,11 +406,11 @@
                 }, 
                 {
                     "description": "runtime parameter for tool NSPDK_candidateClusters", 
-                    "name": "data_names"
+                    "name": "data_svector"
                 }, 
                 {
                     "description": "runtime parameter for tool NSPDK_candidateClusters", 
-                    "name": "data_svector"
+                    "name": "data_names"
                 }
             ], 
             "label": null, 
@@ -466,15 +467,14 @@
                     "output_name": "fast_cluster_sim_m"
                 }
             }, 
-            "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_nspdk/NSPDK_candidateClust/9.2", 
             "tool_shed_repository": {
-                "changeset_revision": "9b5fb987a484", 
+                "changeset_revision": "2aaf391798a3", 
                 "name": "graphclust_nspdk", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"knn\": \"\\\"20\\\"\", \"max_dist_relations\": \"\\\"3\\\"\", \"nhf\": \"\\\"500\\\"\", \"noCache\": \"\\\"true\\\"\", \"__page__\": 0, \"usn\": \"\\\"true\\\"\", \"__rerun_remap_job_id__\": null, \"oc\": \"\\\"true\\\"\", \"iteration_num\": \"{\\\"CI\\\": \\\"3\\\", \\\"final_partition_soft\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"iteration_num_selector\\\": \\\"true\\\", \\\"GLOBAL_hit_blacklist_overlap\\\": \\\"0.2\\\", \\\"blacklist\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0, \\\"fast_cluster_last_round\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\", \"ensf\": \"\\\"5\\\"\", \"data_fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"max_rad\": \"\\\"3\\\"\", \"data_svector\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"nspdk_nhf_max\": \"\\\"1000\\\"\", \"nspdk_nhf_step\": \"\\\"25\\\"\", \"GLOBAL_num_clusters\": \"\\\"100\\\"\", \"data_names\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_state": "{\"knn\": \"\\\"20\\\"\", \"max_dist_relations\": \"\\\"3\\\"\", \"nhf\": \"\\\"500\\\"\", \"noCache\": \"\\\"true\\\"\", \"__page__\": 0, \"usn\": \"\\\"true\\\"\", \"__rerun_remap_job_id__\": null, \"oc\": \"\\\"true\\\"\", \"iteration_num\": \"{\\\"CI\\\": \\\"3\\\", \\\"final_partition_soft\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"iteration_num_selector\\\": \\\"true\\\", \\\"GLOBAL_hit_blacklist_overlap\\\": \\\"0.2\\\", \\\"blacklist\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"__current_case__\\\": 0, \\\"fast_cluster_last_round\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\", \"ensf\": \"\\\"5\\\"\", \"data_fasta\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"max_rad\": \"\\\"3\\\"\", \"data_names\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"nspdk_nhf_max\": \"\\\"1000\\\"\", \"nspdk_nhf_step\": \"\\\"25\\\"\", \"GLOBAL_num_clusters\": \"\\\"100\\\"\", \"data_svector\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
             "tool_version": "9.2", 
             "type": "tool", 
             "uuid": "233690ab-1718-46e6-aebf-2a98d082cc47", 
@@ -494,6 +494,7 @@
         "12": {
             "annotation": "", 
             "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_prepocessing_for_mlocarna/preMloc/0.1.0", 
+            "errors": null, 
             "id": 12, 
             "input_connections": {
                 "data_map": {
@@ -586,10 +587,9 @@
                     "output_name": "trees"
                 }
             }, 
-            "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_prepocessing_for_mlocarna/preMloc/0.1.0", 
             "tool_shed_repository": {
-                "changeset_revision": "b8882b83885c", 
+                "changeset_revision": "550ddcf5384c", 
                 "name": "graphclust_prepocessing_for_mlocarna", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -603,6 +603,7 @@
         "13": {
             "annotation": "", 
             "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_mlocarna/locarna_best_subtree/0.1.0", 
+            "errors": null, 
             "id": 13, 
             "input_connections": {
                 "center_fa_file": {
@@ -659,10 +660,9 @@
                     "output_name": "model_tree_stk"
                 }
             }, 
-            "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_mlocarna/locarna_best_subtree/0.1.0", 
             "tool_shed_repository": {
-                "changeset_revision": "859ee7d8f207", 
+                "changeset_revision": "98e9bc1fb249", 
                 "name": "graphclust_mlocarna", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
@@ -676,6 +676,7 @@
         "14": {
             "annotation": "", 
             "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_cmfinder/cmFinder/0.1.0", 
+            "errors": null, 
             "id": 14, 
             "input_connections": {
                 "cmfinder_fa": {
@@ -690,11 +691,11 @@
             "inputs": [
                 {
                     "description": "runtime parameter for tool cmfinder", 
-                    "name": "model_tree_stk"
+                    "name": "cmfinder_fa"
                 }, 
                 {
                     "description": "runtime parameter for tool cmfinder", 
-                    "name": "cmfinder_fa"
+                    "name": "model_tree_stk"
                 }
             ], 
             "label": null, 
@@ -716,15 +717,14 @@
                     "output_name": "model_cmfinder_stk"
                 }
             }, 
-            "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_cmfinder/cmFinder/0.1.0", 
             "tool_shed_repository": {
-                "changeset_revision": "511da75c73be", 
+                "changeset_revision": "7e7f43d58e13", 
                 "name": "graphclust_cmfinder", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"cmfinder_fa\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"model_tree_stk\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"gap_threshold_opts\": \"{\\\"gap_threshold_opts_selector\\\": \\\"--g\\\", \\\"__current_case__\\\": 0, \\\"gap\\\": \\\"1.0\\\"}\"}", 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"gap_threshold_opts\": \"{\\\"gap_threshold_opts_selector\\\": \\\"--g\\\", \\\"__current_case__\\\": 0, \\\"gap\\\": \\\"1.0\\\"}\", \"model_tree_stk\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cmfinder_fa\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
             "tool_version": "0.1.0", 
             "type": "tool", 
             "uuid": "a977a0b7-b820-439d-811c-c7519ee5f1e2", 
@@ -733,6 +733,7 @@
         "15": {
             "annotation": "", 
             "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/infernal/infernal_cmbuild/1.1.0.2", 
+            "errors": null, 
             "id": 15, 
             "input_connections": {
                 "alignment_infile": {
@@ -783,7 +784,6 @@
                     "output_name": "summary_outfile"
                 }
             }, 
-            "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/infernal/infernal_cmbuild/1.1.0.2", 
             "tool_shed_repository": {
                 "changeset_revision": "c47a7c52ac4f", 
@@ -800,6 +800,7 @@
         "16": {
             "annotation": "", 
             "content_id": "toolshed.g2.bx.psu.edu/repos/bgruening/infernal/infernal_cmsearch/1.1.0.2", 
+            "errors": null, 
             "id": 16, 
             "input_connections": {
                 "cm_opts|cmfile": {
@@ -849,7 +850,6 @@
                     "output_name": "outfile"
                 }
             }, 
-            "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/bgruening/infernal/infernal_cmsearch/1.1.0.2", 
             "tool_shed_repository": {
                 "changeset_revision": "c47a7c52ac4f", 
@@ -866,6 +866,7 @@
         "17": {
             "annotation": "", 
             "content_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_postprocessing/glob_report/0.1", 
+            "errors": null, 
             "id": 17, 
             "input_connections": {
                 "FASTA": {
@@ -881,7 +882,7 @@
                     "output_name": "output"
                 }, 
                 "iteration_num|final_partition_soft": {
-                    "id": 5, 
+                    "id": 4, 
                     "output_name": "output"
                 }, 
                 "iteration_num|final_partition_used_cmsearch": {
@@ -912,11 +913,11 @@
                 }, 
                 {
                     "description": "runtime parameter for tool cluster_collection_report", 
-                    "name": "cmsearch_results"
+                    "name": "FASTA"
                 }, 
                 {
                     "description": "runtime parameter for tool cluster_collection_report", 
-                    "name": "FASTA"
+                    "name": "cmsearch_results"
                 }, 
                 {
                     "description": "runtime parameter for tool cluster_collection_report", 
@@ -1016,15 +1017,14 @@
                     "output_name": "topSecondaryStruct"
                 }
             }, 
-            "tool_errors": null, 
             "tool_id": "toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_postprocessing/glob_report/0.1", 
             "tool_shed_repository": {
-                "changeset_revision": "044bb294db78", 
+                "changeset_revision": "23dc3b4545d5", 
                 "name": "graphclust_postprocessing", 
                 "owner": "rnateam", 
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             }, 
-            "tool_state": "{\"__page__\": 0, \"model_tree_files\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cm_max_eval\": \"\\\"0.001\\\"\", \"min_cluster_size\": \"\\\"3\\\"\", \"advanced_opts\": \"{\\\"__current_case__\\\": 0, \\\"advanced_opts_selector\\\": \\\"hide\\\"}\", \"merge_cluster_ol\": \"\\\"0.66\\\"\", \"iteration_num\": \"{\\\"final_partition_used_cmsearch\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"CI\\\": \\\"3\\\", \\\"final_partition_soft\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"iteration_num_selector\\\": \\\"true\\\", \\\"__current_case__\\\": 0, \\\"combined_cm\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\", \"cm_min_bitscore\": \"\\\"20\\\"\", \"cmsearch_results\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"results_top_num\": \"\\\"5\\\"\", \"merge_overlap\": \"\\\"0.51\\\"\", \"cm_bitscore_sig\": \"\\\"1\\\"\", \"__rerun_remap_job_id__\": null, \"FASTA\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cut_type\": \"\\\"false\\\"\", \"cdhit\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"partition_type\": \"\\\"true\\\"\"}", 
+            "tool_state": "{\"__page__\": 0, \"model_tree_files\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cm_max_eval\": \"\\\"0.001\\\"\", \"min_cluster_size\": \"\\\"3\\\"\", \"advanced_opts\": \"{\\\"__current_case__\\\": 0, \\\"advanced_opts_selector\\\": \\\"hide\\\"}\", \"merge_cluster_ol\": \"\\\"0.66\\\"\", \"iteration_num\": \"{\\\"final_partition_used_cmsearch\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"CI\\\": \\\"3\\\", \\\"final_partition_soft\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}, \\\"iteration_num_selector\\\": \\\"true\\\", \\\"__current_case__\\\": 0, \\\"combined_cm\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}\", \"cm_min_bitscore\": \"\\\"20\\\"\", \"cut_type\": \"\\\"false\\\"\", \"results_top_num\": \"\\\"5\\\"\", \"merge_overlap\": \"\\\"0.51\\\"\", \"cm_bitscore_sig\": \"\\\"1\\\"\", \"__rerun_remap_job_id__\": null, \"FASTA\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cmsearch_results\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cdhit\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"partition_type\": \"\\\"true\\\"\"}", 
             "tool_version": "0.1", 
             "type": "tool", 
             "uuid": "8f3852f6-5730-48c2-ae2c-7402a747de31", 
