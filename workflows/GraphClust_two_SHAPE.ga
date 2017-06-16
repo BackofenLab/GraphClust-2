@@ -2,7 +2,7 @@
     "a_galaxy_workflow": "true", 
     "annotation": "", 
     "format-version": "0.1", 
-    "name": "GrapClust-2-rounds-rnafold-SHAPE", 
+    "name": "GraphClust-2-rounds-rnafold-SHAPE", 
     "steps": {
         "0": {
             "annotation": "", 
