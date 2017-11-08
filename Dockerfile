@@ -1,6 +1,6 @@
 # Galaxy - GraphClust
 
-FROM bgruening/galaxy-stable:17.09
+FROM bgruening/galaxy-stable:17.05
 
 MAINTAINER Björn A. Grüning, bjoern.gruening@gmail.com
 
