@@ -132,7 +132,7 @@ tools:
   - 'c47a7c52ac4f' #rev 4
 
 - name: cdhit
-  owner: jjohnson
+  owner: bebatut
   tool_panel_section_label: "CD-HIT"
 
 - name: viennarna_rnafold
