@@ -1,6 +1,6 @@
 # Galaxy - GraphClust
 
-FROM quqy.io/bgruening/galaxy:17.09
+FROM quay.io/bgruening/galaxy:17.09
 
 MAINTAINER Björn A. Grüning, bjoern.gruening@gmail.com
 
