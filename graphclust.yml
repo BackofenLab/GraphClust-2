@@ -128,8 +128,6 @@ tools:
 - name: infernal
   owner: bgruening
   tool_panel_section_label: "GraphClust"
-  revisions:
-  - 'c47a7c52ac4f' #rev 4
 
 - name: cdhit
   owner: bebatut
