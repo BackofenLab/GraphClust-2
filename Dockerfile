@@ -20,7 +20,7 @@ ADD ./tours/* $GALAXY_ROOT/config/plugins/tours/
 ADD library_data.yaml $GALAXY_ROOT/library_data.yaml
 
 # Add workflows to the Docker image
-ADD ./workflows/* $GALAXY_ROOT/workflows/
+ADD ./workflows/*.ga $GALAXY_ROOT/workflows/
 
 # Download training data and populate the data library
 RUN startup_lite && \
