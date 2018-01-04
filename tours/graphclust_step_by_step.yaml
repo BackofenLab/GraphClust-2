@@ -56,7 +56,7 @@ steps:
       intro: "Links Acquired !"
       position: "top"
       textinsert:
-        https://github.com/eteriSokhoyan/test-data/raw/master/cliques-low-representatives.fa
+        https://github.com/BackofenLab/docker-galaxy-graphclust/raw/master/sample_data/cliques-low-representatives.fa
 
     - title: "<b>Data Acquisition</b>"
       element: "button#btn-start"
