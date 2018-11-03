@@ -8,10 +8,16 @@ ENV GALAXY_CONFIG_BRAND GraphClust
 ENV ENABLE_TTS_INSTALL True
 
 # Install tools
-COPY  graphclust.yml $GALAXY_ROOT/tools.yaml
+COPY  graphclust_tools.yml $GALAXY_ROOT/tools.yaml
+COPY  graphclust_utils.yml $GALAXY_ROOT/tools_2.yaml
 
 RUN install-tools $GALAXY_ROOT/tools.yaml && \
     /tool_deps/_conda/bin/conda clean --tarballs
+
+# Split into multiple layers, it seems that there is a max-layer size.
+RUN install-tools $GALAXY_ROOT/tools_2.yaml && \
+    /tool_deps/_conda/bin/conda clean --tarballs && \
+    rm /export/galaxy-central/ -rf 
 
 # Add Galaxy interactive tours
 ADD ./tours/* $GALAXY_ROOT/config/plugins/tours/
