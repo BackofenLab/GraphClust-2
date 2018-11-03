@@ -33,4 +33,3 @@ RUN startup_lite && \
 # Container Style
 ADD workflow_early.png $GALAXY_CONFIG_DIR/web/welcome_image.png
 ADD welcome.html $GALAXY_CONFIG_DIR/web/welcome.html
-
