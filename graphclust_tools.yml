@@ -60,19 +60,3 @@ tools:
 - name: graphclust_mlocarna
   owner: rnateam
   tool_panel_section_label: "GraphClust"
-
-- name: graphclust_nspdk
-  owner: rnateam
-  tool_panel_section_label: "GraphClust"
-
-- name: graphclust_prepocessing_for_mlocarna
-  owner: rnateam
-  tool_panel_section_label: "GraphClust"
-
-- name: graphclust_preprocessing
-  owner: rnateam
-  tool_panel_section_label: "GraphClust"
-
-- name: graphclust_motif_finder_plot
-  owner: rnateam
-  tool_panel_section_label: "GraphClust"
