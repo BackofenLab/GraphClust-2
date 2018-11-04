@@ -1,5 +1,4 @@
 # Galaxy - GraphClust
-
 FROM quay.io/bgruening/galaxy:dev
 
 MAINTAINER Björn A. Grüning, bjoern.gruening@gmail.com
