@@ -16,7 +16,6 @@ RUN install-tools $GALAXY_ROOT/tools.yaml && \
     /tool_deps/_conda/bin/conda clean --tarballs --yes && \
     rm /export/galaxy-central/ -rf
 
-
 # Split into multiple layers, it seems that there is a max-layer size.
 RUN install-tools $GALAXY_ROOT/tools_2.yaml && \
     /tool_deps/_conda/bin/conda clean --tarballs --yes && \
