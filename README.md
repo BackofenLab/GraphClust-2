@@ -98,7 +98,7 @@ After running the Galaxy server, a web server is established under the host IP/U
 [This video tutorial](https://www.youtube.com/watch?v=fJ6tUt_6uas) can be helpful to get a visually comprehensive introduction on setting-up and running Galaxy-GraphClust.
 
 
-[![IMAGE ALT TEXT HERE](./img/video-thumbnail.png)](https://www.youtube.com/watch?v=fJ6tUt_6uas)
+[![IMAGE ALT TEXT HERE](./assets/img/video-thumbnail.png)](https://www.youtube.com/watch?v=fJ6tUt_6uas)
 
 ### Interactive tours
 Interactive Tours are available for Galaxy and Galaxy-GraphClust. To run the tours please on top panel go to **Help→Interactive Tours** and click on one of the tours prefixed **GraphClust workflow**. You can check the other tours for a more general introduction to the Galaxy interface.
@@ -119,7 +119,7 @@ GraphClust pipeline overview
 
 GraphClust pipeline for clustering similar RNA sequences together is a complex pipeline, for details please check GraphClust publication. Overall it consists of three major phases: a) sequence based pre-clustering b) encoding predicted RNA structures as graph features c) iterative fast candidate clustering then refinement
 
-![GraphClust pipeline overview (Heyne et al. 2012)](./img/graphclust_pipeline.png)
+![GraphClust pipeline overview (Heyne et al. 2012)](./assets/img/graphclust_pipeline.png)
 
 *GraphClust pipeline overview (Heyne et al. 2012)*
 
