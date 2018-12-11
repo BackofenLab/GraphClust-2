@@ -42,5 +42,5 @@ RUN startup_lite && \
     # setup-data-libraries -i $GALAXY_ROOT/library_data.yaml -g http://localhost:8080 -u $GALAXY_DEFAULT_ADMIN_USER -p $GALAXY_DEFAULT_ADMIN_PASSWORD
 
 # Container Style
-ADD workflow_early.png $GALAXY_CONFIG_DIR/web/welcome_image.png
+ADD ./img/workflow_early.png $GALAXY_CONFIG_DIR/web/welcome_image.png
 ADD welcome.html $GALAXY_CONFIG_DIR/web/welcome.html
