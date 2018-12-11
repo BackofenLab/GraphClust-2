@@ -1,5 +1,5 @@
 [![DOI](https://zenodo.org/badge/76652676.svg)](https://zenodo.org/badge/latestdoi/76652676)
-[![Build Status](https://travis-ci.org/BackofenLab/graphclust-2.svg?branch=master)](https://travis-ci.org/BackofenLab/graphclust-2)
+[![Build Status](https://travis-ci.org/BackofenLab/GraphClust-2.svg?branch=master)](https://travis-ci.org/BackofenLab/GraphClust-2)
 [![Docker Repository on Quay](https://quay.io/repository/bgruening/galaxy-graphclust/status "Docker Repository on Quay")](https://quay.io/repository/bgruening/galaxy-graphclust)
 
 Galaxy-GraphClust
