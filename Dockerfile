@@ -7,9 +7,9 @@ ENV GALAXY_CONFIG_BRAND GraphClust
 ENV ENABLE_TTS_INSTALL True
 
 # Install tools
-COPY  graphclust_tools.yml $GALAXY_ROOT/tools.yaml
-COPY  graphclust_tools2.yml $GALAXY_ROOT/tools_2.yaml
-COPY  graphclust_utils.yml $GALAXY_ROOT/tools_3.yaml
+COPY  tools/graphclust_tools.yml $GALAXY_ROOT/tools.yaml
+COPY  tools/graphclust_tools2.yml $GALAXY_ROOT/tools_2.yaml
+COPY  tools/graphclust_utils.yml $GALAXY_ROOT/tools_3.yaml
 
 RUN install-tools $GALAXY_ROOT/tools.yaml && \
     /tool_deps/_conda/bin/conda clean --tarballs --yes && \
