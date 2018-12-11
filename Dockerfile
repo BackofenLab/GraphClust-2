@@ -28,7 +28,7 @@ RUN install-tools $GALAXY_ROOT/tools_3.yaml && \
 ADD ./tours/* $GALAXY_ROOT/config/plugins/tours/
 
 # Data libraries
-ADD library_data.yaml $GALAXY_ROOT/library_data.yaml
+ADD ./assets/scrips/library_data.yaml $GALAXY_ROOT/library_data.yaml
 
 # Add workflows to the Docker image
 ADD ./workflows/*.ga $GALAXY_ROOT/workflows/
