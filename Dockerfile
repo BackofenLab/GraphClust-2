@@ -7,9 +7,9 @@ ENV GALAXY_CONFIG_BRAND GraphClust
 ENV ENABLE_TTS_INSTALL True
 
 # Install tools
-COPY  ./assets/tools/graphclust_tools.yml $GALAXY_ROOT/tools.yaml
-COPY  ./assets/tools/graphclust_tools2.yml $GALAXY_ROOT/tools_2.yaml
-COPY  ./assets/tools/graphclust_utils.yml $GALAXY_ROOT/tools_3.yaml
+COPY ./assets/tools/graphclust_tools.yml $GALAXY_ROOT/tools.yaml
+COPY ./assets/tools/graphclust_tools2.yml $GALAXY_ROOT/tools_2.yaml
+COPY ./assets/tools/graphclust_utils.yml $GALAXY_ROOT/tools_3.yaml
 
 RUN install-tools $GALAXY_ROOT/tools.yaml && \
     /tool_deps/_conda/bin/conda clean --tarballs --yes && \
@@ -42,5 +42,5 @@ RUN startup_lite && \
     # setup-data-libraries -i $GALAXY_ROOT/library_data.yaml -g http://localhost:8080 -u $GALAXY_DEFAULT_ADMIN_USER -p $GALAXY_DEFAULT_ADMIN_PASSWORD
 
 # Container Style
-ADD ../assets/img/workflow_early.png $GALAXY_CONFIG_DIR/web/welcome_image.png
-ADD welcome.html $GALAXY_CONFIG_DIR/web/welcome.html
+ADD ./assets/img/workflow_early.png $GALAXY_CONFIG_DIR/web/welcome_image.png
+ADD ./assets/welcome.html $GALAXY_CONFIG_DIR/web/welcome.html
