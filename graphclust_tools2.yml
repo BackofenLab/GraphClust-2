@@ -41,26 +41,6 @@ galaxy_instance: http://localhost:8080
 install_resolver_dependencies: True
 install_tool_dependencies: False
 tools:
-- name: graphclust_cmfinder
-  owner: rnateam
-  tool_panel_section_label: "GraphClust"
-
-- name: graphclust_postprocessing
-  owner: rnateam
-  tool_panel_section_label: "GraphClust"
-
-- name: graphclust_fasta_to_gspan
-  owner: rnateam
-  tool_panel_section_label: "GraphClust"
-
-- name: structure_to_gspan
-  owner: rnateam
-  tool_panel_section_label: "GraphClust"
-
-- name: graphclust_mlocarna
-  owner: rnateam
-  tool_panel_section_label: "GraphClust"
-
 - name: graphclust_nspdk
   owner: rnateam
   tool_panel_section_label: "GraphClust"
@@ -74,65 +54,5 @@ tools:
   tool_panel_section_label: "GraphClust"
 
 - name: graphclust_motif_finder_plot
-  owner: rnateam
-  tool_panel_section_label: "GraphClust"
-
-- name: text_processing
-  owner: bgruening
-  tool_panel_section_id: "textutil"
-
-- name: fasta_compute_length
-  owner: devteam
-  tool_panel_section_label: "FASTA manipulation tools"
-
-- name: fasta_formatter
-  owner: devteam
-  tool_panel_section_label: "FASTA manipulation tools"
-
-- name: fasta_nucleotide_changer
-  owner: devteam
-  tool_panel_section_label: "FASTA manipulation tools"
-
-- name: fasta_to_tabular
-  owner: devteam
-  tool_panel_section_label: "FASTA manipulation tools"
-
-- name: tabular_to_fasta
-  owner: devteam
-  tool_panel_section_label: "FASTA manipulation tools"
-
-- name: find_subsequences
-  owner: bgruening
-  tool_panel_section_label: "FASTA manipulation tools"
-
-- name: fasta_merge_files_and_filter_unique_sequences
-  owner: galaxyp
-  tool_panel_section_label: "FASTA manipulation tools"
-
-- name: get_orfs_or_cdss
-  owner: peterjc
-  tool_panel_section_label: "FASTA manipulation tools"
-
-- name: seq_filter_by_id
-  owner: peterjc
-  tool_panel_section_label: "FASTA manipulation tools"
-
-- name: seq_select_by_id 
-  owner: peterjc
-  tool_panel_section_label: "FASTA manipulation tools"
-
-- name: seq_rename
-  owner: peterjc
-  tool_panel_section_label: "FASTA manipulation tools"
-
-- name: infernal
-  owner: bgruening
-  tool_panel_section_label: "GraphClust"
-
-- name: cdhit
-  owner: bebatut
-  tool_panel_section_label: "CD-HIT"
-
-- name: viennarna_rnafold
   owner: rnateam
   tool_panel_section_label: "GraphClust"
