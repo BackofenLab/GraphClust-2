@@ -56,3 +56,18 @@ tools:
 - name: graphclust_motif_finder_plot
   owner: rnateam
   tool_panel_section_label: "GraphClust"
+
+- name: graphclust_glob_report_no_align
+  owner: rnateam
+  tool_panel_section_label: "GraphClust"
+
+- name: graphclust_align_cluster
+  owner: rnateam
+  tool_panel_section_label: "GraphClust"
+
+- name: graphclust_aggregate_alignments
+  owner: rnateam
+  tool_panel_section_label: "GraphClust"
+
+  
+
