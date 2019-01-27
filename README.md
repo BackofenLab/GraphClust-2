@@ -1,7 +1,10 @@
 [![DOI](https://zenodo.org/badge/76652676.svg)](https://zenodo.org/badge/latestdoi/76652676)
 [![Build Status](https://travis-ci.org/BackofenLab/GraphClust-2.svg?branch=master)](https://travis-ci.org/BackofenLab/GraphClust-2)
+[![Build Status](https://img.shields.io/docker/pulls/backofenlab/docker-galaxy-graphclust.svg)](https://hub.docker.com/r/backofenlab/docker-galaxy-graphclust)
 <!-- [![Docker Repository on Quay](https://quay.io/repository/bgruening/GraphClust2/status "Docker Repository on Quay")](https://quay.io/repository/bgruening/galaxy-graphclust)
  -->
+ 
+ 
 GraphClust2
 ========================
 GraphClust2 is a  workflow for structural clustering of RNA secondary structures developed in inside the Galaxy framework. It consists of a set of integrated Galaxy tools and different flavors of clustering workflows built upon these tools.
