@@ -112,8 +112,8 @@ To import or upload an existing workflow, on the top panel go to **Workflow** me
 
 #### Workflows files:
   * MotifFinder : [GraphClust-MotifFinder](https://raw.githubusercontent.com/BackofenLab/GraphClust-2/master/workflows/GraphClust-MotifFinder.ga)
-  * Workflow for one round : [GraphClust_default_1r](https://raw.githubusercontent.com/BackofenLab/GraphClust-2/master/workflows/GraphClust_main_1r.ga)
-  * Additonal variations: [extra-workflows](./workflows/extra-workflows/)
+  * Workflow main : [GraphClust_main_1r](https://raw.githubusercontent.com/BackofenLab/GraphClust-2/master/workflows/GraphClust_main_1r.ga)
+  * Additonal variations: [extra-workflows](./workflows/extra-workflows/README.md)
 
 
 #### [Frequently Asked Questions](FAQ.md) 
@@ -121,7 +121,7 @@ To import or upload an existing workflow, on the top panel go to **Workflow** me
 Workflow overview
 ===============================
 
-GraphClust pipeline for clustering similar RNA sequences together is a complex pipeline, for details please check GraphClust publication. Overall it consists of three major phases: a) sequence based pre-clustering b) encoding predicted RNA structures as graph features c) iterative fast candidate clustering then refinement
+GraphClust pipeline for clustering similar RNA sequences together is a multi-step rather complex pipeline. Overall it consists of three major phases: a) sequence based pre-clustering b) encoding predicted RNA structures as graph features c) iterative fast candidate clustering then refinement
 
 <!-- ![GraphClust pipeline overview (Heyne et al. 2012)](./assets/img/graphclust_pipeline.png)
 
@@ -131,20 +131,17 @@ GraphClust pipeline for clustering similar RNA sequences together is a complex p
 
 Below is a coarse-grained correspondence list of GraphClust2 tool names with each step:
 
-<!--   a) sequence based pre-clustering:
-b) encoding predicted RNA structures as graph features
-  c) iterative fast candidate clustering then refinement
- --> 
-|   Stage  | Galaxy Tool Name | Description|   
+|   Stage  | Galaxy Tool Name | Description|
 | :--------------------: | :--------------- | :----------------|
-|1 | Preprocessing | Input preprocessing (fragmentation)|    
-|2 | fasta_gspan | Generation of structures via RNAshapes and conversion into graphs|
-|3 | NSPDK_sparseVect  | Generation of graph features via NSPDK |
-|4| NSPDK_candidateClusters | min-hash based clustering of all feature vectors, output top dense candidate clusters|
-|5| premLocarana,locarana_best_subtree, CMfinder | Locarna based clustering of each candidate cluster, all-vs-all pairwise alignments, create multiple alignments along guide tree, select best subtree,|
-|6|  Build_covariance_models |  create candidate model |
-|7| Search_covariance_models | Scan full input sequences with Infernal's cmsearch to find missing cluster members |
-|8,9| Report results | Collect final clusters and create example alignments of top cluster members|
+|1 | [Preprocessing](https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_preprocessing/preproc/0.5) | Input preprocessing (fragmentation)|
+|2 | [fasta_to_gspan](https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_fasta_to_gspan/gspan/0.4) | Generation of structures via RNAshapes and conversion into graphs|
+|3 | [NSPDK_sparseVect](https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_nspdk/nspdk_sparse/9.2.3) | Generation of graph features via NSPDK |
+|4| [NSPDK_candidateClusters](https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_nspdk/NSPDK_candidateClust/9.2.3) | min-hash based clustering of all feature vectors, output top dense candidate clusters|
+|5| [PGMA_locarna](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_prepocessing_for_mlocarna/preMloc/0.4),[locarna](https://usegalaxy.eu/tool_runner?tool_id=toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_mlocarna/locarna_best_subtree/0.4), [CMfinder](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_cmfinder/cmFinder/0.4) | Locarna based clustering of each candidate cluster, all-vs-all pairwise alignments, create multiple alignments along guide tree, select best subtree, and refine alignment.|
+|6| [Build covariance models](https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/bgruening/infernal/infernal_cmbuild/1.1.0.2) |  create candidate model |
+|7| [Search covariance models](https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/bgruening/infernal/infernal_cmsearch/1.1.0.2) | Scan full input sequences with Infernal's cmsearch to find missing cluster members |
+|8,9| [Report results](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu/repos/rnateam/graphclust_postprocessing/glob_report/0.5) and [conservation evaluations](https://usegalaxy.eu/?tool_id=toolshed.g2.bx.psu.edu/repos/rnateam%2Fgraphclust_aggregate_alignments/graphclust_aggregate_alignments/0.1) | Collect final clusters and create example alignments of top cluster members|
+
 
 ### Input:
 The input to the workflow is a set of putative RNA sequences in FASTA format. Inside the `sample_data` directory you can find examples of the input format. In this case the data is from a benchmark set based on Rfam 12.0 and additionally is optionally labeled with reference Rfam family members.

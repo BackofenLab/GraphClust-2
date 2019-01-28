@@ -1,0 +1,1 @@
+* Here you can find alternative pre-configures falvors of GraphClust-2 pipeline.
