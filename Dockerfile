@@ -25,7 +25,7 @@ RUN install-tools $GALAXY_ROOT/tools_3.yaml && \
     rm /export/galaxy-central/ -rf 
 
 # Add Galaxy interactive tours
-ADD ./tours/* $GALAXY_ROOT/config/plugins/tours/
+ADD ./assets/tours/* $GALAXY_ROOT/config/plugins/tours/
 
 # Data libraries
 ADD ./assets/library/library_data.yaml $GALAXY_ROOT/library_data.yaml

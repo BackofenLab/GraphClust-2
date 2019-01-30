@@ -40,7 +40,7 @@ The only requirement to run this webserver locally is [Docker](https://docs.dock
 Docker supports the three major desktop operating systems  Linux, Windows and Mac OSX. Please refer to Docker [installation guideline](https://docs.docker.com/installation) for details.
 
   * For Windows and Mac systems it is additionally possible
-    to use [Kitematic](./kitematic/kitematic.md) and launch
+    to use [Kitematic](./kitematic.md) and launch
     Galaxy GraphClust using the OS graphical user interface.
 
   * Alternatively GraphClust2 can be integrated into a running Galaxy server. All the GraphClust2 tools and workflows needed to run the 
