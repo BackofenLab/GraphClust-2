@@ -81,7 +81,7 @@ steps:
               This file contains annotated RNAs with human origin from RFAM database, from a mixture of RNA families."
       position: "top"
       textinsert:
-        https://github.com/BackofenLab/docker-galaxy-graphclust/raw/master/sample_data/cliques-low-representatives.fa
+        https://github.com/BackofenLab/docker-galaxy-graphclust/raw/master/data/Rfam-cliques-dataset/cliques-low-representatives.fa
 
     - title: "<b>Data Acquisition</b>"
       element: "button#btn-start"
