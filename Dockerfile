@@ -23,7 +23,7 @@ RUN install-tools $GALAXY_ROOT/tools_2.yaml && \
     # rm /export/galaxy-central/ -rf 
 
 RUN install-tools $GALAXY_ROOT/tools_3.yaml && \
-    /tool_deps/_conda/bin/conda clean --tarballs --yes &&\  
+    /tool_deps/_conda/bin/conda clean --tarballs --yes && \  
     rm /export/galaxy-central/ -rf 
 
 # Add Galaxy interactive tours
