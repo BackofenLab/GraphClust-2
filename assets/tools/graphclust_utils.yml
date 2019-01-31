@@ -49,14 +49,6 @@ tools:
   owner: devteam
   tool_panel_section_label: "FASTA manipulation tools"
 
-- name: fasta_formatter
-  owner: devteam
-  tool_panel_section_label: "FASTA manipulation tools"
-
-- name: fasta_nucleotide_changer
-  owner: devteam
-  tool_panel_section_label: "FASTA manipulation tools"
-
 - name: fasta_to_tabular
   owner: devteam
   tool_panel_section_label: "FASTA manipulation tools"
@@ -65,27 +57,7 @@ tools:
   owner: devteam
   tool_panel_section_label: "FASTA manipulation tools"
 
-- name: find_subsequences
-  owner: bgruening
-  tool_panel_section_label: "FASTA manipulation tools"
-
-- name: fasta_merge_files_and_filter_unique_sequences
-  owner: galaxyp
-  tool_panel_section_label: "FASTA manipulation tools"
-
-- name: get_orfs_or_cdss
-  owner: peterjc
-  tool_panel_section_label: "FASTA manipulation tools"
-
 - name: seq_filter_by_id
-  owner: peterjc
-  tool_panel_section_label: "FASTA manipulation tools"
-
-- name: seq_select_by_id 
-  owner: peterjc
-  tool_panel_section_label: "FASTA manipulation tools"
-
-- name: seq_rename
   owner: peterjc
   tool_panel_section_label: "FASTA manipulation tools"
 

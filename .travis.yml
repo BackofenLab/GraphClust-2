@@ -15,9 +15,9 @@ git:
 before_install:
   - wget https://raw.githubusercontent.com/bgruening/galaxy-flavor-testing/master/Makefile
   - make docker_install
-  - travis_wait 45 make docker_build
+  - travis_wait 90 make docker_build
   - make docker_run
-  - sleep 300
+  - sleep 60
 
 install:
   - make install
