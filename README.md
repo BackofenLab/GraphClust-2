@@ -13,7 +13,8 @@ GraphClust2 is a  workflow for scalable clustering of RNAs based on sequence and
 Table of Contents
 =================
    * [Availability](#availability)
-      * [<g-emoji class="g-emoji" alias="whale" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f433.png">🐳</g-emoji> GraphClust2 Docker Image](#whale-graphclust2-docker-image)
+     * [GraphClust2 on European Galaxy Server](#graphclust2-on-european-galaxy-server)
+     * [GraphClust2 Docker <g-emoji class="g-emoji" alias="whale" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f433.png">🐳</g-emoji> Image](#graphclust2-docker-whale-image) 
          * [Installation and Setup](#installation-and-setup)
             * [Requirements](#requirements)
          * [Running the Galaxy server](#running-the-galaxy-server)
@@ -40,13 +41,13 @@ Table of Contents
 
 
 # Availability 
+
+## GraphClust2 on European Galaxy Server
 GraphClust2 is accessible on European Galaxy server at:
 * [https://graphclust.usegalaxy.eu](https://graphclust.usegalaxy.eu)
 
+## GraphClust2 Docker :whale: Image 
 It is also possible to run GraphClust2 as a stand-alone solution using a Docker container that is a pre-configured flavor of the official [Galaxy Docker image](https://github.com/bgruening/docker-galaxy-stable).
-
-## :whale: GraphClust2 Docker Image
-=================
 This Docker image is a flavor of the Galaxy Docker image customized for GraphClust2 tools, tutorial interactive tours and workflows.
 
 ### Installation and Setup
