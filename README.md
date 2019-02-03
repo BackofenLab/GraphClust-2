@@ -12,8 +12,6 @@ GraphClust2 is a  workflow for scalable clustering of RNAs based on sequence and
 
 Table of Contents
 =================
-   * [GraphClust2](#graphclust2)
-   * [Table of Contents](#table-of-contents)
    * [Availability](#availability)
       * [GraphClust2 on European Galaxy Server](#graphclust2-on-european-galaxy-server)
       * [GraphClust2 Docker <g-emoji class="g-emoji" alias="whale" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f433.png">🐳</g-emoji> Image](#graphclust2-docker-whale-image)
