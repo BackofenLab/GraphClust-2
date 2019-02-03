@@ -1,9 +1,10 @@
+status GraphClust2:
+* container:
 [![DOI](https://zenodo.org/badge/76652676.svg)](https://zenodo.org/badge/latestdoi/76652676)
 [![Build Status](https://travis-ci.org/BackofenLab/GraphClust-2.svg?branch=master)](https://travis-ci.org/BackofenLab/GraphClust-2)
 [![Build Status](https://img.shields.io/docker/pulls/backofenlab/docker-galaxy-graphclust.svg)](https://hub.docker.com/r/backofenlab/docker-galaxy-graphclust)
-<!-- [![Docker Repository on Quay](https://quay.io/repository/bgruening/GraphClust2/status "Docker Repository on Quay")](https://quay.io/repository/bgruening/galaxy-graphclust)
- -->
- 
+* usegalaxy.eu: [![Build Status](https://build.galaxyproject.eu/job/usegalaxy-eu/job/workflow-testing/PYTHON=System-CPython-2.7,WORKFLOW=GraphClust2%2FGC-lite.ga/badge/icon)](https://build.galaxyproject.eu/job/usegalaxy-eu/job/workflow-testing/PYTHON=System-CPython-2.7,WORKFLOW=GraphClust2%2FGC-lite.ga/)
+
  
 GraphClust2
 ========================
