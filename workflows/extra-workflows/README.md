@@ -1,1 +1,1 @@
-* Here you can find alternative pre-configures falvors of GraphClust-2 pipeline.
+* Here you can find alternative pre-configures falvors of GraphClust-2 pipeline. Further descriptions within the directories.

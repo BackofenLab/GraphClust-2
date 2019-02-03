@@ -13,15 +13,14 @@ GraphClust2 is a  workflow for scalable clustering of RNAs based on sequence and
 Table of Contents
 =================
    * [Availability](#availability)
-     * [GraphClust2 on European Galaxy Server](#graphclust2-on-european-galaxy-server)
-     * [GraphClust2 Docker <g-emoji class="g-emoji" alias="whale" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f433.png">🐳</g-emoji> Image](#graphclust2-docker-whale-image) 
+      * [GraphClust2 on European Galaxy Server](#graphclust2-on-european-galaxy-server)
+      * [GraphClust2 Docker <g-emoji class="g-emoji" alias="whale" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f433.png">🐳</g-emoji> Image](#graphclust2-docker-whale-image)
          * [Installation and Setup](#installation-and-setup)
             * [Requirements](#requirements)
-         * [Running the Galaxy server](#running-the-galaxy-server)
+         * [Running the docker instance](#running-the-docker-instance)
             * [Using graphic interface (Windows/MacOS)](#using-graphic-interface-windowsmacos)
-      * [Installation on a running Galaxy instance](#installation-on-a-running-galaxy-instance)
-          + [Setup support](#setup-support)
-          + [Supported OSs](#supported-oss)
+      * [Installation on a Galaxy instance](#installation-on-a-galaxy-instance)
+         * [Setup support](#setup-support)
       * [Demo instance](#demo-instance)
    * [Usage - How to run GraphClust2](#usage---how-to-run-graphclust2)
       * [Browser access to the server](#browser-access-to-the-server)
@@ -29,13 +28,13 @@ Table of Contents
          * [Docker instance](#docker-instance)
          * [Video tutorial](#video-tutorial)
          * [Interactive tours](#interactive-tours)
-         * [Import additional workflow flavors](#import-additional-workflow-flavors)
+         * [Import additional workflows](#import-additional-workflows)
+         * [Workflow flavors](#workflow-flavors)
             * [Workflows on the running server](#workflows-on-the-running-server)
-            * [<a href="FAQ.md">Frequently Asked Questions</a>](#frequently-asked-questions)
+      * [<a href="FAQ.md">Frequently Asked Questions</a>](#frequently-asked-questions)
    * [Workflow overview](#workflow-overview)
-       + [Input](#input)
-       + [Configuring the workflows](#configuring-the-workflows)
-       + [Output](#output)
+        * [Input](#input)
+        * [Output](#output)
    * [Support &amp; Bug Reports](#support--bug-reports)
    * [References](#references)
 
@@ -59,8 +58,20 @@ Docker supports the three major desktop operating systems  Linux, Windows and Ma
 A GUI client can also be used under Windows and Mac OS.
 Please follow the graphical instructions for using Kitematic client [here](./kitematic.md).
 
+**Hardware requirements:**
+* Minimum 8GB memory
+* Minimum 20GB free disk storage space, 100GB recommended.
 
-### Running the Galaxy server
+**Supported operating systems**
+
+GraphClust2 has been tested on these operating systems:
+* *Windows* : 10 using [Kitematic](https://kitematic.com/)
+* *MacOSx*: 10.1x or higher using [Kitematic](https://kitematic.com/)
+* *Linux*: Kernel 4.2 or higher, preferably with aufs support (see [FAQ](FAQ.md))
+
+
+
+### Running the docker instance
 From the command line:
 
 ```bash
@@ -72,25 +83,13 @@ For details about the docker commands please check the official guide [here](htt
 #### Using graphic interface (Windows/MacOS)
 Please check this [step-by-step guide](./kitematic/kitematic.md).
 
-## Installation on a running Galaxy instance
-GraphClust2 can be integrated into a running Galaxy server. All the GraphClust2 tools and workflows needed to run the 
+## Installation on a Galaxy instance
+GraphClust2 can be integrated into any available Galaxy server. All the GraphClust2 tools and workflows needed to run the 
     GraphClust pipeline are listed in [workflows](./workflows/) and 
     [tools-list](./assets/tools/).
 
 #### Setup support
 In case you encountered problems please use the recommended settings, check the [FAQs](./FAQ.md) or contact us via [*Issues*](https://github.com/BackofenLab/GraphClust-2/issues) section of the repository.
-
-
-
-#### Supported OSs
-GraphClust2 has been tested on these operating systems:
-* *Windows* : 10 using [Kitematic](https://kitematic.com/)
-* *MacOSx*: 10.1x or higher using [Kitematic](https://kitematic.com/)
-* *Linux*: Kernel 4.2 or higher, preferably with aufs support (see [FAQ](FAQ.md))
-
-**Hardware requirments:**
-* Minimum 8GB memory
-* Minimum 20GB free disk storage space, 100GB recommended.
 
 
 ## Demo instance
@@ -120,24 +119,26 @@ You might find this [Youtube tutorial](https://www.youtube.com/watch?v=fJ6tUt_6u
 ### Interactive tours
 Interactive Tours are available for Galaxy and GraphClust2. To run the tours please on top panel go to **Help→Interactive Tours** and click on one of the tours prefixed *GraphClust*. You can check the other tours for a more general introduction to the Galaxy interface.
 
-### Import additional workflow flavors
+### Import additional workflows
 
 To import or upload additional workflow flavors (e.g. from [extra-workflows directory](./workflows/extra-workflows/)), on the top panel go to *Workflow* menu. On top right side of the screen click on "Upload or import workflow" button. You can either upload workflow from your local system or by providing the URL of the workflow. Log in is necessary to access into the workflow menu. The docker galaxy instance has a pre-configured *easy!* info that can be found by following the interactive tour. You can download workflows from the following links 
 
+### Workflow flavors
+The pre-configured flavors of GraphClust2 are provided and described inside the [workflows directory](./workflows/) 
+
 #### Workflows on the running server
-Below workflows can be easily viewed and imported to the server:
+Below workflows can be directly accessed on the public server:
   * MotifFinder: [GraphClust-MotifFinder](https://graphclust.usegalaxy.eu/u/graphclust2/w/graphclust2--motiffinder)
   * Workflow main: [GraphClust_1r](https://graphclust.usegalaxy.eu/u/graphclust2/w/graphclust2--main-1r)
   * Workflow main, preconfigured for two rounds : [GraphClust_2r](https://graphclust.usegalaxy.eu/u/graphclust2/w/graphclust2--main-2r)
 
 
-
-#### [Frequently Asked Questions](FAQ.md) 
+## [Frequently Asked Questions](FAQ.md) 
 
 Workflow overview
 ===============================
 
-GraphClust pipeline for clustering RNA sequences and structured motif discovery is a multi-step pipeline. Overall it consists of three major phases: a) sequence based pre-clustering b) encoding predicted RNA structures as graph features c) iterative fast candidate clustering then refinement
+The pipeline for clustering RNA sequences and structured motif discovery is a multi-step pipeline. Overall it consists of three major phases: a) sequence based pre-clustering b) encoding predicted RNA structures as graph features c) iterative fast candidate clustering then refinement
 
 ![GraphClust-2 workflow overview](./assets/img/figure-pipeline_zigzag.png) 
 
@@ -157,11 +158,6 @@ Below is a coarse-grained correspondence list of GraphClust2 tool names with eac
 
 ### Input
 The input to the workflow is a set of putative RNA sequences in FASTA format. Inside the `data` directory you can find examples of the input format. The labeled datasets are based on Rfam annotation that are labeled with the associated RNA family.
-
-### Configuring the workflows
-Please proceed with the interactive tour named `GraphClust workflow step by step`, available under `Help->Interactive Tours` and also check the references.
-An easy to understand tutorial highlighting the use-case scenarios and the few parameters that can be adapted according to the scenarios will be provided soon [here](./workflows/).
-Generally the pre-configured *main* workflows would perform well for clustering and partitioning a set of RNA sequences with defined boundary signals (e.g. ncRNAs or data from genomic screenings with tools such as CMfinder or RNAz).The *MotifFinder* workflow flavor is pre-configured for identifying (a few) local signal under the presence of noise and sequence context.
 
 ### Output
 The output contains the predicted clusters, where similar putative input RNA sequences form a cluster. Additionally overall status of the clusters and the matching of cluster elements is reported for each cluster. 
