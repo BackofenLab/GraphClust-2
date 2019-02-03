@@ -81,7 +81,7 @@ steps:
               This file contains annotated RNAs with human origin from RFAM database, from a mixture of RNA families."
       position: "top"
       textinsert:
-        https://github.com/BackofenLab/docker-galaxy-graphclust/raw/master/sample_data/cliques-low-representatives.fa
+        https://github.com/BackofenLab/docker-galaxy-graphclust/raw/master/data/Rfam-cliques-dataset/cliques-low-representatives.fa
 
     - title: "<b>Data Acquisition</b>"
       element: "button#btn-start"
@@ -110,7 +110,7 @@ steps:
       element: 'a[href$="/workflow/run?id=1cd8e2f6b131e891"]'
       intro: "Inside your workflows list you should see variations of Galaxy-GraphClust.
               The round number specifies the number of iterative clusterings.<br><br> 
-              <b>Click on GraphClust_1_round</b>, which is the faster one better fitting for 
+              <b>Click on GraphClust_1_round then Run</b>, which is the faster one better fitting for 
               the purpose of this tutorial.<b>Then click Next.</b>"
       position: "top"
 
