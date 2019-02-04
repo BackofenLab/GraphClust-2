@@ -1,9 +1,10 @@
+status GraphClust2:
+* container:
 [![DOI](https://zenodo.org/badge/76652676.svg)](https://zenodo.org/badge/latestdoi/76652676)
 [![Build Status](https://travis-ci.org/BackofenLab/GraphClust-2.svg?branch=master)](https://travis-ci.org/BackofenLab/GraphClust-2)
 [![Build Status](https://img.shields.io/docker/pulls/backofenlab/docker-galaxy-graphclust.svg)](https://hub.docker.com/r/backofenlab/docker-galaxy-graphclust)
-<!-- [![Docker Repository on Quay](https://quay.io/repository/bgruening/GraphClust2/status "Docker Repository on Quay")](https://quay.io/repository/bgruening/galaxy-graphclust)
- -->
- 
+* usegalaxy.eu: [![Build Status](https://build.galaxyproject.eu/job/usegalaxy-eu/job/workflow-testing/PYTHON=System-CPython-2.7,WORKFLOW=GraphClust2%2FGC-lite.ga/badge/icon)](https://build.galaxyproject.eu/job/usegalaxy-eu/job/workflow-testing/PYTHON=System-CPython-2.7,WORKFLOW=GraphClust2%2FGC-lite.ga/)
+
  
 GraphClust2
 ========================
@@ -22,7 +23,7 @@ Table of Contents
          * [Running the docker instance](#running-the-docker-instance)
             * [Using graphic interface (Windows/MacOS)](#using-graphic-interface-windowsmacos)
       * [Installation on a Galaxy instance](#installation-on-a-galaxy-instance)
-          * [Setup support](#setup-support)
+         * [Setup support](#setup-support)
       * [Demo instance](#demo-instance)
    * [Usage - How to run GraphClust2](#usage---how-to-run-graphclust2)
       * [Browser access to the server](#browser-access-to-the-server)
@@ -30,13 +31,13 @@ Table of Contents
          * [Docker instance](#docker-instance)
          * [Video tutorial](#video-tutorial)
          * [Interactive tours](#interactive-tours)
-         * [Import additional workflow flavors](#import-additional-workflow-flavors)
+         * [Import additional workflows](#import-additional-workflows)
+         * [Workflow flavors](#workflow-flavors)
             * [Workflows on the running server](#workflows-on-the-running-server)
-            * [<a href="FAQ.md">Frequently Asked Questions</a>](#frequently-asked-questions)
+      * [<a href="FAQ.md">Frequently Asked Questions</a>](#frequently-asked-questions)
    * [Workflow overview](#workflow-overview)
-       * [Input](#input)
-       * [Configuring the workflows](#configuring-the-workflows)
-       * [Output](#output)
+        * [Input](#input)
+        * [Output](#output)
    * [Support &amp; Bug Reports](#support--bug-reports)
    * [References](#references)
 
@@ -70,7 +71,6 @@ GraphClust2 has been tested on these operating systems:
 * *Windows* : 10 using [Kitematic](https://kitematic.com/)
 * *MacOSx*: 10.1x or higher using [Kitematic](https://kitematic.com/)
 * *Linux*: Kernel 4.2 or higher, preferably with aufs support (see [FAQ](FAQ.md))
-
 
 
 ### Running the docker instance
@@ -121,9 +121,12 @@ You might find this [Youtube tutorial](https://www.youtube.com/watch?v=fJ6tUt_6u
 ### Interactive tours
 Interactive Tours are available for Galaxy and GraphClust2. To run the tours please on top panel go to **Help→Interactive Tours** and click on one of the tours prefixed *GraphClust*. You can check the other tours for a more general introduction to the Galaxy interface.
 
-### Import additional workflow flavors
+### Import additional workflows
 
 To import or upload additional workflow flavors (e.g. from [extra-workflows directory](./workflows/extra-workflows/)), on the top panel go to *Workflow* menu. On top right side of the screen click on "Upload or import workflow" button. You can either upload workflow from your local system or by providing the URL of the workflow. Log in is necessary to access into the workflow menu. The docker galaxy instance has a pre-configured *easy!* info that can be found by following the interactive tour. You can download workflows from the following links 
+
+### Workflow flavors
+The pre-configured flavors of GraphClust2 are provided and described inside the [workflows directory](./workflows/) 
 
 #### Workflows on the running server
 Below workflows can be directly accessed on the public server:
@@ -132,15 +135,15 @@ Below workflows can be directly accessed on the public server:
   * Workflow main, preconfigured for two rounds : [GraphClust_2r](https://graphclust.usegalaxy.eu/u/graphclust2/w/graphclust2--main-2r)
 
 
-
-#### [Frequently Asked Questions](FAQ.md) 
+## [Frequently Asked Questions](FAQ.md) 
 
 Workflow overview
 ===============================
 
 The pipeline for clustering RNA sequences and structured motif discovery is a multi-step pipeline. Overall it consists of three major phases: a) sequence based pre-clustering b) encoding predicted RNA structures as graph features c) iterative fast candidate clustering then refinement
 
-![GraphClust-2 workflow overview](./assets/img/figure-pipeline_zigzag.png) 
+<img src="./assets/img/workflow_early.png" width="600"> ![GraphClust-2 workflow overview](./assets/img/figure-pipeline_zigzag.png) 
+
 
 Below is a coarse-grained correspondence list of GraphClust2 tool names with each step:
 

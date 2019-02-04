@@ -1,0 +1,1 @@
+The SHAPE workflows allow providing the structure probing reactivity information alongside the fasta sequences. Please check the sample data for formatting. The SHAPE variation has similar setting to the "main" workflows and will be eventually merged as an optional feature of the "main" workflows.

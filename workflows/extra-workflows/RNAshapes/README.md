@@ -1,0 +1,1 @@
+These pre-configurations use Bielefeld's RNAshapes package for the RNA structure predictions.
