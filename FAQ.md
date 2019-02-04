@@ -20,7 +20,25 @@
   sudo service docker restart
   ```
   For more information please check Docker documentation: https://docs.docker.com/engine/userguide/storagedriver/aufs-driver/
-  
+ 
+3.  Q: After a few experiments and upgrades, lots of disk storage is occupied. How can I clean it up?
+
+Docker takes a conservative approach for cleaning up unnecessary data objects. Below some solutions for cleaning up your hard disk is coming, ordered in the level of conservativeness:
+
+* Using `docker system prune` command, manual [here](https://docs.docker.com/config/pruning/)
+* Please make sure no unintended container instance is running on the background. You can get a list of all containers with `docker ps -a` and remove them if necessary with `docker rm ID-or-NAME`.
+* The above steps do not remove the dangling and not needed images which usually take most of the space. You can use `docker images` to get a list of them, and `docker rmi image-ID` to remove individual images.
+* To auto-remove a container after exiting, you can use `docker run --rm`.
+* A detailed tutorial about these and further ways can be found here: [https://www.tecmint.com/remove-docker-images-containers-and-volumes/](https://www.tecmint.com/remove-docker-images-containers-and-volumes/)
+
+4. Q: I would like to customize the workflow settings but there are so many parameters there. What can I do?
+
+GraphClust2 workflow is collection of more than 15 tools which most of them can be slightly complex even on its own. We have provided the pre-configurations that we think would be needed by the users accroding to our own experience and the feedback from the GraphClust2 users and collaborators. 
+Each tool wrapper is also supplemented with brief help descriptions for the arguments and/or external links to the tool's documentation. We are trying to extend the in-Galaxy help descriptions and Galaxy tutorials. The user's feedback is very appreciated. If you would like to customize the configurations and do not know how to start, we would recommend to start with adapting the first and last steps of the workflow. 
+
+GraphClust2 takes a windowing approach for folding and clustering long input sequences. The windows size and overlapping ratio can be adapted to the user's expectation of the structure features. Starting with shorter  window-length (50-100nt) would be a good idea, if you are not sure that the structured element you are searching for is covering entire sequence or not. In this way the small elements like stem-loops should be identified, afterwards you may re-start by increasing the windows size to capture the complete structure.
+
+In the last step `cluster_collection_report`, GraphClust2 assigns the elements to the best matching cluster and also aligns the best (top) matching entries of each cluster. `results_top_num` defines how many of the top entries to align, increasing the number would be a good idea to find covariations and identify a reliable conserved element. Usually aligning the top10-30 or higher would help to identify reliable structure conservations and covariations. The other parameter to consider is the covariance model hit criteria (E-value or bitscore). The E-value works very well (and designed for )specially for structured non-coding RNAs with defined boundaries, like sequences in the Rfam database.  We have found switching back to the CM-bit score option (option `Use CM score for cutoff`), to work better for identifying structured elements surrounded (within) a sequence context.
       
 # Registration and Login: 
 To have distinct history and workflows the Galaxy server requires each user to register for first access time. **By default anyone with access to the host network can register. No registration confirmation email will be sent to the given email.** So you can register with any custom (including non-existent) email address. There exist also a default Admin user [described here](https://bgruening.github.io/docker-galaxy-stable/users-passwords.html).  To change the default authorization settings please refer to the Galaxy Wiki section [Authentication](https://wiki.galaxyproject.org/Develop/Authentication) 
