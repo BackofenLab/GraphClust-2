@@ -1,4 +1,4 @@
-# Questions regarding setup:
+# Questions regarding setup and usage:
 
 1. Q: How can I stop a running docker instance of Galaxy-GraphClust?
 
