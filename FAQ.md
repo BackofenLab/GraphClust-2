@@ -40,7 +40,7 @@ GraphClust2 takes a windowing approach for folding and clustering long input seq
 
 In the last step `cluster_collection_report`, GraphClust2 assigns the elements to the best matching cluster and also aligns the best (top) matching entries of each cluster. `results_top_num` defines how many of the top entries to align, increasing the number would be a good idea to find covariations and identify a reliable conserved element. Usually aligning the top10-30 or higher would help to identify reliable structure conservations and covariations. The other parameter to consider is the covariance model hit criteria (E-value or bitscore). The E-value works very well (and designed for )specially for structured non-coding RNAs with defined boundaries, like sequences in the Rfam database.  We have found switching back to the CM-bit score option (option `Use CM score for cutoff`), to work better for identifying structured elements surrounded (within) a sequence context.
       
-. Q: The workflow runs forever on my computer. Isn't the liner run-time on of the highlighted remarks?
+5. Q: The workflow runs forever on my computer. Isn't the liner run-time on of the highlighted remarks?
 
 The apparent practical bottleneck of the workflow specially for local instances is the covariance model calibration. Specifically the `cmcalibrate` step integrated into the `cmbuild` Infernal wrapper. This calibration is necessary to compute a reliable E-value for the significance of a CM hit, but time-consuming for generating ~million bases of background sequences. 
 
