@@ -180,7 +180,7 @@ You can file a [github issue](https://github.com/BackofenLab/GraphClust-2/issues
 # References
 The manuscript is currently under prepration/revision. If you find this resource useful, please cite the zenodo DOI of the repo or contact us. 
 
-* M. Miladi, E. Sokhoyan, T. Houwaart, S. Heyne, F. Costa, R. Backofen and B. Gruening; Empowering the annotation and discovery of structured RNAs with scalable and accessible integrative clustering (under preparation/revision)
+* Miladi, Milad, Eteri Sokhoyan, Torsten Houwaart, Steffen Heyne, Fabrizio Costa, Bjoern Gruening, and Rolf Backofen. "Empowering the annotation and discovery of structured RNAs with scalable and accessible integrative clustering." bioRxiv (2019): 550335. doi: [https://doi.org/10.1101/550335](https://doi.org/10.1101/550335)
 * Milad Miladi, Björn Grüning, & Eteri Sokhoyan. BackofenLab/GraphClust-2: Zenodo. http://doi.org/10.5281/zenodo.1135094
 * The GraphClust-2 alignment-free approach is based on GraphClust methodology (S. Heyne, F. Costa, D. Rose, R. Backofen;
 GraphClust: alignment-free structural clustering of local RNA secondary structures; Bioinformatics, 2012) available at http://www.bioinf.uni-freiburg.de/Software/GraphClust/
