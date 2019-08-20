@@ -34,6 +34,7 @@ Table of Contents
          * [Import additional workflows](#import-additional-workflows)
          * [Workflow flavors](#workflow-flavors)
             * [Workflows on the running server](#workflows-on-the-running-server)
+      * [command line support (beta)](#command-line-support-beta)
       * [<a href="FAQ.md">Frequently Asked Questions</a>](#frequently-asked-questions)
    * [Workflow overview](#workflow-overview)
         * [Input](#input)
@@ -55,15 +56,15 @@ This Docker image is a flavor of the Galaxy Docker image customized for GraphClu
 ### Installation and Setup
 #### Requirements
 
-To run GraphClust2 locally Docker client is required.
+For running GraphClust2 locally, the `Docker` client is required.
 Docker supports the three major desktop operating systems  Linux, Windows and Mac OSX. Please refer to thw [Docker installation guideline](https://docs.docker.com/installation) for details.
 
-A GUI client can also be used under Windows and Mac OS.
+A GUI client can also be used for Windows and Mac operation systems.
 Please follow the graphical instructions for using Kitematic client [here](./kitematic.md).
 
 **Hardware requirements:**
 * Minimum 8GB memory
-* Minimum 20GB free disk storage space, 100GB recommended.
+* Minimum 20GB free disk storage space, 100GB is recommended.
 
 **Supported operating systems**
 
@@ -82,7 +83,7 @@ docker run -i -t -p 8080:80 backofenlab/docker-galaxy-graphclust
 
 For details about the docker commands please check the official guide [here](https://docs.docker.com/engine/reference/run/). Galaxy specific run options and configuration supports for computation grid systems are detailed in the Galaxy Docker [repository](https://github.com/bgruening/docker-galaxy-stable).
 
-#### Using graphic interface (Windows/MacOS)
+### Using graphic interface (Windows/MacOS)
 Please check this [step-by-step guide](./kitematic/kitematic.md).
 
 ## Installation on a Galaxy instance
@@ -134,6 +135,9 @@ Below workflows can be directly accessed on the public server:
   * Workflow main: [GraphClust_1r](https://graphclust.usegalaxy.eu/u/graphclust2/w/graphclust2--main-1r)
   * Workflow main, preconfigured for two rounds : [GraphClust_2r](https://graphclust.usegalaxy.eu/u/graphclust2/w/graphclust2--main-2r)
 
+## command line support (beta)
+Galaxy service is accessible via the Galaxy project `bioblend` API library. In the future we plan to provide a full integration of bioblend API for GraphClust2. Currently a beta support for running GraphClust2 via the CLI is available. The wrapper and setup template is available inside [CLI-workflow-executor](./CLI-workflow-executor) directory.
+
 
 ## [Frequently Asked Questions](FAQ.md) 
 
@@ -172,6 +176,7 @@ The output contains the predicted clusters, where similar putative input RNA seq
  - [Eteri Sokhoyan](https://github.com/eteriSokhoyan)
  - [Bjoern Gruening](https://github.com/bgruening)
  -->
+
 
 # Support & Bug Reports
 

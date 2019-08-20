@@ -1,0 +1,4 @@
+cliques_lite:
+  class: File
+  path: sample_lite.fa
+  type: fasta
