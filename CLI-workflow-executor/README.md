@@ -1,4 +1,12 @@
-Note: This is a clone of Pablo Moreno's EPI group repository [https://github.com/ebi-gene-expression-group/galaxy-workflow-executor](https://github.com/ebi-gene-expression-group/galaxy-workflow-executor)
+This is based on EBI gene expression group repository [https://github.com/ebi-gene-expression-group/galaxy-workflow-executor](https://github.com/ebi-gene-expression-group/galaxy-workflow-executor)
+
+A sample invocation would be:
+
+```python run_galaxy_workflow.py -C galaxy_credentials.yml -i input_files.yaml -W GC-lite-workflow.ga -k -H testCLI -P wf-parameters.json -G usegalaxy_eu```  
+
+For instruction details and technical issues regarding the CLI executation please refer to these repositories: https://github.com/ebi-gene-expression-group/galaxy-workflow-executor and https://github.com/ebi-gene-expression-group/scxa-workflows
+
+
 # Galaxy workflow executor
 
 This setup uses bioblend to run a Galaxy workflow through the cli:

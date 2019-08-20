@@ -136,11 +136,7 @@ Below workflows can be directly accessed on the public server:
   * Workflow main, preconfigured for two rounds : [GraphClust_2r](https://graphclust.usegalaxy.eu/u/graphclust2/w/graphclust2--main-2r)
 
 ## command line support (beta)
-Galaxy service is accessible via the Galaxy project `bioblend` API library. In the future we plan to provide a full integration of bioblend API for GraphClust2. Currently a beta support for running GraphClust2 via the CLI is available, which is based on the EBI Gene Expression Group workflow execution wrapper. The wrapper and setup template is available inside [CLI-workflow-executor](./CLI-workflow-executor) directory. A sample invocation would be:
-
-```python run_galaxy_workflow.py -C galaxy_credentials.yml -i input_files.yaml -W GC-lite-workflow.ga -k -H testCLI -P wf-parameters.json -G usegalaxy_eu```  
-
-For instruction details regarding the CLI executation please refer to these repositories: https://github.com/ebi-gene-expression-group/galaxy-workflow-executor and https://github.com/ebi-gene-expression-group/scxa-workflows
+Galaxy service is accessible via the Galaxy project `bioblend` API library. In the future we plan to provide a full integration of bioblend API for GraphClust2. Currently a beta support for running GraphClust2 via the CLI is available. The wrapper and setup template is available inside [CLI-workflow-executor](./CLI-workflow-executor) directory.
 
 
 ## [Frequently Asked Questions](FAQ.md) 
